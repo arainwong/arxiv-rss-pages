@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>arXiv keyword digest</title>
+    <link>https://arainwong.github.io/arxiv-rss-pages/</link>
+    <description>Daily arXiv papers summarized with Codex</description>
+    <lastBuildDate>Wed, 10 Jun 2026 13:58:11 GMT</lastBuildDate>
+    <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>Causal Ensemble Agent: Hierarchical Causal Discovery with LLM-guided Expert Reweighting</title>
+      <link>http://arxiv.org/abs/2606.10607v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.10607v1</guid>
+      <pubDate>Tue, 09 Jun 2026 09:09:07 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; CEA is a causal discovery framework that ensembles multiple statistical discovery experts and uses an LLM as a data-aware meta-referee to improve causal graph construction from observational data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to recover accurate causal graphs from observational data when standard causal discovery algorithms disagree and when direct LLM-based causal judgments are unreliable or insufficiently aligned with the observed data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes Causal Ensemble Agent (CEA), which aggregates structural outputs from multiple statistical causal discovery experts at different graph levels using linear opinion pooling, then invokes an LLM meta-referee to dynamically reweight experts when pooled confidence is near a decision boundary.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new aspect is the hybrid ensemble design: instead of asking an LLM to directly infer causal edges, CEA uses the LLM selectively for meta-analysis and expert reweighting, combining statistical evidence with domain-level reasoning from feature descriptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, extensive experiments on synthetic and real-world datasets show that CEA achieves the strongest overall performance across a wide range of causal discovery methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report specific metrics, datasets, baselines, effect sizes, computational cost, or ablations, so the strength and robustness of the empirical evidence cannot be assessed from the abstract alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This directly matches the configured query &amp;quot;causal discovery&amp;quot; because it proposes a new framework for observational causal graph learning and addresses disagreement among causal discovery algorithms, a central issue in the field.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, observational data, LLM, ensemble learning, expert reweighting, causal graphs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the CEA pipeline or architecture diagram showing statistical causal discovery experts, linear opinion pooling, decision-boundary detection, LLM-guided expert reweighting, and final graph composition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xinyu Li, Yuanyuan Wang, Haoxuan Li, Chuan Zhou, Erdun Gao, Bo Han, Tongliang Liu, Kun Zhang, Howard Bondell, Mingming Gong&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10607v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation</title>
+      <link>http://arxiv.org/abs/2606.10363v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.10363v1</guid>
+      <pubDate>Tue, 09 Jun 2026 03:22:34 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; HiMem-WAM proposes a hierarchical memory-gated World Action Model for long-horizon robotic manipulation, using skill-boundary-triggered memory updates to improve task-relevant causal state tracking.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies why existing World Action Models struggle with task-relevant memory in long-horizon robotic manipulation, especially when manipulation requires remembering compact task state across extended sequences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces HiMem-WAM, which combines motion-centric low-level latent actions, high-level skill latents, and a boundary-aware memory gate that writes compact task states at predicted skill transitions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel element is the hierarchical latent action structure plus boundary-triggered memory mechanism, intended to provide temporal abstraction and memory updates without requiring test-time future video generation or optical flow estimation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, evaluations on LIBERO, LIBERO-PLUS, RMBench, and real-world tasks show improved robustness under deployment perturbations from hierarchical latents and substantial gains on memory-dependent long-horizon manipulation from the memory module.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative results, baseline comparisons, ablation details, or enough evidence to judge how broadly the approach generalizes beyond the named benchmarks and real-world tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the query &amp;#x27;causal inference&amp;#x27; because it frames the memory gate as enabling causal inference over compact task states during robotic manipulation, though the causal-inference contribution appears embedded in an embodied-control architecture rather than presented as a general causal methodology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robotics, world action models, long-horizon manipulation, hierarchical latent actions, memory, causal inference, embodied intelligence&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework figure showing the hierarchical low-level motion latents, high-level skill latents, predicted skill boundaries, and memory-gated state updates would be useful, but no direct image URL is available from the provided metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xiaoquan Sun, Ruijian Zhang, Chen Cao, Yihan Sun, Jiahui Chen, Zetian Xu, Bo Chen, Haijier Chen, Zhen Yang, Jiarun Zhu, Yijun Hong, JingZhe Xu, Jingrui Pang, Mingqi Yuan, Jiayu Chen&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10363v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+    </item>
+    <item>
+      <title>Correlation Is Not Enough: Embedding Human Metadata for Individual Causal Discovery</title>
+      <link>http://arxiv.org/abs/2606.09672v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.09672v1</guid>
+      <pubDate>Mon, 08 Jun 2026 15:54:28 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that biomedical sentence embeddings can create false causal evidence for Large Behavioural Models and proposes contrastive fine-tuning plus BODHI hard-negative mining to improve cross-domain separation for individual causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Off-the-shelf biomedical encoders assign high similarity to unrelated cross-domain concepts, which is especially harmful when embeddings are used as evidence for causal edges in a graph of a person&amp;#x27;s life rather than only as noisy retrieval signals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors fine-tune PubMedBERT with a contrastive pass over 72,034 pairs, then apply BODHI, a second pass that mines hard negatives from biomedical knowledge-graph non-edges. They also benchmark serving performance with OpenVINO on Intel Xeon hardware with and without AMX.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that embedding geometry is a correctness condition for individual causal discovery in Large Behavioural Models, and that knowledge-graph-derived absent edges can be used as hard negatives to reduce false cross-domain proximity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, contrastive training improves PubMedBERT BIOSSES correlation from 0.633 to 0.828 and within-vs-across-domain separation from 1.05x to 1.63x. BODHI further raises separation to 2.30x and the discrimination gap to +0.392, with a 4.5% BIOSSES cost. OpenVINO reduces single-query latency from 1367 ms to 10 ms on an AMX-enabled Xeon 6737P.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report validation on real downstream individual causal-discovery outcomes, only embedding discrimination, BIOSSES correlation, and serving benchmarks. It is also unclear how broadly BODHI generalizes beyond the chosen biomedical knowledge graph and encoders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;quot;causal discovery&amp;quot; because it studies how embedding errors can induce false causal links in person-centered causal graphs and proposes a training framework to reduce those errors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, biomedical embeddings, contrastive learning, hard negatives, knowledge graphs, Large Behavioural Models, PubMedBERT, OpenVINO&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the proposed pipeline: pretrained biomedical encoder, contrastive pair training, BODHI knowledge-graph hard-negative mining, and downstream causal-edge construction in a personal life graph.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Suraj Biswas, Saurabh Gupta, Pritam Mukherjee&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.09672v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+      <category>cs.PF</category>
+      <category>q-bio.QM</category>
+    </item>
+    <item>
+      <title>Closing the Prior-Posterior Loop: Self-Reflective Molecular Design with Analysis-Driven LLM Iteration</title>
+      <link>http://arxiv.org/abs/2606.09520v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.09520v1</guid>
+      <pubDate>Mon, 08 Jun 2026 14:09:40 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a self-reflective LLM framework for molecular design that feeds detailed first-principles physicochemical analyses back into the generation loop to support more mechanistic causal reasoning than scalar score feedback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether general-purpose LLMs can design molecules to satisfy target properties with chemist-like precision, rather than relying on generate-score-reject loops that provide only scalar feedback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The framework couples retrieval-augmented generation with a self-reflection module that returns orbital energies, atomic charges, electron densities, and related structure-property rationale from first-principles calculations to the LLM during iterative molecular design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is replacing compressed scalar rewards or scores with rich physicochemical explanations, allowing the LLM to reason about why candidate molecules fail and how structural changes should affect target properties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, on HOMO-LUMO gap targets from 1.0 to 5.0 eV, the SPR reflection approach reaches deviations as low as 0.0003 eV and reports 100% success on moderate tasks, outperforming scalar-feedback and non-reflective baselines; it also generalizes to dipole-moment design and across five LLM backbones.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify dataset size, molecule validity constraints, computational cost of first-principles feedback, benchmark breadth beyond the named properties, or whether success holds for harder real-world medicinal or materials design objectives.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the matched query &amp;#x27;causal reasoning&amp;#x27; because the paper explicitly frames detailed physicochemical feedback as a way to turn LLM molecular optimization from stochastic trial-and-error into mechanistic, cause-aware iteration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal reasoning, molecular design, large language models, self-reflection, retrieval-augmented generation, computational chemistry, structure-property relationships&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing the prior-posterior loop: LLM/RAG molecule proposal, first-principles calculation, extraction of orbital energies/charges/electron densities, SPR reflection, and revised molecule generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Junyi Gong, Zijie Qiu, Ben Zhong Tang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal reasoning&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.09520v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>physics.chem-ph</category>
+      <category>cs.AI</category>
+    </item>
+  </channel>
+</rss>
