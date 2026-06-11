@@ -4,8 +4,210 @@
     <title>arXiv keyword digest</title>
     <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     <description>Daily arXiv papers summarized with Codex</description>
-    <lastBuildDate>Wed, 10 Jun 2026 13:58:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 08:00:42 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>ShrinkageTrees: An R Package for Bayesian Tree Ensembles for Survival Analysis and Causal Inference</title>
+      <link>http://arxiv.org/abs/2606.12317v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12317v1</guid>
+      <pubDate>Wed, 10 Jun 2026 16:52:44 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; ShrinkageTrees introduces an R package implementing regularized Bayesian additive regression tree ensembles for censored survival outcomes and causal effect estimation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper addresses flexible survival modeling and causal inference when outcomes are right- or interval-censored, especially in high-dimensional covariate settings where standard Bayesian tree ensembles may overfit or lack suitable regularization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It implements Bayesian additive regression tree models in an accelerated failure time framework, with optional decomposition into prognostic and treatment-effect components, using depth-penalizing and Dirichlet splitting priors for tree structure plus global-local shrinkage priors for step heights.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The abstract claims the first implementation of the Horseshoe Forest, which applies a horseshoe prior to tree step heights, and packages this with survival and causal inference workflows in R.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical benchmark or numerical result is reported in the abstract; the stated result is software capability, including fitting, prediction, causal effect estimation, convergence diagnostics, Rcpp acceleration, and multi-chain MCMC.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide evidence on accuracy, calibration, runtime, scalability, or comparisons against existing survival or causal inference methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;#x27;causal inference&amp;#x27; because it provides Bayesian tree ensemble tools for estimating treatment effects, particularly with censored survival outcomes and high-dimensional covariates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, survival analysis, Bayesian additive regression trees, R package, censored outcomes, Horseshoe Forest, MCMC&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a workflow or architecture diagram showing censored survival data entering the AFT Bayesian tree ensemble, the prognostic/treatment-effect decomposition, regularization priors, and outputs for prediction and causal effect estimation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Tijn Jacobs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12317v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>stat.CO</category>
+    </item>
+    <item>
+      <title>The Impossibility of Eliciting Latent Knowledge</title>
+      <link>http://arxiv.org/abs/2606.12268v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12268v1</guid>
+      <pubDate>Wed, 10 Jun 2026 16:11:13 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper formalizes eliciting latent knowledge in AI systems using Causal Influence Diagrams and proves that behavior-only feedback cannot guarantee an honest agent, even with perfect training feedback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to train advanced AI systems to honestly report their beliefs about latent environmental variables that humans cannot directly observe, a problem known as eliciting latent knowledge (ELK).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors use Causal Influence Diagrams to model the relationship between an agent&amp;#x27;s training environment, its subjective world representation, observable variables, latent variables, honesty, and goal misgeneralisation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a formal CID-based treatment of ELK that distinguishes honest reporting from merely producing answers humans would judge as true, plus an impossibility theorem for behavior-only feedback strategies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract states an impossibility theorem: no feedback-based training strategy that depends only on agent behavior can guarantee production of an honest agent with certainty, even when training feedback is perfect.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report empirical experiments, benchmarks, or practical mitigation evidence; the result appears theoretical and applies under the paper&amp;#x27;s stated formal assumptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the query &amp;#x27;causality&amp;#x27; because the paper uses Causal Influence Diagrams as the core formal framework for reasoning about hidden variables, agent beliefs, feedback, and causal structure in AI alignment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, causal influence diagrams, AI alignment, eliciting latent knowledge, honesty, goal misgeneralisation, theoretical AI safety&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s CID framework diagram showing observable variables, latent variables, agent beliefs, feedback, and behavior in the training environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Korbinian Friedl, Francis Rhys Ward, Paul Yushin Rapoport, Tom Everitt, Jonathan Richens&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12268v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Making Foresight Actionable: Repurposing Representation Alignment in World Action Models</title>
+      <link>http://arxiv.org/abs/2606.12217v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12217v1</guid>
+      <pubDate>Wed, 10 Jun 2026 15:31:25 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies why visually plausible World Action Model rollouts can still yield poor robot actions and proposes AGRA, a representation-alignment objective that makes video diffusion features more useful for action decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; World Action Models for robot manipulation use video generation to predict future scene evolution before choosing actions, but the abstract reports that plausible generated futures do not reliably produce accurate low-level control actions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors diagnose the issue with action-head attention analysis and causal interventions, then introduce AGRA: an Action-Grounded Representation Alignment objective that aligns intermediate video diffusion features with spatially coherent semantic representations from a foundation visual encoder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is reframing the world-model-to-action interface as a representation mismatch problem: hidden states optimized for visual reconstruction are regularized to become spatially and semantically organized for action control, rather than assuming better video prediction directly implies better actions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On real-world manipulation tasks, AGRA reportedly improves attention to task-relevant interaction regions, object localization, affordance understanding, robustness to task-irrelevant perturbations, in-distribution performance, and out-of-distribution generalization over a baseline World Action Model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative results, task suite details, baseline names beyond a baseline WAM, or evidence about computational cost and scalability across robot platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the `causality` feed because the paper explicitly uses causal interventions to identify why action decoders fail under task-irrelevant perturbations, though the main contribution is representation alignment for robot world-action models rather than a general causal inference method.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robot manipulation, world action models, video diffusion, representation alignment, causal interventions, attention analysis, affordance learning, out-of-distribution generalization&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the AGRA pipeline: video diffusion world-model features feeding an action decoder, the semantic foundation-encoder alignment objective, and attention or causal-intervention maps highlighting task-relevant versus task-irrelevant regions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Lu Qiu, Yizhuo Li, Yi Chen, Yuying Ge, Yixiao Ge, Xihui Liu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12217v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.AI</category>
+      <category>cs.RO</category>
+    </item>
+    <item>
+      <title>Attention by Synchronization in Coupled Oscillator Networks</title>
+      <link>http://arxiv.org/abs/2606.12059v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12059v1</guid>
+      <pubDate>Wed, 10 Jun 2026 13:28:14 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes replacing softmax attention with a Kuramoto synchronization-based oscillator mechanism designed for energy-constrained physical hardware.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to implement transformer-style attention on physical substrates where exponentiation and global reductions used by softmax are energetically expensive and physically unnatural.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The proposed fixed-query oscillator attention uses learned query anchors fixed on a sphere while free oscillators evolve under Kuramoto-Lohe dynamics until equilibrium; attention weights are then encoded through cosine similarity with an affine normalization at readout.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a mathematically grounded attention operation implemented by oscillator synchronization dynamics, with a provably unique and almost globally attractive fixed point across physical realizations, avoiding exponentiation during computation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Empirically, at oscillator dimension 2 it outperforms softmax on keyword spotting by +1.00 percentage point and subject-verb agreement by +5.27 percentage points on hard sentences; on causal language modeling, softmax remains better, but the perplexity gap shrinks as oscillator dimension increases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract frames the work mainly as a hardware blueprint rather than a software replacement for softmax, and reports remaining gaps on causal language modeling; it does not provide hardware energy measurements or physical-device experiments in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevance to the matched query &amp;#x27;causality&amp;#x27; appears weak and indirect: the abstract mentions causal language modeling, but the paper is about physical implementations of attention, not causal inference or causality methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; oscillator-attention, kuramoto-dynamics, physical-ai-hardware, transformer-attention, energy-efficient-computing, neuromorphic-computing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework diagram showing fixed query anchors on the sphere, free oscillator equilibration under Kuramoto-Lohe dynamics, and readout of attention weights via cosine similarity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Fabio Pasqualetti, Taosha Guo&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12059v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.NE</category>
+      <category>nlin.AO</category>
+    </item>
+    <item>
+      <title>WorldReasoner: Evaluating Whether Language Model Agents Forecast Events with Valid Reasoning</title>
+      <link>http://arxiv.org/abs/2606.11816v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11816v1</guid>
+      <pubDate>Wed, 10 Jun 2026 08:50:29 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; WorldReasoner is a benchmark framework for testing whether language-model agents can make temporally valid event forecasts using grounded evidence and causal reasoning rather than memorized facts or unsupported explanations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to evaluate real-world event forecasting by language-model agents under uncertainty, especially when final-answer accuracy alone cannot distinguish valid forecasting from memorization, fabricated citations, or post hoc causal storytelling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes WorldReasoner, an evaluation framework where each task provides a resolved forecasting question, a simulated forecast date, and access only to pre-date evidence; agents submit probabilities, cited evidence, and optionally causal event graphs, which are scored on outcome quality, evidence quality, and reasoning quality against hindsight reference graphs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel contribution is a temporally constrained forecasting benchmark that evaluates not just prediction accuracy but also source grounding and causal-event reasoning, built at scale through an agentic pipeline that generates questions, gathers timestamped evidence, and constructs hindsight event graphs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On 345 resolved tasks derived from 14,141 articles and 8,087 extracted graph events, temporally valid retrieval was the strongest driver of forecast accuracy; causal graph construction improved key-event recovery, but agents still struggled to turn grounded evidence into well-calibrated probabilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report detailed model identities, statistical significance, human validation quality for the hindsight graphs, or whether results generalize beyond the 345 constructed forecasting tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the query &amp;#x27;causality&amp;#x27; because it evaluates whether LM agents can use causal event graphs and key-event structure to support real-world forecasts, rather than relying only on surface evidence or outcome accuracy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, event forecasting, language model agents, evaluation benchmark, temporal validity, retrieval, causal event graphs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the WorldReasoner evaluation pipeline: forecasting question generation, timestamped evidence retrieval, agent probability and citation submission, optional causal graph construction, and the three scoring axes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yizhou Chi, Eric Chamoun, Zifeng Ding, Andreas Vlachos&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11816v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>AnchorEdit: Maintaining Temporal Consistency in Multi-turn Image Editing via Causal Memory</title>
+      <link>http://arxiv.org/abs/2606.11751v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11751v1</guid>
+      <pubDate>Wed, 10 Jun 2026 07:26:31 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; AnchorEdit proposes an autoregressive diffusion framework with causal memory to reduce identity drift and accumulated errors in long-horizon multi-turn image editing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies high-resolution iterative image editing, where models must preserve subject identity and follow instructions over many successive edits but often suffer from identity drift and error accumulation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes AnchorEdit, an autoregressive diffusion-based multi-turn editing framework trained with a three-stage curriculum: identity-preserving single-turn pretraining, causal autoregressive forcing fine-tuning using self-rollout to reduce exposure bias, and consistency distillation for efficient 4-step generation; at inference, a memory mechanism anchors the initial subject identity across editing rounds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is reframing multi-turn image editing as causal autoregressive inference rather than relying on bidirectional video-prior attention, plus adding a causal memory mechanism and a high-resolution benchmark for long-horizon editing stability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, AnchorEdit achieves state-of-the-art results, preserving subject fidelity and instruction following over more than 10 interaction rounds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative metrics, dataset details, baseline names, ablations, or evidence about generalization beyond the proposed benchmark.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;#x27;causal inference&amp;#x27; mainly through its use of causal autoregressive inference and memory for sequential generation; it is not clearly about causal effect estimation or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; multi-turn image editing, autoregressive diffusion, causal memory, identity preservation, long-horizon consistency, computer vision&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the AnchorEdit pipeline or architecture figure showing the three-stage training curriculum and inference-time causal memory mechanism.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hang Xu, Xiaoxiao Ma, Guohui Zhang, Yu Hu, Siming Fu, Jie Huang, Lin Song, Haoyang Huang, Nan Duan, Feng Zhao&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11751v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>From Prompts to Tokens: Internalizing Causal Supervision in Vision-Language Model for Multi-Image Causal Reasoning</title>
+      <link>http://arxiv.org/abs/2606.11745v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11745v1</guid>
+      <pubDate>Wed, 10 Jun 2026 07:21:45 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; BridgeVLM proposes to improve multi-image visual causal reasoning by turning induced causal graphs into internal causal tokens processed inside a VLM decoder rather than relying on prompt-level causal instructions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies brittle causal reasoning in large vision-language models, especially identifying causal variables from multi-image visual inputs and answering interventional or counterfactual queries about physical scenes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes BridgeVLM, which induces a causal graph from multi-image inputs, converts that graph into structured Causal Tokens, and executes them through RAMP layers inserted into the LLM decoder for causal message passing; it also introduces M3S, a unified training interface for local and global causal supervision.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is internalizing causal supervision into model execution via causal tokens and decoder-level message passing, instead of keeping causal knowledge external as text prompts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, BridgeVLM reports 54.4% accuracy on CausalVLBench intervention tasks versus 33.2% with prompt-level supervision, improves Causal3D from 43.6% to 49.0%, and raises CausalVLBench causal structure learning F1 from 33.4% to 75.1%.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify model scale, dataset breadth beyond CausalVLBench and Causal3D, robustness to real-world visual distributions, computational overhead from RAMP layers, or whether improvements generalize outside benchmark-style causal tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;#x27;causal reasoning&amp;#x27; because it targets visual causal reasoning, causal structure learning, interventions, and counterfactual reasoning in VLMs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; visual causal reasoning, vision-language models, causal structure learning, interventions, counterfactual reasoning, multi-image reasoning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the BridgeVLM architecture or pipeline figure showing multi-image inputs, induced causal graph, Causal Token construction, and RAMP-layer message passing inside the LLM decoder.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Haoping Yu, Yuanxi Li, Jing Ma&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal reasoning, causal structure learning, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11745v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Bracketing Relationships of Weighted Average Treatment Effects</title>
+      <link>http://arxiv.org/abs/2606.11715v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11715v1</guid>
+      <pubDate>Wed, 10 Jun 2026 06:40:53 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper derives theoretical bracketing relationships among weighted average treatment effects in observational causal inference, especially showing when the overlap-weight estimand lies between ATT and ATC.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how different weighted average treatment effect estimands relate to each other in observational studies, where treatment effect heterogeneity and propensity-score-based weighting can make causal estimands difficult to compare.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors prove theoretical bounds under a monotonic relationship between the propensity score and the conditional average treatment effect, then extend the argument to weighted local average treatment effects with a binary instrumental variable and binary treatment, as well as to other weighting schemes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a bracketing result: under stated monotonicity conditions, the overlap-weight average treatment effect is bounded between the average treatment effects on treated and control units, giving an interpretable ordering of common causal estimands.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, the primary result is theoretical rather than empirical: the overlap-weight estimand is bounded between ATT and ATC under the monotonic propensity-score/CATE relationship, with analogous extensions to weighted LATE settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report simulations, real-data validation, or robustness evidence; the results appear to depend on monotonicity assumptions whose empirical plausibility may need diagnostic assessment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;#x27;causal inference&amp;#x27; because it clarifies relationships among treatment-effect estimands used in observational causal studies and proposes a CP-plot diagnostic of estimated CATE versus estimated propensity score.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, observational studies, weighted average treatment effects, overlap weights, ATT, ATC, LATE, propensity score&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework or diagnostic figure showing the proposed CP-plot: estimated conditional average treatment effect on one axis and estimated propensity score on the other, with regions illustrating the bracketing relationship among ATT, ATC, and overlap-weight ATE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Pengfei Tian, Fan Yang, Peng Ding&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11715v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>Substrate Asymmetry in User-Side Memory: A Diagnostic Framework</title>
+      <link>http://arxiv.org/abs/2606.11712v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11712v1</guid>
+      <pubDate>Wed, 10 Jun 2026 06:39:20 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that user-side LLM memory should be evaluated along separate behavioral and factual axes because parametric user adapters and retrieval systems fail in opposite ways.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to evaluate and choose memory substrates for personalized LLMs, showing that aggregate personalization scores obscure distinct failures in style consistency, factual recall, and abstention when facts are absent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper proposes a diagnostic framework that factorizes memory into behavioral consistency, factual presence, and factual absence, then compares per-user gamma-LoRA adapters against BGE-large top-K retrieval on a controlled 50-user synthetic corpus and a LaMP-3 real-data probe, with causal intervention by zeroing specific LoRA attention weights.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Its main novelty is identifying substrate asymmetry: LoRA-based parametric memory and RAG specialize in different memory axes, and the same query-projection attention cells in layers 21-35 appear causally load-bearing for opposite factual-presence and factual-absence effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Gamma-LoRA decisively improves behavioral style, while RAG decisively improves factual absence. Zeroing the identified LoRA weights raises absence-probe TPR by 33 percentage points but drops presence-probe TPR by 20 points. On Llama-3.1-8B-Instruct, alignment appears to worsen the asymmetry; on LaMP-3, gamma-LoRA underperforms a majority baseline unless evaluation-time logit masking is used.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports a controlled synthetic corpus of only 50 users and a LaMP-3 probe; broader real-world validation, robustness across more tasks/models, and details of the causal intervention methodology are not available from the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the matched query &amp;#x27;causality&amp;#x27; because the paper makes causal claims about specific LoRA attention query-projection weights load-bearing for memory behavior, using weight-zeroing interventions to test their effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM memory, personalization, LoRA, RAG, causal intervention, attention analysis, evaluation framework, alignment tax&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the diagnostic framework with the three memory axes, the compared substrates, and the causal intervention on attention query-projection cells in layers 21-35.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Youwang Deng&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11712v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents</title>
+      <link>http://arxiv.org/abs/2606.11680v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11680v1</guid>
+      <pubDate>Wed, 10 Jun 2026 05:49:14 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; HORMA proposes a hierarchical file-system-like working memory for LLM agents that preserves raw trajectories while enabling efficient navigation-based retrieval for long-horizon tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how LLM agents can maintain useful working memory over long-horizon, multi-step tasks without relying on ever-growing contexts that degrade reasoning quality, increase cost, and add latency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; HORMA builds a hierarchical memory structure from agent experience, linking summarized entities to raw trajectories, then uses a lightweight reinforcement-learning-trained navigation agent to traverse the hierarchy and retrieve minimal sufficient context for the current task.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty is an organize-then-retrieve memory framework that explicitly preserves temporal structure and causal dependencies by connecting summaries to raw experience, instead of depending only on lossy compression or similarity-based retrieval.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, HORMA improves task performance under constrained context budgets across ALFWorld, LoCoMo, and LongMemEval, using at most 22.17% of baseline token usage in long conversation tasks while improving efficiency-performance trade-offs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify exact accuracy gains, ablation results, training cost for the retrieval agent, or whether the method scales to very large real-world agent histories beyond the evaluated benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it targets memory retrieval methods that preserve temporal structure and causal dependencies needed for multi-step agent behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM agents, working memory, hierarchical retrieval, long-horizon tasks, causal dependencies, reinforcement learning, agent memory&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or architecture diagram showing HORMA&amp;#x27;s two stages: hierarchical memory construction linking summaries to raw trajectories, followed by navigation-based retrieval through the memory tree.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hao-Lun Hsu, Nikki Lijing Kuang, Boyi Liu, Zhewei Yao, Yuxiong He&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11680v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+    </item>
     <item>
       <title>Causal Ensemble Agent: Hierarchical Causal Discovery with LLM-guided Expert Reweighting</title>
       <link>http://arxiv.org/abs/2606.10607v1</link>
@@ -21,7 +223,7 @@
 &lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, observational data, LLM, ensemble learning, expert reweighting, causal graphs&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the CEA pipeline or architecture diagram showing statistical causal discovery experts, linear opinion pooling, decision-boundary detection, LLM-guided expert reweighting, and final graph composition.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xinyu Li, Yuanyuan Wang, Haoxuan Li, Chuan Zhou, Erdun Gao, Bo Han, Tongliang Liu, Kun Zhang, Howard Bondell, Mingming Gong&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10607v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.LG</category>
       <category>cs.AI</category>
