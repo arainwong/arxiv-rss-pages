@@ -4,8 +4,208 @@
     <title>arXiv keyword digest</title>
     <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     <description>Daily arXiv papers summarized with Codex</description>
-    <lastBuildDate>Thu, 11 Jun 2026 08:00:42 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 08:48:59 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning</title>
+      <link>http://arxiv.org/abs/2606.13607v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13607v1</guid>
+      <pubDate>Thu, 11 Jun 2026 17:23:10 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that both humans and LLMs show similar everyday causal reasoning failures, and that LLM attention heads tied to pattern matching can predict analogous human errors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whether failures in common-sense and everyday causal reasoning are unique evidence against LLM reasoning, or whether humans exhibit similar failures under comparable prompt conditions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors evaluate human participants and 25 LLMs on everyday common-sense reasoning tasks, compare their error patterns, and identify attention heads that drive LLM responses to test whether those mechanisms resemble pattern matching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Its novel claim is that specific LLM attention heads implementing pattern-matching behavior can predict seemingly inexplicable human reasoning errors triggered by irrelevant prompt details, linking human and model failures mechanistically rather than only behaviorally.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, humans and LLMs exhibit similar reasoning error patterns, and the identified LLM attention heads help predict human errors caused by irrelevant details in prompts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report dataset size, task design details, statistical strength, model list, or whether the attention-head analysis establishes causality rather than correlation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This directly matches the causal reasoning feed because it examines everyday causal and common-sense reasoning, comparing human reasoning with LLM mechanisms and challenging abstract-world-model accounts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal reasoning, common-sense reasoning, LLMs, human cognition, attention heads, pattern matching, reasoning errors&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework or pipeline figure showing the human/LLM task comparison, attention-head identification, and prediction of human errors from LLM attention patterns.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zach Studdiford, Gary Lupyan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal reasoning, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13607v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models</title>
+      <link>http://arxiv.org/abs/2606.13603v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13603v1</guid>
+      <pubDate>Thu, 11 Jun 2026 17:21:16 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies when chain-of-thought reasoning actually causally determines an LLM’s answer and finds a detectable commitment boundary after which many reasoning steps are epiphenomenal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; CoT is widely used for inference-time scaling, but it is unclear which individual reasoning steps causally influence the final answer and when the model’s answer becomes fixed during a reasoning trace.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors estimate each CoT step’s causal importance using early exit, analyze answer formation across several model families and tasks, and train attention probes to decode answer-formation stages from intermediate reasoning steps.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is the identification and probing of a sharp commitment boundary in CoT traces, separating transient intermediate guesses from a stable answer, plus a practical early-exit strategy based on this signal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that CoT length can be reduced by up to 55% on average with negligible performance impact, and that attention probes decode answer-formation stages with high accuracy and robust generalization to unseen reasoning tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify the exact model families, task suite, baseline comparisons, or whether the early-exit method preserves calibration, robustness, or performance on harder out-of-distribution reasoning cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the causality query because it measures the causal importance of individual reasoning steps and distinguishes causally influential CoT content from post-commitment steps that do not alter the final answer probability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, chain-of-thought, large language models, reasoning, early exit, interpretability, attention probes, inference-time scaling&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or trace figure showing early-exit causal importance scores over CoT steps, the detected commitment boundary, and the subsequent epiphenomenal reasoning segment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Daniel Scalena, Sara Candussio, Luca Bortolussi, Elisabetta Fersini, Malvina Nissim, Gabriele Sarti&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13603v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Is It You or Your Environment? A Bayesian Inference Framework for Genomically-Anchored Personalized Physiological Interpretation</title>
+      <link>http://arxiv.org/abs/2606.13556v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13556v1</guid>
+      <pubDate>Thu, 11 Jun 2026 16:38:38 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a Bayesian causal-inference framework that uses genomic information as an initial personalized prior for interpreting physiological measurements before enough individual behavioral data are available.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Personalized health AI systems suffer from a cold-start problem: without weeks of individual data, models struggle to distinguish a person&amp;#x27;s constitutional baseline from environmentally or state-driven physiological deviations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors propose a genomically anchored Bayesian inference scheme in which GWAS-derived effect sizes and risk-allele counts initialize an individual&amp;#x27;s physiological set-point prior, incoming measurements are interpreted as deviations from that prior, and the genomic prior gradually decays as empirical personal data accumulate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel element is using a fixed genomic profile as an exogenous, domain-informed anchor for early personalized physiological interpretation, with evidence-graded priors, dynamic prior decay, ancestry-matched effect sizes, and explicit separation between attribution and deterministic prediction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical benchmark or validation result is reported in the abstract; the main demonstrated result is conceptual, illustrated by how the same HRV value can imply opposite interpretations depending on the genomic prior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report experiments, clinical validation, uncertainty calibration, or performance comparisons against standard personalization baselines; practical reliability also depends on GWAS effect validity, ancestry matching, and avoiding overinterpretation of contested genes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the causal inference feed because it frames genomic variables as exogenous anchors, discusses association versus Mendelian randomization versus individual causal attribution, and proposes a causal-Bayesian architecture for personalized health AI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, Bayesian inference, personalized medicine, genomics, physiological monitoring, cold start, Mendelian randomization&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the pipeline from genomic profile to GWAS-weighted prior, physiological measurement deviation, Bayesian belief update, and time-decayed transition toward an empirical personal baseline.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aruna Dey, Suraj Biswas&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13556v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.HC</category>
+      <category>q-bio.BM</category>
+      <category>q-bio.GN</category>
+      <category>q-bio.MN</category>
+    </item>
+    <item>
+      <title>NetCause: Counterfactual Learning for Root Cause Analysis in Large-Scale Networks</title>
+      <link>http://arxiv.org/abs/2606.13543v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13543v1</guid>
+      <pubDate>Thu, 11 Jun 2026 16:26:33 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; NetCause learns graph-temporal fault propagation patterns in large production networks and uses counterfactual simulation to rank likely root causes of customer-impacting incidents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies root cause analysis for large-scale networks where faults propagate through complex physical and logical dependencies, making static rules, correlation heuristics, and topology-local reasoning insufficient in dynamic operational environments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes NetCause, a self-supervised learning framework that represents incidents as graph-temporal processes and applies counterfactual simulation to score and rank candidate root cause hypotheses, with outputs intended to support operator mitigation and remediation workflows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is combining learned network fault-propagation modeling with counterfactual reasoning for interpretable causal root-cause ranking, rather than relying primarily on static heuristics or local topology/correlation signals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On over 1,500 incidents from six months of a cloud provider production network and 31 expert-labeled evaluation incidents, NetCause improves root cause ranking quality and reports a 16.1% accuracy improvement over a rule-based heuristic baseline; inference takes seconds of GPU time per incident.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only 31 expert-labeled evaluation incidents, does not describe robustness across other providers or network types, and notes that training is computationally intensive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the query &amp;#x27;causality&amp;#x27; because it uses counterfactual simulation to causally attribute observed customer impact to underlying network root causes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, counterfactual learning, root cause analysis, network operations, graph-temporal modeling, self-supervised learning, cloud networks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a NetCause pipeline or architecture figure showing telemetry ingestion, graph-temporal incident modeling, counterfactual simulation, and ranked root-cause hypotheses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Fabien Chraim, Jian Zhang, Dominik Janzing, Xiang Song, Christos Faloutsos, John Evans&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13543v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.NI</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Graphical Causal Reasoning for Root Cause Analysis in Cloud Networks</title>
+      <link>http://arxiv.org/abs/2606.13532v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13532v1</guid>
+      <pubDate>Thu, 11 Jun 2026 16:20:51 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a graph-based causal discovery and inference system for root cause analysis of large-scale cloud network incidents, reporting strong recall on labeled production incidents and qualitative production usefulness.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to identify root causes of incidents in complex cloud networks, where rule-based automation can struggle with scale, temporal dependencies, and dynamic operational behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The approach groups incident signals spatiotemporally, uses an automation ontology to reduce dimensionality, builds causal graphs from binary time-series data with bivariate Granger causality and conditional independence tests, and performs time-aware causal graph traversal using edge-specific lag-dependent conditional probabilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Its novelty is the combination of causal discovery over cloud network incident time series with dimensionality reduction via operational ontology and a probabilistic, interpretable, time-lag-aware root cause scoring procedure designed for production RCA workflows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On 35 labeled production incidents from a major cloud provider, the system recalled the correct root cause in 85.7% of cases and produced an exact match in 74.3%; it has also reportedly been used in over 800 real-world production incidents with positive qualitative engineer feedback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only 35 labeled incidents for quantitative evaluation, does not describe baselines or statistical uncertainty, and production evidence is qualitative rather than a controlled empirical comparison.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the query &amp;#x27;causal discovery&amp;#x27; because it applies causal graph construction and causal reasoning to a real operational cloud-network RCA setting rather than a purely synthetic benchmark.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, root cause analysis, cloud networks, Granger causality, conditional independence, time series, causal graph, network operations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or architecture figure showing spatiotemporal grouping, ontology-based dimensionality reduction, causal graph construction, and time-aware root cause traversal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Fabien Chraim, Dominik Janzing, John Evans&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causal reasoning, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13532v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.NI</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>GeoHAT: Geometry-Adaptive Hybrid Action Transformer for Mobile Manipulation</title>
+      <link>http://arxiv.org/abs/2606.13394v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13394v1</guid>
+      <pubDate>Thu, 11 Jun 2026 14:25:09 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; GeoHAT is a diffusion-based mobile manipulation policy that injects reliable dense 3D geometry into vision foundation model features and decodes arm/base actions through separate, attention-based subspaces.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whole-body mobile manipulation, where a robot must coordinate a mobile base and manipulator under changing viewpoints while maintaining robust geometric perception and generating appropriate actions for both control modalities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; GeoHAT uses a lightweight Fourier spatial encoder to convert dense per-pixel 3D coordinates into geometric tokens, gated fusion to selectively inject those tokens into pretrained vision features based on depth validity, and a Hybrid Whole-Body Action Decoder that separates arm and base action spaces with sparse cross-attention plus causal temporal modeling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is geometry-adaptive fusion: dense 3D information is added only where depth is reliable and only where the policy needs it, avoiding both sparse 3D representations and heavy 3D backbones while preserving pretrained semantic features. The action decoder also explicitly separates arm and base control instead of treating them as one monolithic action vector.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On the ManiSkill-HAB simulation benchmark, GeoHAT reports a 79.3% mean success rate, outperforming the strongest baseline by 23.7%; the abstract also claims consistent gains in real-world experiments across diverse tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify the number or type of real-world tasks, dataset scale, baseline identities, ablation details, runtime cost, or whether improvements hold under severe depth noise or out-of-distribution environments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This paper matched the query &amp;#x27;causality&amp;#x27; because it mentions causal temporal modeling for action coordination, but it does not appear to study causality in the causal inference or causal representation learning sense. Relevance is therefore indirect unless the researcher is tracking causal/autoregressive temporal models in robotics policies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; mobile manipulation, robot learning, diffusion policy, vision-language/vision foundation features, 3D geometry, whole-body control, causal temporal modeling&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the GeoHAT pipeline: RGB-D input, Fourier spatial encoding of per-pixel 3D coordinates, gated geometry fusion into vision features, and the hybrid arm/base action decoder with sparse cross-attention.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xiangyu Zhu, Renjun Wu, Luzhou Ge, Jinyan Liu, Xuesong Li&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13394v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+    </item>
+    <item>
+      <title>MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold</title>
+      <link>http://arxiv.org/abs/2606.13376v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13376v1</guid>
+      <pubDate>Thu, 11 Jun 2026 14:01:02 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MoVerse turns a single narrow-field-of-view image into a real-time, interactively navigable video world by combining panoramic diffusion, a persistent 3D Gaussian scaffold, and a distilled causal video renderer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies single-image world creation for interactive roaming, where the input sees only a small part of the environment but the output must provide surrounding scene content, persistent geometry, controllable camera motion, and temporally coherent photorealistic video.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; MoVerse separates world construction from observation rendering: it first expands the input into a gravity-aligned 360-degree panorama using topology-aware diffusion, lifts that panorama into a dense 3D Gaussian scaffold via panoramic geometry-aware residual prediction, then renders user-controlled camera trajectories with a Gaussian-conditioned video renderer. A bidirectional diffusion teacher is distilled into a causal autoregressive student for bounded-latency streaming.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel aspect is the pipeline that closes missing scene context before 3D reasoning, stores the result as an explicit persistent Gaussian scaffold, and uses teacher-student distillation to obtain a causal renderer suitable for real-time interactive video rather than offline generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, MoVerse runs real-time scene roaming at 8 FPS on a single NVIDIA RTX 4090 GPU; no quantitative quality comparisons or benchmark scores are provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report evaluation datasets, baselines, perceptual metrics, user studies, failure cases, or how well the hallucinated 360-degree scene remains semantically correct beyond visual plausibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevance to the matched query &amp;#x27;causality&amp;#x27; is limited: the paper uses a causal autoregressive student model for streaming latency, but it does not appear to study causal inference, causal representation learning, or cause-effect reasoning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; computer-vision, video-world-model, single-image-3d, panorama-generation, 3d-gaussian-splatting, diffusion-models, autoregressive-rendering, real-time-rendering&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure would be useful: single narrow-FOV input image -&amp;gt; topology-aware 360-degree panorama expansion -&amp;gt; 3D Gaussian scaffold construction -&amp;gt; Gaussian-conditioned video rendering along user camera trajectories with teacher-to-causal-student distillation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yang Zhou, Ziheng Wang, Yuqin Lu, Haofeng Liu, Jun Liang, Shengfeng He, Jing Li&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13376v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>Navigating the Safety-Fidelity Trade-off: Massive-Variate Time Series Forecasting for Power Systems via Probabilistic Scenarios</title>
+      <link>http://arxiv.org/abs/2606.13338v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13338v1</guid>
+      <pubDate>Thu, 11 Jun 2026 13:27:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; PowerPhase is a large-scale probabilistic forecasting benchmark for power-system time series, paired with PowerForge, a scenario-based quantile forecaster that uses type-specific heads and a causal bridge between variable groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies probabilistic forecasting for massive multivariate power systems where channels have different physical meanings and operational constraints, arguing that existing benchmarks are too small or do not evaluate temporal probabilistic safety constraints at scale.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces PowerPhase, a benchmark spanning six transmission grids with 2,000 to 36,964 jointly forecasted channels generated from AC power-flow solves, plus constraint-aware metrics such as Safety_mBrier, NECV, and CVaR-alpha. It also proposes PowerForge, a scenario-based quantile forecasting model with variable-type-specific decoding heads and a causal bridge between variable groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is the combination of massive-variate probabilistic power-system forecasting, physics-derived target trajectories, constraint-aware evaluation, and an explicit safety-fidelity framing showing that distributional accuracy and constraint satisfaction can rank models differently.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across eight baselines and three seeds, the abstract reports that model rankings differ between distributional accuracy and constraint satisfaction, and that PowerForge achieves the best average rank on every grid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report absolute metric values, statistical significance, details of the six grids, or evidence about generalization beyond simulated AC power-flow-derived targets.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This paper matched the query &amp;quot;causality&amp;quot; because PowerForge includes a causal bridge between variable groups, applying causal structure ideas to probabilistic multivariate forecasting in power systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; probabilistic forecasting, massive-variate time series, power systems, benchmark, constraint-aware evaluation, causality, quantile forecasting, safety-fidelity trade-off&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the PowerForge architecture or pipeline figure showing scenario generation, type-specific decoding heads, and the causal bridge between variable groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kaijie Xu, Anqi Wang, Xilin Dai&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13338v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>SkillCAT: Contrastive Assessment and Topology-Aware Skill Self-Evolution for LLM Agents</title>
+      <link>http://arxiv.org/abs/2606.13317v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13317v1</guid>
+      <pubDate>Thu, 11 Jun 2026 13:12:10 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; SkillCAT is a training-free framework for LLM-agent skill self-evolution that uses contrastive causal evidence from multiple trajectories, patch replay assessment, and topology-aware skill routing to improve reusable skill documents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how LLM agents can convert execution trajectories into reliable reusable skills, addressing weaknesses in existing pipelines that learn from only one trajectory per task, merge unverified skill patches, and load the entire skill corpus at inference time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; SkillCAT separates skill evolution into three stages: Contrastive Causal Extraction samples multiple trajectories and compares same-task success/failure pairs to find outcome-explaining evidence; Assessment-Augmented Evolution replays candidate patches on cloned source tasks and retains only patches that preserve or improve outcomes before hierarchical merging; Topology-Aware Task Execution compiles skills into a routable sub-skill topology so inference loads only task-relevant capability nodes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is combining contrastive causal extraction, outcome-preserving patch validation, and topology-aware skill retrieval into a training-free skill self-evolution pipeline, rather than relying on single-trajectory learning, unchecked merging, or full-corpus prompting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, SkillCAT is evaluated on SpreadsheetBench, WikiTableQuestions, DocVQA, plus cross-model and out-of-distribution settings, and improves average score over baselines by up to 40.40%.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify baseline names, absolute scores, statistical significance, compute or trajectory-sampling cost, or whether gains hold beyond the listed document/table/spreadsheet-style agent benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the `causality` feed because its core extraction stage explicitly compares success and failure trajectories to identify causal evidence explaining task-outcome differences, applying causal-style reasoning to LLM-agent skill evolution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM agents, skill self-evolution, causal extraction, contrastive learning, agent benchmarks, training-free framework, skill retrieval&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the SkillCAT pipeline or architecture figure showing the three stages: Contrastive Causal Extraction, Assessment-Augmented Evolution, and Topology-Aware Task Execution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kunfeng Chen, Qihuang Zhong, Juhua Liu, Bo Du&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13317v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Semiparametric Bayesian inference for causal mediation in cluster randomized trials</title>
+      <link>http://arxiv.org/abs/2606.13305v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13305v1</guid>
+      <pubDate>Thu, 11 Jun 2026 13:01:10 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a semiparametric Bayesian inference framework for causal mediation analysis in cluster randomized trials with cluster-level mediators and few clusters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to estimate natural direct and indirect causal effects in cluster randomized trials when mediation occurs through a cluster-level mediator and standard large-sample inference gives unreliable variance estimates and confidence intervals with small numbers of clusters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The approach combines parametric Bayesian models for the outcome and mediator with a similarity-weighted Bayesian bootstrap that uses a distance metric between clusters to quantify uncertainty while borrowing more information from similar clusters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element described in the abstract is the similarity-weighted Bayesian bootstrap for mediation inference in small-cluster CRTs, intended to avoid restrictive parametric uncertainty assumptions while improving finite-sample coverage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Simulation studies reportedly achieve nominal coverage probability across diverse scenarios, and the method is applied to a cluster randomized trial in Kenya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report effect sizes, sample sizes, comparisons against specific competing methods, or details on how sensitive results are to the chosen cluster distance metric and causal assumptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the query &amp;quot;causality&amp;quot; because it develops inference methods for causal mediation, specifically estimating natural direct and indirect effects under causal assumptions in randomized clustered settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal mediation, cluster randomized trials, Bayesian inference, semiparametric methods, Bayesian bootstrap, finite-sample inference, natural direct effect, natural indirect effect&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; No direct image URL is available from the provided metadata. A useful image would be a framework diagram showing the CRT structure, treatment, cluster-level mediator, outcome model, and similarity-weighted Bayesian bootstrap uncertainty step.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Woojung Bae, Michael Daniels, Joseph Hogan, Rajesh Vedanthan, Stavroula Chrysanthopoulou&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13305v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>stat.AP</category>
+      <category>stat.CO</category>
+    </item>
     <item>
       <title>ShrinkageTrees: An R Package for Bayesian Tree Ensembles for Survival Analysis and Causal Inference</title>
       <link>http://arxiv.org/abs/2606.12317v1</link>
