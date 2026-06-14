@@ -9,7 +9,7 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Sun, 14 Jun 2026 11:51:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 12:13:44 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
     <item>
       <title>Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning</title>
@@ -444,6 +444,175 @@
       <category>cs.AI</category>
     </item>
     <item>
+      <title>SciR: A Controllable Benchmark for Scientific Reasoning in LLMs</title>
+      <link>http://arxiv.org/abs/2606.13020v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13020v1</guid>
+      <pubDate>Thu, 11 Jun 2026 07:54:22 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 45, Paper 50, Empirical 65, Reproducibility 35, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation counts or h-index signals not supplied., DOI, venue, or peer-review status not supplied., Code repository availability not stated., Public data or benchmark release details not stated., Exact metrics, benchmark size, model list, and statistical robustness not reported in abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.AI.; Benchmark covers deduction, induction, and causal abduction.; Tasks are generated from formal objects with verifiable answers.; Difficulty is varied along extraction and inference axes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; SciR is a controllable benchmark for evaluating LLM scientific reasoning across deduction, induction, and causal abduction, with separate difficulty controls for information extraction and formal inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to reliably evaluate LLMs on scientific reasoning when human-annotated scientific benchmarks are expensive and lack mechanistic ground truth, while synthetic logic benchmarks often fail to resemble real scientific documents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; SciR generates tasks from formal objects, including deduction trees, inductive rule hypotheses, and causal graphs, then renders them into multi-document scientific discourse using domain-tuned genres. This gives verifiable answers and lets the benchmark independently vary extraction difficulty and inference difficulty.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a multi-paradigm scientific-reasoning benchmark with parametric control over both document-level extraction difficulty and underlying inference difficulty, including causal abduction as one of the reasoning paradigms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports experiments on six models: both extraction and inference difficulty hurt all models, the effects compound, scientific rendering hurts even neurosymbolic solver pipelines, and reasoning models such as deepseek-r1 outperform non-reasoning instruct models mainly on the inference axis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report exact datasets, metrics, model list, code/data availability, statistical robustness, or detailed benchmark size, so empirical strength and reproducibility cannot be fully assessed from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This matches the configured query &amp;#x27;causality&amp;#x27; because one SciR track is explicitly based on causal graphs and causal abduction, making it relevant to evaluating causal reasoning in LLMs within scientific-text settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM evaluation, scientific reasoning, causal abduction, causal graphs, benchmark, deduction, induction, multi-document reasoning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the SciR pipeline: formal objects for deduction, induction, and causal graphs feeding controllable scientific document rendering, then evaluation across extraction and inference difficulty axes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Pierre Beckmann, Marco Valentino, Andre Freitas&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13020v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Circuit Synchronization Precedes Generalization: Causal Evidence from Fourier Structure in Grokking Transformers</title>
+      <link>http://arxiv.org/abs/2606.12966v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12966v1</guid>
+      <pubDate>Thu, 11 Jun 2026 06:52:10 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 45, Empirical 78, Reproducibility 45, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No affiliation or institution metadata supplied., No citation count or h-index metadata supplied., No DOI, venue, journal, or conference signal supplied., No code repository or reproducibility artifact mentioned., No public dataset artifact mentioned., No explicit limitations section visible from the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Introduces Frequency Synchronization Degree as a normalized, permutation-tested metric requiring no prior circuit knowledge.; Reports nine modular-addition configurations over primes p in {53, 71, 97, 113, 131} and three seeds.; FSD leads grokking in all nine cases with mean lead +1722 steps and sign-test p approximately 0.004.; Forking at the FSD-ceiling step and varying weight decay is reported to produce monotone earlier grokking with Delta_t proportional to 1/lambda.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes Frequency Synchronization Degree as an early, circuit-agnostic predictor of grokking in modular-addition transformers and reports causal intervention evidence linking the delay between circuit synchronization and generalization to weight decay.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies why transformer grokking on modular arithmetic occurs suddenly, with emphasis on the timing, causal structure, and controllability of the Fourier circuit thought to support generalization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper introduces Frequency Synchronization Degree, a normalized permutation-tested metric for Fourier circuit synchronization that requires no prior circuit knowledge, then evaluates it across modular-addition runs, compares it with a restricted-logit loss baseline, forks training at the FSD-ceiling step while varying weight decay, and performs architecture ablations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that Fourier-circuit synchronization can be detected before grokking without hand-identifying the circuit, and that the remaining delay to grokking follows a weight-decay-controlled law, providing causal rather than purely correlational evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across nine modular-addition configurations, FSD synchronizes 500-3000 steps before grokking with mean lead of 1722 steps and positive lead in all nine cases; forked-training interventions reportedly show earlier grokking monotonically with larger weight decay, with Delta_t approximately proportional to 1/lambda.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to modular addition grokking settings from the abstract; no code, public artifacts, affiliations, citation signals, robustness beyond the stated primes/seeds, or broader task transfer are provided in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because it claims direct causal evidence about how regularization controls the timing between Fourier-circuit synchronization and generalization in grokking transformers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; grokking, mechanistic-interpretability, causality, Fourier-circuits, transformers, regularization, modular-arithmetic&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the proposed FSD pipeline and a timeline overlay where FSD synchronization, restricted-logit loss, and grokking occur across training steps.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Achyuthan Sivasankar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12966v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.NE</category>
+    </item>
+    <item>
+      <title>Order Is Not Control</title>
+      <link>http://arxiv.org/abs/2606.12923v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12923v1</guid>
+      <pubDate>Thu, 11 Jun 2026 05:27:42 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 45, Empirical 55, Reproducibility 25, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal, or conference status, citation or influential-citation counts, open-source code, public data or benchmark identifiers&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.LG, cs.AI, and cs.CL.; Abstract reports LLM component-sign accuracy of 72.8-73.7%, rising to 84.3-84.8% on nonzero components.; Abstract reports held-out observer prediction accuracies of 93.6% and 91.7%.; Abstract explicitly states several limits: no deployable pre-generation control, no hidden/logit causal sufficiency, no biological-to-LLM coordinate identity, and no literal thermodynamic quantities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that order-inducing interventions are not sufficient for control and proposes a receiver-gated response-operator framework for identifying local admitted control across biological systems, LLMs, adapters, and stochastic-operator settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to distinguish mere order, alignment, steering, interpretability structure, or perturbation response from actual control in systems where interventions can have medium-, bath-, receiver-, and comparator-dependent effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper proposes a denominator-indexed, receiver-gated response law: an operator mapping material state, action or drive, bath, and receiver state to response displacement, sinks, effort, and basin projection. It evaluates this framing across biological panels, LLM generated-output panels, constitution-conditioned adapters, and stochastic-operator panels.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a control criterion based on local receiver-gated response laws rather than coordinate identity, order induction, or controller attribution: control is assigned only when finite effort moves a target or outcome-readout class under the same denominator while damage, null/evasive behavior, invalid format, overdrive, and unnecessary effort remain bounded.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, LLM response vectors are predictable at 72.8-73.7% component-sign accuracy, increasing to 84.3-84.8% on nonzero components; held-out observers predict system-effect and target/oracle families at 93.6% and 91.7% accuracy. Biological panels are described as supporting physical response-operator evidence, but detailed sample sizes, datasets, and controls are not provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract explicitly leaves deployable pre-generation control, hidden/logit causal sufficiency, biological-to-LLM coordinate identity, and literal thermodynamic quantities outside scope. It also does not provide code, data, baselines, ablations, statistical robustness, sample sizes, or venue/peer-review signals in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it proposes criteria for causal control rather than correlation/order: interventions are evaluated by receiver-gated response laws, finite-effort target movement, bounded failure modes, and separations between measured opportunity and deployable action policies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, control, AI alignment, interpretability, LLM steering, response operators, stochastic operators, biological systems&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework diagram showing the denominator-indexed response operator: material state, action/drive, bath, and receiver state flowing into response displacement, sinks, effort, and basin projection, with bounded failure modes used to decide local admitted control.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Gareth Seneque, Lap-Hang Ho, Nafise Erfanian Saeedi, Jeffrey Molendijk, Tim Elson&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12923v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>MAStrike: Shapley-Guided Collusive Red-Teaming on Multi-Agent Systems</title>
+      <link>http://arxiv.org/abs/2606.12918v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12918v1</guid>
+      <pubDate>Thu, 11 Jun 2026 05:21:39 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 45, Empirical 72, Reproducibility 45, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Affiliations not supplied., Citation count and h-index not supplied., No DOI, venue, or peer-review status supplied., No code repository or dataset URL supplied., No numerical metrics or effect sizes in the abstract., No ablation, robustness, or statistical significance details in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.CR and cs.AI.; Abstract claims a closed-loop framework for collusive red-teaming in hierarchical MAS.; Abstract claims first agent-level Shapley value analysis for MAS robustness.; Abstract claims structured causal diagnosis is used to refine attacks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MAStrike proposes a Shapley-guided closed-loop framework for finding collusive adversarial coalitions in hierarchical multi-agent systems and red-teaming them with coordinated role-aware manipulations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies safety and security failures in hierarchical multi-agent systems where attacks can be distributed across role-specialized agents through privilege escalation, collusion, and coordinated bypasses of system defenses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes MAStrike, a closed-loop collusive red-teaming framework that estimates agent-level Shapley values for robustness, uses those attributions to identify vulnerable coalitions, generates coordinated role-aware adversarial manipulations, and iteratively refines attacks using structured causal diagnosis of failed attempts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty claimed is agent-level Shapley value analysis for MAS robustness combined with coalition-guided, causal-diagnosis-driven adversarial attack generation, rather than heuristic target selection or isolated message perturbations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports extensive experiments on hierarchical MAS across finance, software engineering, and CRM, using multiple frontier models, where MAStrike substantially outperforms heuristic baselines; no quantitative effect sizes or metric values are provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide numerical results, benchmark details, code or data availability, exact baselines, ablations, statistical robustness, or evidence about scalability of Shapley estimation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because MAStrike uses structured causal diagnosis to attribute attack failures to uncompromised agents and refine collusive red-team strategies in multi-agent systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; multi-agent systems, red-teaming, AI security, Shapley values, causal diagnosis, collusion, hierarchical agents&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the MAStrike pipeline: Shapley-based agent attribution, vulnerable coalition selection, coordinated adversarial manipulation, causal diagnosis of blocked attacks, and iterative refinement across a hierarchical MAS topology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Chejian Xu, Zhaorun Chen, Jingyang Zhang, Freddy Lecue, Avni Kothari, Sarah Tan, Wenbo Guo, Bo Li&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12918v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CR</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Where Computation Lives Inside TabPFN: Causal Localisation of Attention Head Function</title>
+      <link>http://arxiv.org/abs/2606.12917v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12917v1</guid>
+      <pubDate>Thu, 11 Jun 2026 05:21:08 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 35, Empirical 60, Reproducibility 30, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations are not supplied., Citation counts and h-index signals are not supplied., No DOI, conference, journal, or peer-review signal is supplied., No code repository or implementation artifact is mentioned in the supplied metadata or abstract., No public dataset or benchmark suite is mentioned beyond synthetic regression datasets., No baselines, statistical significance, robustness checks, or full metric details are visible in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.LG.; Abstract claims first causal mechanistic analysis of TabPFN 2.5.; Methods named in abstract: activation patching, ablation, attention entropy, and contrastive activation steering.; Empirical setting visible in abstract: two synthetic regression datasets.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper applies causal mechanistic interpretability tools to TabPFN 2.5 and reports that feature-wise attention computation is temporally localized, with one dominant head carrying substantially more causal importance than the others on synthetic regression tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies where and how computation is distributed across feature-wise attention heads and layers inside the tabular foundation model TabPFN 2.5, with an emphasis on causal localization rather than purely correlational attention inspection.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It uses activation patching, head ablation, and attention-entropy analysis on two synthetic regression datasets, and additionally tests inference-time contrastive activation steering.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a causal mechanistic analysis of a tabular foundation model, identifying task-dependent temporal specialization of attention-head function and contrasting TabPFN&amp;#x27;s context-dependent computation with steering behavior commonly studied in language models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: one attention head is causally dominant by about 2x to 5x at its peak layer, the dominant layer shifts with task complexity, and attention entropy aligns with patching evidence for the active layers. Contrastive activation steering does not transfer across samples.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited in the supplied abstract to two synthetic regression datasets; there is no visible claim about real-world tabular benchmarks, statistical robustness, open-source code, public data, broader ablations, or external validation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query &amp;#x27;causality&amp;#x27; because it uses causal mechanistic methods, including activation patching and ablation, to localize functional components inside a foundation model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal-mechanistic-interpretability, tabular-foundation-models, TabPFN, activation-patching, attention-heads, ablation, in-context-learning, causality&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the layer-wise causal effect and attention-entropy profiles for each feature-wise attention head across the two synthetic regression tasks, highlighting the dominant head and the task-dependent layer shift.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Atharva Gupta, Dhruv Kumar, Murari Mandal, Saurabh Deshpande&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12917v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Prediction-Powered Causal Inference by Automatic Debiased Machine Learning and Semi-Supervised Riesz Regression</title>
+      <link>http://arxiv.org/abs/2606.12892v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12892v1</guid>
+      <pubDate>Thu, 11 Jun 2026 04:37:03 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 55, Empirical 35, Reproducibility 40, Manuscript 80&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, citation count, h-index or prior-author-impact metadata, DOI, journal or conference venue, open-source code&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract states the setting includes labeled outcomes/regressors plus unlabeled auxiliary regressors.; Abstract derives an efficient influence function and efficiency bound for PPCI.; Abstract proposes EE-DML-PPCI and TMLE-DML-PPCI estimators.; Abstract claims both estimators match the derived efficiency bound.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a semi-supervised, efficiency-theoretic framework for causal and structural parameter estimation that uses unlabeled auxiliary regressors to reduce asymptotic variance relative to labeled-data-only estimators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The study addresses semiparametric efficient estimation of causal and structural parameters when labeled observations include outcomes and regressors, while additional unlabeled auxiliary regressors are also available.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces prediction-powered causal inference (PPCI), derives the efficient influence function and efficiency bound, and combines that influence-function construction with debiased machine learning to define EE-DML-PPCI and TMLE-DML-PPCI estimators. It also develops semi-supervised generalized Riesz regression for estimating the Riesz representer with convergence guarantees.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that unlabeled auxiliary regressors can be incorporated into causal/structural parameter estimation to attain a smaller asymptotic variance than the labeled-data-only efficiency bound, with DML/TMLE-style estimators matching the derived semi-supervised efficiency bound.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, the main result is theoretical: both proposed estimators are claimed to have asymptotic variances matching the newly derived efficiency bound. No finite-sample empirical result is reported in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report simulations, real-data experiments, baselines, ablations, robustness checks, code, data, DOI, venue, or affiliation/citation metadata, so the practical magnitude of the efficiency gain and reproducibility are unclear from the supplied information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query &amp;quot;causal inference&amp;quot; and is especially relevant to researchers interested in semiparametric efficiency, debiased machine learning, TMLE, Riesz representers, and semi-supervised causal estimation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, semiparametric efficiency, debiased machine learning, TMLE, semi-supervised learning, Riesz regression, prediction-powered inference&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing how labeled data and unlabeled auxiliary regressors feed into Riesz representer estimation, efficient influence-function construction, and the EE-DML-PPCI/TMLE-DML-PPCI estimators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Masahiro Kato&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12892v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ML</category>
+      <category>cs.LG</category>
+      <category>econ.EM</category>
+      <category>math.ST</category>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning</title>
+      <link>http://arxiv.org/abs/2606.12852v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.12852v1</guid>
+      <pubDate>Thu, 11 Jun 2026 03:35:02 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 55, Empirical 60, Reproducibility 30, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, venue, or peer-review status, quantitative metrics, full baseline list, ablation studies&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.AI.; Abstract explicitly proposes WISE with a Causal Event Graph, Opportunistic Task Scheduler, and multi-scale progressive exploration.; Abstract compares conceptually against MrSteve-style feature-similarity retrieval.; Experiments are reported to improve task success and efficiency on long-horizon sparse Minecraft tasks, but without numbers in the supplied abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; WISE proposes a Minecraft long-horizon embodied-agent framework that couples episodic memory with causal which-why reasoning to improve low-level control, task recall, and opportunistic subtask scheduling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies repeated low-level controller failures in LLM-augmented hierarchical embodied agents, especially on long-horizon sparse Minecraft tasks where memory and reasoning are decoupled.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces WISE, a long-horizon agent framework with a Causal Event Graph for causally structured episodic memory, an Opportunistic Task Scheduler for dynamic subtask reprioritization, and a multi-scale progressive exploration strategy for broader spatial observations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is linking what-where-when observations to which-why causal task relevance, rather than retrieving memory mainly by feature similarity, enabling viewpoint-robust recall and causally motivated task reordering.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports large improvements in task success and efficiency on long-horizon sparse tasks, particularly when adaptive decision-making is required, but gives no quantitative results or full benchmark details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide exact metrics, dataset/task suite details, ablations, code availability, or robustness evidence; claims about improvement cannot be independently assessed from the supplied metadata alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;quot;causal reasoning&amp;quot; because the proposed agent uses an explicit causal event graph and causal reasoning to guide memory retrieval and subtask scheduling in embodied AI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal reasoning, embodied agents, Minecraft, long-horizon planning, episodic memory, LLM agents, task scheduling, exploration&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline or architecture figure showing WISE&amp;#x27;s Causal Event Graph, memory retrieval, Opportunistic Task Scheduler, and exploration loop would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Renmin Cheng, Changhao Chen&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal reasoning&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12852v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
       <title>ShrinkageTrees: An R Package for Bayesian Tree Ensembles for Survival Analysis and Causal Inference</title>
       <link>http://arxiv.org/abs/2606.12317v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2606.12317v1</guid>
@@ -644,6 +813,76 @@
       <category>cs.AI</category>
       <category>cs.CL</category>
       <category>cs.LG</category>
+    </item>
+    <item>
+      <title>The Periodic Table of LLM Reasoning: A Structured Survey of Reasoning Paradigms, Methods, and Failure Modes</title>
+      <link>http://arxiv.org/abs/2606.11470v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11470v1</guid>
+      <pubDate>Tue, 09 Jun 2026 21:59:37 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 40/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 52, Empirical 35, Reproducibility 15, Manuscript 62&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI or peer-reviewed venue, citation or influential-citation hints, explicit paper-selection protocol, code or repository&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09 in cs.CL.; Abstract states the survey analyzes more than 300 recent papers.; Claims a structured taxonomy of LLM reasoning paradigms.; Explicitly lists weak causal abstraction among recurring failure modes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This arXiv v1 survey organizes recent work on LLM reasoning into a broad taxonomy and highlights recurring failure modes, including weak causal abstraction, but it is only tangentially aligned with a causality-focused feed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies why reliable reasoning in LLMs remains difficult despite progress in structured inference, multi-step problem solving, and contextual understanding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It presents a systematic survey of more than 300 recent papers from arXiv, Semantic Scholar, Google Scholar, Papers with Code, and ACL Anthology, organized into a taxonomy of reasoning paradigms and methodological trends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty claimed in the abstract is a unified structured taxonomy spanning CoT, multi-hop, mathematical, commonsense, visual, temporal, code, retrieval-augmented, tool-augmented, agentic, and reinforcement-learning-based reasoning, together with synthesized failure modes and future directions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No new empirical result is reported in the abstract; the main outcome is a literature synthesis identifying common limitations such as reasoning hallucinations, brittle multi-step inference, weak causal abstraction, and poor cross-domain generalization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not mention quantitative survey methodology, selection criteria, inter-annotator agreement, benchmark reanalysis, code/data release, ablations, or robustness checks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; only because it explicitly discusses weak causal abstraction as an LLM reasoning failure mode; the paper is broader than causality and appears primarily useful as background on LLM reasoning taxonomies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM reasoning, survey, taxonomy, chain-of-thought, multi-hop reasoning, agentic reasoning, causal abstraction, failure modes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A taxonomy or framework figure mapping LLM reasoning paradigms, methods, and failure modes would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Avinash Anand, Mahisha Ramesh, Avni Mittal, Ashutosh Kumar, Erik Cambria, Zhengkui Wang, Timothy Liu, Aik Beng Ng, Simon See, Rajiv Ratn Shah&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11470v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Bayesian Causal Machine Learning for Cure Models</title>
+      <link>http://arxiv.org/abs/2606.11405v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11405v1</guid>
+      <pubDate>Tue, 09 Jun 2026 19:55:11 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 48/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 40, Empirical 70, Reproducibility 25, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation and h-index information not supplied., No DOI, journal, or conference venue supplied., No code repository or implementation details mentioned in the abstract., No public data or reproducibility package mentioned., No quantitative simulation metrics reported in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Defines causal effects for survival settings with a cured subpopulation.; Proposes BartCure, a Bayesian causal machine learning approach.; Decomposes RMST causal effects into stochastic cure and stochastic latency components.; Reports simulations and an application to the CALGB 40101 breast cancer trial.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper introduces BartCure, a Bayesian causal machine learning approach for decomposing treatment effects in survival settings with a cured subpopulation into cure-probability and latency mechanisms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies causal effect estimation in survival studies where treatment may work either by increasing the probability of cure or by delaying failure among patients who are not cured, including whether these mechanisms vary across subpopulations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It defines causal estimands for cure-model settings and proposes BartCure, a Bayesian causal machine learning method to estimate average and subgroup effects, including a decomposition of restricted mean survival time effects into stochastic cure and stochastic latency components.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a causal framework for cure models that separates treatment benefit into cure and latency mechanisms, connecting these effects to stochastic intervention effects and principal-strata causal effects rather than only estimating finite-horizon survival or RMST.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, simulations show BartCure is competitive for average-effect estimation and especially effective at conservatively detecting the direction of treatment-effect heterogeneity; the method is also applied to the CALGB 40101 breast cancer trial.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative metrics, comparison baselines, ablations, robustness checks, code availability, or detailed dataset coverage, so empirical strength and reproducibility cannot be fully assessed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;quot;causality&amp;quot; because it proposes new causal estimands and a causal machine learning method for survival analysis with cure structures and heterogeneous treatment effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, survival analysis, cure models, Bayesian machine learning, heterogeneous treatment effects, restricted mean survival time&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework diagram showing how BartCure separates treatment effects into cure-probability and latency components and how these combine into RMST effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Antonio R. Linero, F. Javier Rubio, Piyali Basak&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11405v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>stat.AP</category>
+    </item>
+    <item>
+      <title>Next Forcing: Causal World Modeling with Multi-Chunk Prediction</title>
+      <link>http://arxiv.org/abs/2606.11187v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11187v1</guid>
+      <pubDate>Tue, 09 Jun 2026 17:59:22 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 45, Empirical 78, Reproducibility 35, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index not supplied., No DOI, conference, journal, or peer-review status supplied., No code repository or license mentioned in supplied metadata., No ablation, statistical significance, robustness, compute cost, or failure-case details visible in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09 in cs.CV.; Abstract states explicit comparison to LingBot-VA at 50 fps with 93.1% relative improvement at 5k steps.; Abstract reports 2.3x faster convergence and 2x inference acceleration.; Abstract reports RoboTwin Clean/Random scores of 94.1/93.5 and improvements on PhyWorld and FVD.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Next Forcing proposes a multi-chunk prediction framework for causal world/action video models that adds auxiliary future-chunk denoising modules to improve training speed, accuracy, and inference latency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies slow convergence, limited high-frame-rate accuracy, and slow iterative-denoising inference in autoregressive video generation for World Action Models, arguing that standard supervision over only the current chunk gives weak signals about future dynamics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces Next Forcing, a multi-chunk prediction objective with lightweight auxiliary MCP modules that denoise multiple future chunks at horizons next^1, next^2, and next^3. The modules form a causal prediction chain, fuse intermediate features from multiple main-model layers, and can be kept at inference to predict the next chunk in parallel with the current chunk.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel element is dense multi-scale temporal supervision across future video chunks, inspired by multi-token prediction in LLMs, plus a training-time auxiliary module design that can also be reused for 2x faster inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: at 50 fps, Next Forcing reports a 93.1% relative improvement over LingBot-VA at 5k training steps, 2.3x faster convergence, RoboTwin Clean/Random scores of 94.1/93.5%, significant PhyWorld gains, over 50% FVD reduction in general video pretraining, and 2x inference acceleration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code availability, ablations, statistical robustness, implementation cost, model size overhead, or whether gains persist across many architectures beyond the named benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the keyword &amp;#x27;causality&amp;#x27; because it focuses on causal world modeling and future-dynamics prediction, although the abstract appears to use &amp;#x27;causal&amp;#x27; in the temporal/autoregressive modeling sense rather than causal inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal-world-modeling, autoregressive-video-generation, world-action-models, multi-chunk-prediction, robotics-benchmarks, video-denoising&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the Next Forcing pipeline: the main causal video model, auxiliary MCP modules for next^1/next^2/next^3 chunk denoising, the causal chain across future horizons, feature fusion from intermediate layers, and parallel next-chunk inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Gangwei Xu, Qihang Zhang, Jiaming Zhou, Xing Zhu, Yujun Shen, Xin Yang, Yinghao Xu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11187v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
     </item>
     <item>
       <title>Causal Ensemble Agent: Hierarchical Causal Discovery with LLM-guided Expert Reweighting</title>
