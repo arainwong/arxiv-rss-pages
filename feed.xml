@@ -9,8 +9,223 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Mon, 15 Jun 2026 08:19:35 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 08:24:51 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>The Value Axis: Language Models Encode Whether They're on the Right Track</title>
+      <link>http://arxiv.org/abs/2606.17056v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17056v1</guid>
+      <pubDate>Mon, 15 Jun 2026 17:59:58 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 45, Empirical 60, Reproducibility 65, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index signals, DOI or venue information, quantitative metrics, baselines, ablations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-15.; Abstract names Qwen3-8B as the studied model.; Method constructs a value axis from synthetic, in-context reinforcement learning data.; Abstract reports causal activation steering effects on self-correction, verbosity, backtracking, and exploration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that Qwen3-8B contains a linear “value” direction encoding expected goal success, and that manipulating this direction causally changes confidence, self-correction, and exploration behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether language models internally track the value of their current trajectory, meaning whether an ongoing strategy is likely to achieve the model’s goal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors use synthetic in-context reinforcement learning data to construct a linear value axis in Qwen3-8B activations, test whether the axis separates behavioral states, steer activations along the axis, examine DPO-induced changes, and apply the axis to selected in-the-wild settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that expected goal success is linearly encoded in model activations and causally modulates behaviors such as confidence, backtracking, verbosity, and exploration, rather than merely correlating with verbalized confidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, the value axis distinguishes high vs. low verbalized confidence, rollouts with vs. without backtracking, and correct vs. corrupted code; steering high value suppresses self-correction, while steering low value induces backtracking and exploration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports no quantitative effect sizes, baselines, ablations, robustness checks, or statistical tests; evidence appears centered on Qwen3-8B, so generality across models and tasks is unclear from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the query “causality” because it uses activation steering and DPO analyses to test whether an internal representation causally affects model behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; language-model-interpretability, activation-steering, causality, reinforcement-learning, DPO, confidence, Qwen3-8B&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper’s framework or pipeline figure showing how the value axis is constructed from activations, then used for probing, steering, DPO analysis, and in-the-wild evaluation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Nick Jiang, Isaac Kauvar, Jack Lindsey&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17056v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Geometric Action Model for Robot Policy Learning</title>
+      <link>http://arxiv.org/abs/2606.17046v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17046v1</guid>
+      <pubDate>Mon, 15 Jun 2026 17:58:03 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 50, Paper 45, Empirical 62, Reproducibility 35, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; affiliations, citation counts, h-index signals, DOI, journal or conference venue, named benchmarks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15 in cs.RO, cs.CV, and cs.LG.; Abstract states GAM repurposes a pretrained geometric foundation model for language-conditioned manipulation.; Abstract claims evaluation across simulation and real-robot manipulation benchmarks.; Metadata includes a project page but no DOI or journal/conference reference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; GAM repurposes a pretrained geometric foundation model into a language-conditioned robot manipulation policy that predicts future 3D latent geometry and actions through one shared backbone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how generalist robot policies can follow language instructions while explicitly reasoning about 3D object, camera, and action interactions needed for contact-rich manipulation, instead of relying mainly on 2D image frames or 2D-derived latents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes the Geometric Action Model, which splits a pretrained geometric foundation model at an intermediate layer: shallow layers encode observations, an inserted causal future predictor forecasts future latent tokens conditioned on language, proprioception, and action history, and the remaining backbone blocks propagate features and decode future geometry plus robot actions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is using one pretrained geometric foundation model as a shared substrate for perception, temporal world modeling, and action decoding with minimal architectural modification, preserving geometric priors while adding language-conditioned future prediction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract claims GAM is more accurate, more robust, faster, and lighter than foundation-model-scale baselines across simulation and real-robot manipulation benchmarks, but it does not provide quantitative metrics or named benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify benchmark names, exact metrics, baseline identities, ablations, robustness tests, code availability, or failure cases, so empirical strength cannot be fully assessed from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the configured query &amp;quot;causality&amp;quot; appears mostly through the paper&amp;#x27;s use of a causal future predictor and physical action-effect modeling, not through causal inference or explicit causal discovery; relevance is therefore moderate to weak unless the feed includes causal world models for robotics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robotics, vision-language-action, world models, 3D geometry, manipulation, foundation models, causal prediction&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the GAM architecture/pipeline figure showing the GFM split point, observation encoder, causal future predictor, language/proprioception/action-history conditioning, and downstream geometry/action decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jisang Han, Seonghu Jeon, Jaewoo Jung, René Zurbrügg, Honggyu An, Tifanny Portela, Marco Hutter, Marc Pollefeys, Seungryong Kim, Sunghwan Hong&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17046v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+      <category>cs.CV</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>From Tokens to Policy: Causal and Interpretable Heterogeneous Treatment Effects Identification</title>
+      <link>http://arxiv.org/abs/2606.17010v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17010v1</guid>
+      <pubDate>Mon, 15 Jun 2026 17:44:44 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 45, Empirical 55, Reproducibility 25, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index metadata, DOI or venue signal, open-source code, public data or replication package, baselines&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15 in cs.LG.; Abstract explicitly targets HTE identification under unmeasured heterogeneity drivers.; Introduces Neural EXposure Interaction Search (NEXIS).; Claims provable and empirically validated consistent selection.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; NEXIS reframes causal heterogeneous treatment effect identification in controlled experiments as Markov-blanket discovery over aligned multimodal pre-treatment representations, aiming to recover interpretable latent treatment-effect modifiers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to identify causally meaningful heterogeneous treatment effects when important effect modifiers are unmeasured, causing both interpretable and expressive HTE methods to produce spurious subgroup characterizations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes Neural EXposure Interaction Search (NEXIS), an iterative Markov-blanket discovery procedure applied to sufficient, aligned pre-treatment representations, including multimodal and multi-view inputs such as satellite imagery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty is the causal reframing of HTE characterization around latent interactors discovered from scalable pre-treatment representations, with a claimed consistent selection procedure rather than a standard predictive HTE or post-hoc subgroup analysis approach.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, NEXIS is claimed to have provable and empirically validated consistent selection and is deployed on two anti-poverty programs in Africa, where satellite imagery reveals previously unmeasured environmental effect modifiers and yields interpretable policy guidelines. No quantitative performance numbers are reported in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide baselines, metrics, ablations, robustness checks, code availability, data availability, or quantified policy gains, so the empirical strength and reproducibility cannot be judged from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;quot;causality&amp;quot; because it directly addresses causal HTE identification, latent effect modifiers, controlled experiments, and interpretable policy optimization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, heterogeneous-treatment-effects, Markov-blanket-discovery, representation-learning, interpretable-ML, policy-learning, satellite-imagery&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the NEXIS pipeline or framework figure showing multimodal pre-treatment representation learning, Markov-blanket discovery, latent interactor selection, and resulting policy-guideline generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Riccardo Cadei, Frank Otchere, Nyasha Tirivayi, Gustavo Angeles Tagliaferro, Falco J. Bargagli-Stoffi, Francesco Locatello&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17010v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>DreamX-World 1.0: A General-Purpose Interactive World Model</title>
+      <link>http://arxiv.org/abs/2606.16993v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.16993v1</guid>
+      <pubDate>Mon, 15 Jun 2026 17:30:33 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 62/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 55, Paper 55, Empirical 65, Reproducibility 70, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations beyond the AMAP-ML repository/project-page hint, citation counts or h-index signals, DOI, journal, or conference acceptance, ablation results, statistical uncertainty or robustness analysis, public dataset details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-06-15 in cs.CV.; Comment lists a project page and GitHub code repository.; Abstract reports specific comparisons against HY-WorldPlay 1.5 and LingBot-World.; Abstract reports runtime of up to 16 FPS on eight RTX 5090 GPUs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; DreamX-World 1.0 proposes an interactive text/image-to-video world model for controllable long-horizon generation with camera navigation, scene persistence, event control, and few-step autoregressive rollout.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to build a general-purpose video world model that can generate long-horizon interactive scenes while preserving camera control, revisiting previously seen regions, and responding to promptable events across varied visual domains.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The system combines a multi-source data engine, E-PRoPE camera-aware positional encoding, causal forcing to convert a bidirectional video generator into an autoregressive world model, DMD-style distillation, long-rollout training on self-generated contexts, camera-geometry-based memory retrieval, residual recycling, event instruction tuning, RL alignment, and runtime optimizations for fast inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The most distinctive contribution is a full interactive world-model pipeline that combines camera-geometry-aware control, memory-conditioned scene persistence, event-level instruction control, and long-rollout self-conditioning to reduce drift in autoregressive video generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On a 5-second basic evaluation, DreamX-World 1.0 reports a camera-control score of 73.75 and overall score of 84.76, outperforming HY-WorldPlay 1.5 at 80.79 and LingBot-World at 80.45 overall; it also reports up to 16 FPS on eight RTX 5090 GPUs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report ablations, statistical robustness, dataset release details, human evaluation, long-duration benchmark results beyond the stated 5-second evaluation, or independent reproduction evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the query &amp;quot;causality&amp;quot; appears mostly indirect: the abstract mentions &amp;quot;causal forcing&amp;quot; as a training mechanism for autoregressive rollout, but the paper is primarily about controllable video world models rather than causal inference or causality research.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; world-models, text-to-video, image-to-video, camera-control, autoregressive-generation, DiT, scene-persistence, causal-forcing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework or pipeline figure showing the data engine, E-PRoPE camera conditioning, autoregressive rollout training, memory-conditioned scene persistence, event instruction tuning, and inference optimizations would be useful, but no direct image URL is present in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; DreamX Team, Yancheng Bai, Rui Chen, Xiangxiang Chu, Rujing Dang, Hao Dou, Bingjie Gao, Qiwen Gu, Siyu Hong, Jiachen Lei, Geng Li, Jifan Li, Ruimin Lin, Qingfeng Shi, Bingze Song, Lei Sun, Jing Tang, Ruitian Tian, Jun Wang, Jiahong Wu, Pengfei Zhang, Shen Zhang, Jiashu Zhu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.16993v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>Phantoms and Disclosures: a Causal Framework for Auditing Synthetic Data</title>
+      <link>http://arxiv.org/abs/2606.16952v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.16952v1</guid>
+      <pubDate>Mon, 15 Jun 2026 16:54:02 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 42/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 45, Empirical 55, Reproducibility 35, Manuscript 65&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation or h-index metadata, DOI, journal, or conference venue, code repository, public datasets or benchmark names, specific baselines beyond high-level references&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15.; Abstract claims a customizable empirical auditing framework for synthetic data disclosures.; Framework distinguishes true disclosures from phantom disclosures.; Requires no model access, canary insertion, or reference model training.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a causal, model-agnostic empirical auditing framework for detecting whether synthetic data generators disclose private training records rather than merely producing coincidental matches.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to audit privacy leakage in synthetic data generated by LLMs or other generative systems, especially distinguishing real memorization-driven disclosure from incidental generation of the same information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The framework partitions data into training and holdout sets, compares synthetic outputs against held-out controls, and applies statistical hypothesis testing against privacy baselines such as zero-learning or specified differential privacy bounds. It requires only generated synthetic data and a holdout set, not model access, canary insertion, shadow models, or reference model training.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is a causal framing that separates true disclosures from phantom disclosures, turning the audit into a membership-inference-style test that can provide empirical lower bounds on privacy leakage with much lower computational cost than canary- or shadow-model-based audits.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, the authors report tighter empirical lower bounds on privacy leakage than prior data-based auditing methods and orders-of-magnitude lower computational requirements, but the abstract does not specify datasets, metrics, or numerical effect sizes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide concrete experimental settings, numerical results, code availability, datasets, robustness checks, or ablations, so the strength and generality of the empirical claims cannot be assessed from the supplied metadata alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it explicitly frames synthetic-data privacy auditing causally, using the causal distinction between true and phantom disclosures as the basis for statistical auditing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; synthetic-data, privacy-auditing, causal-framework, membership-inference, differential-privacy, LLM-privacy&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework or pipeline figure showing the train/holdout partition, synthetic output matching, true-vs-phantom disclosure test, and hypothesis-testing decision would be useful, but no direct image URL is provided in the metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kareem Amin, Rudrajit Das, Alessandro Epasto, Adel Javanmard, Dennis Kraft, Mónica Ribero, Sergei Vassilvitskii&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.16952v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+      <category>stat.AP</category>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+    </item>
+    <item>
+      <title>A Causal Model of Theory of Mind in Conflict for Artificial Intelligence</title>
+      <link>http://arxiv.org/abs/2606.16944v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.16944v1</guid>
+      <pubDate>Mon, 15 Jun 2026 16:44:42 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 23/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 8, Paper 25, Empirical 15, Reproducibility 10, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliation or prior-topic record, Citation count or h-index signal, DOI, conference, journal, or peer-review signal, Completed empirical validation results, Baselines and ablations, Robustness or statistical analysis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15 in cs.AI and cs.HC.; Abstract explicitly claims a structural causal model formalized as a DAG.; Model includes four exogenous variables, five endogenous mediators, and three causal pathways.; Primary outcome is epistemic accuracy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a structural causal DAG for deciding when an AI system should engage theory-of-mind reasoning in conflict settings, rather than treating mentalizing as an always-on capability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies when theory-of-mind engagement is causally warranted for AI agents in conflict, especially under situational and agent-level conditions where mentalizing may improve epistemic accuracy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper presents a structural causal model formalized as a directed acyclic graph with four exogenous condition variables, five endogenous mediators, and a mechanistic ToM node that yields engagement states through tractability, reasoning-depth, and enabling-cause pathways.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty is framing ToM as a conditionally activated causal mechanism with a resource-rational decision procedure, decoupling social reasoning from downstream behavioral policy and focusing the outcome on epistemic accuracy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical result is reported in the abstract; simulation validation and human-machine teaming studies are described as discussed rather than completed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract provides no evidence of implemented validation, baselines, ablations, robustness analysis, code, data, DOI, venue, or external review.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because the core contribution is an explicit structural causal model and DAG for AI theory-of-mind engagement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, structural-causal-model, DAG, theory-of-mind, human-machine-teaming, artificial-social-intelligence, conflict&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A DAG figure showing the four exogenous variables, five mediators, ToM engagement node, three causal pathways, and epistemic-accuracy outcome would be useful, but no direct image URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Nikolos Gurney&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.16944v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.HC</category>
+    </item>
+    <item>
+      <title>A Unified Causal-Origin Taxonomy of Distributional Shifts in Reinforcement Learning</title>
+      <link>http://arxiv.org/abs/2606.16933v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.16933v1</guid>
+      <pubDate>Mon, 15 Jun 2026 16:32:40 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 39/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 45, Empirical 20, Reproducibility 25, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts, h-index or prior-author impact signals, accepted venue or DOI, open-source code, public datasets or benchmark environments&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15 in cs.LG and cs.AI.; Comment states the paper is under review at JAIR.; Abstract proposes a POMDP-based decomposition of RL interaction components.; Abstract introduces degradation and recovery metrics but reports no empirical outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a causal-origin taxonomy for distributional shift in reinforcement learning, unifying ID/OOD generalization and non-stationarity as structured changes in the agent-environment generative process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; RL agents often degrade under distributional shift, but the abstract argues that the formal relationship between ID/OOD generalization, non-stationarity, and the causal origins of shift in agent-environment interaction remains unclear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper reformulates dataset shift for RL using a POMDP-based generative interaction process, decomposing shift sources across state distribution, observation process, policy, reward, transition dynamics, and a shifted-time boundary. It also proposes an evaluation framework based on performance degradation and recovery metrics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a unified causal-origin taxonomy that distinguishes internal agent-driven shifts from external environment-driven shifts and characterizes explicit, implicit, and hybrid shifts via a shifted-time boundary perspective.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical result is reported in the abstract; the stated contribution is conceptual and methodological, with an evaluation framework introduced but not described as experimentally validated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report experiments, datasets, baselines, ablations, robustness checks, implementation details, code, or evidence that the proposed taxonomy improves analysis or adaptation in concrete RL benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query `causality` because the paper explicitly grounds RL distributional shift in causal-origin structure and uses that framing to connect generalization and non-stationarity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; reinforcement-learning, distributional-shift, causality, OOD-generalization, non-stationarity, POMDP, taxonomy, robustness&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the proposed causal-origin taxonomy: POMDP interaction components, internal versus external shift sources, and explicit/implicit/hybrid shifted-time boundaries.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ardianto Wibowo, Paulo E Santos, Amer Baghdadi, Matthew Stephenson, Karl Sammut, Jean-Philippe Diguet&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.16933v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>GIST-CMTF: Goal-State Inference for Causal Minimal Tool Filtering in LLM Agents</title>
+      <link>http://arxiv.org/abs/2606.16813v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.16813v1</guid>
+      <pubDate>Mon, 15 Jun 2026 14:57:08 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 49/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 18, Paper 45, Empirical 78, Reproducibility 25, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation or h-index metadata, DOI, journal, or conference venue, open-source code, public dataset or benchmark details, ablations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15 in cs.AI.; Abstract defines a failure mode: ambiguous requests can cause wrong-goal execution.; Evaluation claims seven model backends, six filtering methods, and 120 controlled tool-use tasks.; Reported task success is 97.0% for GIST-CMTF versus 80.1% and 82.9% for two CMTF variants.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; GIST-CMTF adds goal-state inference and ambiguity handling to causal minimal tool filtering so LLM agents avoid executing the right tool path for the wrong inferred objective.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies wrong-goal execution in tool-augmented LLM agents: ambiguous user requests may map to multiple symbolic goals, while CMTF assumes the intended symbolic goal state is already known.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes GIST-CMTF, a goal-state inference layer that predicts candidate symbolic goals using CMTF&amp;#x27;s state-transition vocabulary, estimates ambiguity, and either applies CMTF or exposes clarification as a causal action to obtain missing goal or state variables.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The new element is validating the intended goal state before tool exposure, rather than only filtering tools by relevance or causal necessity after a goal has been assumed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; In 120 controlled tool-use tasks across seven model backends and six filtering methods, GIST-CMTF reports 97.0% task success versus 80.1% for top-goal CMTF and 82.9% for semantic-goal CMTF; wrong-goal execution drops from 19.4% to 2.5% relative to top-goal CMTF.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code, public data, ablations, statistical uncertainty, real-world deployment tests, or details on the controlled task design, so generalization and reproducibility are unclear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because it extends causal tool filtering for LLM agents and treats clarification as a causal action in a state-transition framework.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM agents, tool use, causal filtering, goal inference, ambiguity handling, agent safety&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing ambiguous request input, candidate symbolic goal inference, ambiguity estimation, clarification-as-causal-action, and CMTF tool-frontier exposure would be useful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Rahul Suresh Babu, Rohit Shukla&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.16813v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Maximum Entropy Inverse Reinforcement Learning for Mean-Field Games with Average Reward</title>
+      <link>http://arxiv.org/abs/2606.16759v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.16759v1</guid>
+      <pubDate>Mon, 15 Jun 2026 14:13:16 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 52, Empirical 58, Reproducibility 35, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal, or conference acceptance, open-source code, public data, baseline comparisons&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-15; no DOI or journal reference supplied.; Abstract states a unified occupation-measure framework for two reward classes.; Abstract claims smoothness, curvature, differentiability, Lipschitz smoothness, and convergence guarantees.; Abstract reports two numerical examples: malware-spread MFG and RKHS consumer-choice model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper develops maximum causal entropy inverse reinforcement learning for average-reward mean-field games, with convex and RKHS reward formulations and convergence guarantees for the resulting optimization algorithms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies inverse reinforcement learning in discrete-time, infinite-horizon mean-field games under an average-reward criterion, where demonstrations come from a stationary mean-field equilibrium under an unknown reward.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors formulate the inverse problem with occupation measures, expert mean-field consistency, and long-run feature expectations. For finite-dimensional linear rewards they derive a convex dual log-partition objective and gradient descent guarantees; for RKHS rewards they use a Lagrangian relaxation, soft Bellman characterization, and a minorisation-based sub-stochastic kernel to recover contraction without discounting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is extending maximum causal entropy IRL to average-reward mean-field games, especially handling the non-discounted RKHS case by constructing a strict contraction for the soft Bellman operator via minorisation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports convergence guarantees for the proposed algorithms and two numerical examples, malware-spread MFG and RKHS consumer-choice, where recovered policies closely match expert behavior. No quantitative error values are given in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report baselines, ablations, statistical uncertainty, robustness tests, code availability, public datasets, or quantitative metrics, so empirical strength and reproducibility are hard to assess from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the query &amp;#x27;causality&amp;#x27; appears to come from &amp;#x27;maximum causal entropy&amp;#x27;; this is about entropy-regularized sequential decision modeling, not causal inference or causal discovery. It is relevant only if the feed treats causal entropy methods as in scope.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; inverse-reinforcement-learning, mean-field-games, maximum-causal-entropy, average-reward, rkhs, occupation-measures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s framework or algorithm diagram showing expert demonstrations, mean-field consistency, reward recovery, soft Bellman policy optimization, and policy matching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Şevket Kaan Alkır, Naci Saldı, Berkay Anahtarcı, Can Deha Karıksız&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.16759v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+    </item>
     <item>
       <title>Graph Structured Combinatorial Semi-Bandit with Nonlinear Reward Associations through Separable Signals</title>
       <link>http://arxiv.org/abs/2606.14650v1</link>
@@ -225,8 +440,8 @@
     </item>
     <item>
       <title>Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning</title>
-      <link>http://arxiv.org/abs/2606.13607v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13607v1</guid>
+      <link>http://arxiv.org/abs/2606.13607v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.13607v2</guid>
       <pubDate>Thu, 11 Jun 2026 17:23:10 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 44, Paper 45, Empirical 62, Reproducibility 25, Manuscript 76&lt;/p&gt;
@@ -243,7 +458,7 @@
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework figure linking everyday reasoning prompts, human and LLM error-pattern comparison, attention-head identification, and prediction of human errors from prompt details.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zach Studdiford, Gary Lupyan&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal reasoning, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13607v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13607v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.AI</category>
     </item>
     <item>
@@ -967,8 +1182,8 @@
     </item>
     <item>
       <title>AnchorEdit: Maintaining Temporal Consistency in Multi-turn Image Editing via Causal Memory</title>
-      <link>http://arxiv.org/abs/2606.11751v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11751v1</guid>
+      <link>http://arxiv.org/abs/2606.11751v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.11751v2</guid>
       <pubDate>Wed, 10 Jun 2026 07:26:31 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; AnchorEdit proposes an autoregressive diffusion framework with causal memory to reduce identity drift and accumulated errors in long-horizon multi-turn image editing.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies high-resolution iterative image editing, where models must preserve subject identity and follow instructions over many successive edits but often suffer from identity drift and error accumulation.&lt;/p&gt;
@@ -981,7 +1196,7 @@
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the AnchorEdit pipeline or architecture figure showing the three-stage training curriculum and inference-time causal memory mechanism.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hang Xu, Xiaoxiao Ma, Guohui Zhang, Yu Hu, Siming Fu, Jie Huang, Lin Song, Haoyang Huang, Nan Duan, Feng Zhao&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11751v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11751v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.CV</category>
       <category>cs.AI</category>
     </item>
