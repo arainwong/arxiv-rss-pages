@@ -9,8 +9,202 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Tue, 16 Jun 2026 08:24:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 08:39:22 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>Tensor-based second-order causal discovery</title>
+      <link>http://arxiv.org/abs/2606.18074v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18074v1</guid>
+      <pubDate>Tue, 16 Jun 2026 15:43:44 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 61/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 55, Empirical 65, Reproducibility 70, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index evidence, venue or peer-review status, DOI or journal reference, specific datasets, named baselines&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-16.; Abstract states TSCD uses a tensor obtained from covariance matrices of observational and interventional data.; Assumes a linear structural equation model on a DAG with uncorrelated noise variables.; Claims identifiability of causal order and parameters from logarithmically many interventions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; TSCD is a causal discovery algorithm that uses tensors built from observational and interventional covariance matrices to recover DAG structure and edge functions under linear SEM assumptions, with a nonlinear variant also implemented.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to recover causal dependencies among variables from observational and interventional data, especially using statistically efficient second-order information rather than higher-order moments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes Tensor-based Second-order Causal Discovery (TSCD), which takes a tensor formed from covariance matrices across observational and interventional settings and, under a linear structural equation model on a DAG with uncorrelated noise variables, outputs both the DAG and edge functions; the authors also report a nonlinear implementation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that second-order covariance information organized as a tensor can identify causal order and parameters with a number of interventions logarithmic in the number of variables, while avoiding assumptions such as non-Gaussianity or higher-order moment availability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: TSCD is claimed to be robust to noise, competitive with existing methods, and scalable to hundreds of variables; it also has theoretical identifiability with logarithmically many interventions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify datasets, baselines, ablations, metrics, statistical uncertainty, intervention design details, or how broadly the nonlinear version is validated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query &amp;#x27;causal discovery&amp;#x27; by proposing a new causal discovery algorithm with identifiability claims and empirical evaluation for observational plus interventional data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, interventional data, covariance matrices, tensor methods, linear SEM, DAG learning, identifiability&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or framework figure showing how observational and interventional covariance matrices are stacked into a tensor and how TSCD recovers causal order, DAG edges, and edge functions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Nathan Ouyang, Kexin Wan, Anna Seigal&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18074v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ML</category>
+      <category>cs.LG</category>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>Fast Nonparametric Conditional Independence Testing via Two-Stage Regression</title>
+      <link>http://arxiv.org/abs/2606.18011v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18011v1</guid>
+      <pubDate>Tue, 16 Jun 2026 14:55:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 57/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 44, Paper 45, Empirical 65, Reproducibility 70, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No affiliation or institution metadata supplied., No citation count or h-index metadata supplied., No DOI, journal, or conference venue supplied., No exact empirical metrics, tables, or confidence intervals in the abstract., No ablation or robustness evidence visible in the abstract., No public dataset or benchmark details beyond synthetic graphs and flow-cytometry data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract explicitly targets constraint-based causal discovery and repeated conditional independence tests.; Method details include polynomial regression, nonlinear feature map, shallow tree residualization, residual cross-covariance, and moment-matched chi-square approximation.; Empirical claims mention simulations, synthetic graphs, flow-cytometry data, and comparisons to fast kernel, random-feature, and regression-based competitors.; Metadata says arXiv v1 and includes an R implementation with C++ back-end at a GitHub URL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; BLITZ is a fast nonparametric conditional independence test for constraint-based causal discovery that combines broad polynomial residualization with local shallow-tree residualization to improve calibration while staying computationally light.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to perform many conditional independence tests quickly in constraint-based causal discovery without losing null calibration under nonlinear dependence on the conditioning set.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes BLITZ, a two-stage residualization test: first remove broad smooth dependence on the conditioning set using low-order polynomial regression, then apply a small nonlinear feature map and residualize those features with shallow tree regressions before testing residual cross-covariance using a moment-matched chi-square null approximation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is the broad-to-local residualization design, which is argued theoretically to reduce the effective complexity handled by shallow tree residualizers, improving calibration while avoiding overfitting and sub-second runtimes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, BLITZ has better null calibration than fast kernel, random-feature, and regression-based competitors in simulations, remains among the fastest tested methods, and improves reliability of endpoint orientations in causal discovery experiments on synthetic graphs and flow-cytometry data while maintaining competitive structural recovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report exact quantitative metrics, sample sizes, ablations, robustness checks, or detailed failure cases; the paper is arXiv v1 with no DOI, journal, or conference signal in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query `causal discovery`: conditional independence testing is a core bottleneck in constraint-based causal discovery, and the proposed test is evaluated inside causal discovery workflows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, conditional independence testing, nonparametric statistics, constraint-based discovery, residualization, stat.ML&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the BLITZ pipeline: conditioning-set polynomial residualization, nonlinear feature map construction, shallow-tree residualization, residual cross-covariance statistic, and chi-square null approximation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Eric V. Strobl&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18011v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ML</category>
+      <category>cs.LG</category>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>SoftMoE: Soft Differentiable Routing for Mixture-of-Experts in LLMs</title>
+      <link>http://arxiv.org/abs/2606.17952v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17952v1</guid>
+      <pubDate>Tue, 16 Jun 2026 14:05:41 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 59/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 75, Empirical 65, Reproducibility 55, Manuscript 80&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation counts and h-index signals not supplied., DOI and journal reference absent., No quantitative metrics in abstract., No dataset names or benchmark details in abstract., No ablation, robustness, or statistical significance details in abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract identifies the non-differentiability of discrete top-k routing as the core problem.; Proposes truncated soft top-k LapSum relaxation for differentiable expert routing.; Adds learnable mean active experts per layer with a global budget constraint.; Claims comparable or better language modeling and downstream performance while activating fewer experts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; SoftMoE proposes a differentiable soft routing mechanism for autoregressive sparse MoE LLMs that learns non-uniform expert allocation across layers while using fewer active experts than standard sparse MoE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies inefficient and rigid expert usage in sparse Mixture-of-Experts LLMs caused by non-differentiable discrete top-k routing, which fixes the number of active experts per input despite a constrained inference budget.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It replaces discrete top-k routing with a truncated soft top-k LapSum relaxation, parameterizes the mean number of active experts per layer, and applies a global budget constraint so routing and layer-wise expert allocation can be optimized by gradient descent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a soft differentiable routing framework for autoregressive MoE LLMs that can learn how many experts to activate per layer instead of enforcing a fixed top-k count everywhere.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, SoftMoE reportedly matches or outperforms sparse MoE on language modeling and downstream tasks while activating significantly fewer experts; learned expert allocation is highly non-uniform, with later layers using more experts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative gains, dataset names, metric values, ablation details, robustness analysis, or the code URL, so the strength and reproducibility of the empirical claim cannot be fully judged from supplied metadata alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query only tangentially: the abstract mentions preserving causality for autoregressive language modeling, but the paper is about MoE routing efficiency rather than causal inference or causality research.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; mixture-of-experts, LLM, differentiable-routing, sparse-computation, autoregressive-modeling, ICML-2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the SoftMoE routing pipeline: soft top-k LapSum relaxation, global budget constraint, and learned layer-wise expert activation pattern compared with fixed top-k sparse MoE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Mikołaj Zasada, Łukasz Struski, Jacek Tabor, Marcin Kurdziel&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17952v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>PearlVLA: Progressive Embodied Action-Plan Refinement in Latent Space</title>
+      <link>http://arxiv.org/abs/2606.17924v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17924v1</guid>
+      <pubDate>Tue, 16 Jun 2026 13:38:03 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 40, Empirical 55, Reproducibility 35, Manuscript 62&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation count or h-index signals, DOI or venue, numerical benchmark results, specific baselines, ablations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 preprint, published 2026-06-16.; Abstract proposes PearlVLA with latent-space iterative plan refinement and a frozen latent world model.; Abstract claims state-of-the-art performance on LIBERO but gives no numerical results.; Metadata lists no DOI, journal reference, affiliations, citation signals, code, or data links.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; PearlVLA proposes a VLA framework that performs iterative action-plan deliberation in latent space to improve embodied robot control while preserving low-latency parallel action decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies the trade-off in Vision-Language-Action models between fast direct action decoding and slower explicit deliberation methods such as textual reasoning, pixel subgoals, or action search.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; PearlVLA separates VLM meta-query representations into a fixed visual-grounding branch and an iterative latent-plan branch; each refinement round uses a plan-conditioned world query to obtain an imagined future observation latent from a lightweight frozen latent world model, then a future-guided RefineNet applies scheduled residual updates before decoding the refined latent plan into an action chunk. It also introduces Causal Refinement-Grouped Process-Reward RL to optimize refinement using rewards from longer-horizon imagined futures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new idea claimed in the abstract is moving deliberative planning into latent VLM representations, combining iterative latent future imagination, residual plan refinement, and process-reward RL while retaining parallel low-latency action generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports state-of-the-art performance among existing methods on the LIBERO benchmark, but does not provide numerical scores, task breakdowns, or statistical evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative results, baselines, ablations, latency measurements, robustness tests, code availability, or details sufficient to judge whether the causal/process-reward component is essential.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; mainly through its &amp;#x27;Causal Refinement-Grouped Process-Reward RL&amp;#x27; component. It appears more centrally about latent planning for VLA robotics than causal inference, so relevance to a causality-focused feed is moderate to low unless the researcher tracks causal reward assignment or intervention-like latent plan edits.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; vision-language-action, robotics, latent planning, embodied AI, reinforcement learning, LIBERO, causality-adjacent&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing the visual-grounding branch, iterative latent-plan refinement loop, latent world model future prediction, RefineNet residual updates, and parallel action-chunk decoder would be useful; metadata indicates 2 figures but provides no direct image URL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Bochen Yang, Lianlei Shan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17924v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Revisiting Structural Dependency in Autoregressive Multi-Task Table Recognition via Order-Independent Cell-Level Representations</title>
+      <link>http://arxiv.org/abs/2606.17874v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17874v1</guid>
+      <pubDate>Tue, 16 Jun 2026 12:45:57 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 46/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 55, Empirical 58, Reproducibility 20, Manuscript 68&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, author citation or h-index signal, DOI or journal reference, dataset names, baseline names, exact metrics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16.; Comment field says ICDAR 2026.; Abstract reports experiments on two large datasets.; Abstract claims consistent gains in cell localization and end-to-end recognition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes an order-independent structural refinement module for multi-task table recognition to improve cell localization/content recognition and speed relative to autoregressive hidden-state reuse.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Multi-task table recognition must jointly predict table structure, locate cells, and recognize cell contents, but existing autoregressive decoders can make cell representations depend on generation order, reducing global consistency across cells.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces a structural refinement module using non-causal attention to produce order-independent cell-level features, enabling parallel cell-content inference while conditioning each cell on global table context.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim from the abstract is replacing order-dependent autoregressive cell representations with non-causal, globally refined, order-independent cell features inside a unified table-recognition framework.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Experiments on two large datasets reportedly show consistent gains in cell localization and end-to-end recognition, with roughly a threefold reduction in overall inference time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not name datasets, baselines, metrics, ablations, robustness tests, code availability, or failure cases, so the strength and reproducibility of the empirical claim are unclear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevance to the matched query &amp;#x27;causality&amp;#x27; is weak: the paper discusses causal versus non-causal attention in autoregressive decoding, not causal inference or causality research.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; table recognition, document AI, computer vision, autoregressive decoding, non-causal attention, cell localization, parallel inference&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing the autoregressive decoder, structural refinement module, non-causal attention over cells, and parallel content-recognition heads would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Takaya Kawakatsu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17874v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>ActWorld: From Explorable to Interactive World Model via Action-Aware Memory</title>
+      <link>http://arxiv.org/abs/2606.17730v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17730v1</guid>
+      <pubDate>Tue, 16 Jun 2026 09:47:32 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 46/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 16, Paper 40, Empirical 60, Reproducibility 35, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal, or conference acceptance, numeric benchmark results, full baseline list, ablation studies&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16 in cs.CV.; Abstract identifies data and memory bottlenecks for object interaction in interactive world models.; Claims a 100K interaction video dataset with per-chunk captions.; Introduces hierarchical action-aware memory and persistent memory bank.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; ActWorld proposes an interactive world model that adds mid-rollout object interaction to navigation-centric video/world generators using action-aware hierarchical memory and a 100K interaction-video dataset.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies the gap between visually explorable world models and genuinely actionable ones: existing interactive world models mostly support navigation actions while failing to preserve and execute object interactions such as opening doors, picking up items, or triggering physical responses over long rollouts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The abstract describes ActWorld as a chunk-autoregressive interactive world model with a hierarchical action-aware memory mechanism that compresses history based on interaction importance, plus a persistent memory bank for event-update and object-identity tokens. It also constructs a 100K human-object interaction video dataset with per-chunk captions generated via chain-of-thought reasoning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is shifting interactive world modeling beyond navigation by explicitly addressing two bottlenecks: lack of densely labeled interaction data and memory compression that forgets causally important event-transition frames.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that ActWorld supports both flexible navigation and rich object interaction in one model, substantially improving interaction fidelity over navigation-only baselines without sacrificing viewpoint control; exact metrics are not provided in the supplied abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative results, dataset release status, code availability, ablations, robustness tests, or details on whether chain-of-thought-derived captions introduce annotation noise.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;quot;causality&amp;quot; because its method explicitly targets causal event-transition frames and memory mechanisms that preserve object-state changes across rollouts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; interactive world models, object interaction, action-aware memory, video generation, human-object interaction, causal memory, cs.CV&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework figure showing chunk-autoregressive rollout, action-aware history compression, persistent event/object memory tokens, and where object interactions update state would be useful, but no direct image URL is available in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zhexiao Xiong, Yizhi Song, Hao Kang, Qing Yan, Liming Jiang, Jenson Yang, Zhoujie Fu, Stathi Fotiadis, Angtian Wang, Zichuan Liu, Bo Liu, Yiding Yang, Xin Lu, Nathan Jacobs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17730v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>MambaCount: Efficient Text-guided Open-vocabulary Object Counting with Spatial Sparse State Space Duality Block</title>
+      <link>http://arxiv.org/abs/2606.17650v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17650v1</guid>
+      <pubDate>Tue, 16 Jun 2026 08:11:58 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 42/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 35, Empirical 60, Reproducibility 35, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI or venue, code repository, data availability statement, ablation details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-06-16.; Claims MambaCount uses a Spatial Sparse State Space Duality block.; Reports FSC-147 test MAE of 12.23.; Claims state-of-the-art among methods without secondary querying.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MambaCount adapts Mamba-style state space modeling for text-guided open-vocabulary object counting by modifying spatial dependency handling and token selection to improve dense-scene counting efficiency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies text-guided open-vocabulary object counting in dense scenes with large scale variation, where Transformer-based methods can be expensive because attention scales quadratically with image resolution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes MambaCount, an efficient framework built around a Spatial Sparse State Space Duality block, with reconstructed Mamba hidden-state decay dynamics, a Spatial Token Selection sub-block, and Multi-Granularity Prototypes for cross-modal object-region alignment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is adapting Mamba to non-causal vision counting by alleviating causal spatial dependency constraints, reducing high-entropy spatial token responses, and adding multi-level object-like prototypes for text-image alignment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On FSC-147, the abstract reports state-of-the-art performance among methods without secondary querying, with test MAE of 12.23 while retaining linear complexity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only FSC-147 results and does not mention code release, ablations, robustness tests, statistical significance, affiliations, citation signals, DOI, or conference/journal status.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; mainly because it analyzes and modifies the causal formulation of Mamba for non-causal spatial vision tasks; it is not about causal inference or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; open-vocabulary object counting, Mamba, state space models, computer vision, vision-language alignment, causal modeling constraint&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing the S^4D block, Spatial Token Selection, Multi-Granularity Prototypes, and text-image alignment path would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hao-Yuan Ma, Li Zhang, Minjie Qiang, Jie Gao&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17650v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Proximal Mediation Analysis with Hidden Recanting Witnesses</title>
+      <link>http://arxiv.org/abs/2606.17600v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17600v1</guid>
+      <pubDate>Tue, 16 Jun 2026 07:07:06 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 45/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 18, Paper 40, Empirical 58, Reproducibility 38, Manuscript 76&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index evidence, DOI or peer-reviewed venue, open-source code, public data or replication package, baseline comparisons&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16 in stat.ME, math.ST, and stat.ML.; Abstract explicitly targets mediation analysis with unknown hidden recanting witnesses.; Claims three proximal identification strategies, an efficient influence function, and a multiply robust estimator.; Reports simulation studies and a real data application, but gives no quantitative results in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper develops proximal causal inference methods for identifying and estimating path-specific mediation effects when recanting witnesses are hidden or unknown.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies mediation analysis when treatment-induced mediator-outcome confounders, or recanting witnesses, may exist but are unobserved or not known in advance, undermining standard identification of path-specific effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors propose three proximal identification strategies, derive a semiparametric efficient influence function, introduce a proximal multiply robust estimator, and use a minimax optimization-based debiased machine learning procedure for estimation and confidence intervals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element claimed in the abstract is handling hidden or unknown recanting witnesses in mediation analysis using proximal causal inference, rather than assuming such variables are absent or fully specified a priori.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports theoretical guarantees: consistency if at least one nuisance-model set is correctly specified, asymptotic normality and semiparametric efficiency when all nuisance models are correctly specified with suitable rates, plus simulation and real-data demonstrations. No quantitative empirical results are provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify datasets, baselines, simulation settings, effect sizes, robustness checks, code availability, or how sensitive the method is to proximal proxy assumptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causal inference&amp;#x27; because it addresses identification and estimation of causal mediation/path-specific effects under hidden confounding using proximal causal inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, mediation analysis, proximal causal inference, path-specific effects, hidden confounding, semiparametric inference, debiased machine learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the causal graph with hidden recanting witnesses, observed proxy variables, direct and indirect paths, and where the proximal identification conditions enter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sihan Wu, Yang Bai, Yifan Cui&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17600v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>math.ST</category>
+      <category>stat.ML</category>
+    </item>
     <item>
       <title>The Value Axis: Language Models Encode Whether They're on the Right Track</title>
       <link>http://arxiv.org/abs/2606.17056v1</link>
