@@ -9,8 +9,226 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Wed, 17 Jun 2026 08:39:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 08:56:37 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology</title>
+      <link>http://arxiv.org/abs/2606.19245v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19245v1</guid>
+      <pubDate>Wed, 17 Jun 2026 16:23:45 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 22, Paper 48, Empirical 82, Reproducibility 48, Manuscript 76&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation counts or h-index signals not supplied., No DOI, journal, conference, or peer-review signal supplied., No code repository or public data availability stated in the abstract or metadata., No ablations, detailed baselines, robustness analysis beyond confidence intervals, or task construction details visible from the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Introduces TxBench-PP as a verifiable benchmark for small-molecule preclinical pharmacology.; Benchmark contains 100 evaluations across program stage, assay type, and task structure.; Tasks include causal target validation along with MoA/PD reasoning, target engagement, safety, developability, and translational efficacy.; Evaluation covers 16 model-harness configurations, 11 models, and 4,800 trajectories.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; TxBench-PP introduces a deterministic benchmark for evaluating whether AI agents can make realistic small-molecule preclinical pharmacology decisions from assay workflow data, finding that current agent/model configurations perform far from reliably.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to evaluate AI agents for drug-discovery decision-making in realistic preclinical pharmacology settings, especially whether agents can recover conclusions from assay data rather than relying on memorized literature facts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes TxBench-PP, a benchmark with 100 verifiable evaluations indexed by program stage, assay type, and task structure. Agents receive realistic workflow snapshots, inspect files in a coding environment, and return structured answers that are graded deterministically.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution, as supported by the abstract, is a focused benchmark slice for small-molecule preclinical pharmacology covering MoA/PD reasoning, compound-target engagement, causal target validation, developability and safety, and translational efficacy, with deterministic grading over realistic workflow data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across 16 model-harness configurations, 11 models, and 4,800 trajectories, no system reliably recovered preclinical pharmacology decisions. The strongest reported configuration, Claude Opus 4.8 / Pi, passed 59.3% of endpoint attempts, followed by GPT-5.5 / Pi at 55.3%.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code or data availability, detailed task construction, baseline/harness details, ablations, external validation, affiliations, peer-review status, DOI, or broader TherapeuticsBench results beyond this first slice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because the benchmark explicitly includes causal target validation tasks, and it is relevant if the researcher tracks causal reasoning capabilities of AI agents in scientific or biomedical workflows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; AI agents, drug discovery, preclinical pharmacology, benchmark, causal target validation, model evaluation, cs.AI, cs.LG&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline or benchmark schematic would be useful, showing workflow snapshots, file inspection by agents, structured answer generation, deterministic grading, and the preclinical pharmacology task categories.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hannah Le, Ramesh Ramasamy, Alex Urrutia, Mahsa Yazdani, Tim Proctor, Kenny Workman&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19245v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Wasserstein Policy Learning for Distributional Outcomes</title>
+      <link>http://arxiv.org/abs/2606.19117v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19117v1</guid>
+      <pubDate>Wed, 17 Jun 2026 14:31:53 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 61/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 82, Empirical 45, Reproducibility 35, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations are not supplied., Citation counts and h-index signals are not supplied., No DOI or journal reference is supplied., No code repository is mentioned., No public data or implementation details are mentioned., No empirical baselines, ablations, simulations, or real-data evaluation are mentioned in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Accepted by COLT 2026 according to the metadata comment.; arXiv version is v1, published 2026-06-17.; Abstract explicitly states IPW and doubly robust estimators.; Abstract gives finite-sample regret rate O~(sqrt(N-dim(Pi)/N)).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper develops a theoretical offline policy learning framework for causal individualized treatment rules when outcomes are full probability distributions rather than scalar rewards, using Wasserstein barycenters and utility functionals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Standard offline policy learning in causal inference usually optimizes empirical welfare based on scalar-valued potential outcomes; this paper studies the harder setting where each potential outcome is a probability measure on the real line and policy value is defined through a utility applied to the Wasserstein barycenter of induced outcome distributions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors propose Wasserstein policy learning for distribution-valued outcomes and analyze policy learning based on IPW and doubly robust estimators, with finite-sample regret bounds over a combinatorial policy class and an infinite-dimensional quantile domain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is extending offline causal policy learning from scalar outcomes to distribution-valued outcomes while proving regret guarantees whose leading rate remains governed by policy-class complexity, plus a minimax lower bound showing sharpness of the leading dependence on sample size and policy-class N-dimension.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract states a finite-sample regret bound with leading dependence approximately O~(sqrt(N-dim(Pi)/N)) and a matching minimax lower bound for the leading dependence on sample size N and policy-class complexity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not mention experiments, simulations, real data, code, implementation details, robustness checks, or practical performance comparisons; the guarantees also appear restricted to the one-dimensional Wasserstein setting under stated regularity conditions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched causal inference query because it studies offline policy learning, individualized treatment rules, IPW, doubly robust estimation, and regret guarantees in a causal inference setting, though the focus is theoretical and specialized to distribution-valued outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, offline policy learning, individualized treatment rules, distributional outcomes, Wasserstein barycenter, IPW, doubly robust estimation, statistical learning theory&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would depict the proposed pipeline: observed covariates and treatments, distribution-valued potential outcomes, IPW/DR estimation, Wasserstein barycenter construction, utility evaluation, and policy-class optimization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yiyan Huang, Cheuk Hang Leung, Qi Wu, Zhiheng Zhang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19117v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>cs.LG</category>
+      <category>econ.EM</category>
+      <category>stat.ML</category>
+    </item>
+    <item>
+      <title>Structure Over Nonlinearity: Explicit Interaction Architectures for Dynamical Learning</title>
+      <link>http://arxiv.org/abs/2606.19101v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19101v1</guid>
+      <pubDate>Wed, 17 Jun 2026 14:12:27 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 45, Empirical 45, Reproducibility 25, Manuscript 65&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliation not supplied., Citation count or h-index not supplied., No DOI, journal, or conference venue supplied., No code repository mentioned., No public dataset or benchmark names mentioned., No explicit baselines mentioned in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-17.; Single author: Augusto Sarti.; Categories: eess.SP and cs.LG.; Comment says 11 pages, 2 figures, 2 tables.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes explicit wave-inspired, strictly causal interaction units for learning dynamical systems, arguing that structured interactions can provide expressivity without relying mainly on generic nonlinear function approximators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Most learned models for dynamical systems use broad nonlinear function approximation, which can require high model complexity to capture structured dynamics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces explicit structured dynamical units with internal state and wave-inspired interaction patterns; the units are strictly causal to avoid algebraic loops and can be stacked into layered dynamical architectures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a structure-first design paradigm: expressivity is intended to emerge from explicit causal interaction organization and depth, rather than primarily from strong nonlinear parameterization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports experiments on a nonlinear system identification task where increasing depth improves representation quality and generalization, including under readout-only fitting and limited parameter optimization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence appears limited to a nonlinear system identification experiment from the abstract; no baselines, ablations, robustness analysis, datasets, code, or solver/runtime comparisons are specified in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; because the architecture is explicitly described as strictly causal and designed to eliminate algebraic loops in dynamical learning, though it does not appear to address causal inference or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; dynamical-systems, structured-architectures, causality, system-identification, signal-processing, machine-learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be one of the paper&amp;#x27;s architecture or pipeline figures showing the wave-inspired structured dynamical unit, its strictly causal internal-state interactions, and how units stack into layered dynamical architectures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Augusto Sarti&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19101v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>eess.SP</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Balanced Twins: Causal Inference on Time Series with Hidden Confounding</title>
+      <link>http://arxiv.org/abs/2606.18969v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18969v1</guid>
+      <pubDate>Wed, 17 Jun 2026 11:52:59 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 38, Empirical 50, Reproducibility 30, Manuscript 65&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index information, DOI or venue signal, open-source code, public data or benchmark details, quantitative metrics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-06-17 in stat.ME, cs.MS, and stat.ML.; Abstract targets ATT estimation through individual-level counterfactual recovery.; Method learns latent time-series representations and propensity scores jointly.; Evaluation settings named: high-frequency electricity demand-response data and semi-synthetic ICU time series.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Balanced Twins proposes a neural matching framework for estimating ATT in staggered-treatment time series under hidden confounding by learning latent individual representations and propensity scores before constructing individual counterfactuals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies causal effect estimation for time series when treatment adoption is staggered across individuals, pre-treatment histories are heterogeneous, and treatment assignment may be biased by unobserved factors, making aggregate trajectory comparisons ill-defined.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces a neural framework that jointly learns low-dimensional latent representations of individual time series and propensity scores, then uses these estimates in a flexible individual-level matching procedure to approximate counterfactual outcomes and individual treatment effects before aggregating to ATT.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is moving synthetic-control-like counterfactual construction to the individual level for staggered interventions, while avoiding classical convexity constraints and not requiring explicit temporal modeling assumptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract says the approach is illustrated on real-world energy consumption data and semi-synthetic ICU clinical time series, but it does not report quantitative performance, baselines, effect-size accuracy, or robustness results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited from the abstract: no numerical results, baseline comparisons, ablations, uncertainty quantification, code availability, public dataset details, or formal assumptions are provided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query because it directly addresses causal inference for time-series interventions, hidden confounding, counterfactual estimation, propensity scores, and ATT/ITE estimation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, time series, hidden confounding, individual treatment effects, ATT, propensity scores, matching, synthetic control&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing time-series inputs, joint latent representation and propensity learning, matching-based counterfactual construction, ITE estimation, and ATT aggregation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ouali Maha, Ghattas Badih, Flachaire Emmanuel, Charpentier Philippe, Bozzi Laurent&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18969v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>cs.MS</category>
+      <category>stat.ML</category>
+    </item>
+    <item>
+      <title>LegalWorld: A Life-Cycle Interactive Environment for Legal Agents</title>
+      <link>http://arxiv.org/abs/2606.18728v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18728v1</guid>
+      <pubDate>Wed, 17 Jun 2026 06:11:21 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 40, Empirical 75, Reproducibility 35, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations are not supplied., Citation counts and h-index signals are not supplied., No DOI, journal, or conference venue is supplied., No code repository or dataset release URL is supplied., No detailed model list, baseline table, ablations, robustness analysis, or metric definitions are included in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-17 in cs.CL.; LegalWorld models five stages and seven sub-scenarios of Chinese civil litigation as a causally connected state chain.; Environment is grounded in 75,309 paired Chinese civil judgments.; Evaluation includes 18,992 ratings from 217 legal-background evaluators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; LegalWorld introduces a causally connected, full life-cycle Chinese civil litigation environment and benchmark for evaluating legal agents across consultation, drafting, trial, and related stages.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies the gap between real civil litigation, where early legal actions causally constrain later outcomes, and existing legal benchmarks or simulators that evaluate isolated subtasks or reset scenarios from shared ground truth.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes LegalWorld, an interactive environment modeling Chinese civil litigation as a five-stage, seven-subscenario causally connected state chain grounded in 75,309 paired Chinese civil judgments, with local memory, global case memory, and a reusable Skill/Tool library. It also introduces LongJud-Bench for cross-stage legal-agent evaluation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is the life-cycle simulation design: disputes persist across stages so that earlier drafting and consultation decisions affect later procedural states, rather than treating each legal task as independent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports 18,992 ratings from 217 legal-background evaluators indicating procedurally faithful and role-consistent trajectories, plus cross-model evaluation showing capability-level divergences with no single model backbone leading across consultation, drafting, and courtroom advocacy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide model names, quantitative benchmark scores, baseline details, ablations, robustness checks, code availability, or public data links; resources are only promised for future release.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the `causality` query because its central claim is a causally connected state-chain environment where earlier litigation-stage actions shape later-stage outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; legal-agents, interactive-environment, causal-state-chain, benchmark, civil-litigation, Chinese-law, long-horizon-evaluation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline or framework figure showing the five litigation stages, seven sub-scenarios, memory modules, Skill/Tool library, and causal state transitions would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Songhan Zuo, Shengbin Yue, Tao Chiang, Guanying Li, Yun Song, Xuanjing Huang, Zhongyu Wei&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18728v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>UniTemp: Unlocking Video Generation in Any Temporal Order via Bidirectional Distillation</title>
+      <link>http://arxiv.org/abs/2606.18702v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18702v1</guid>
+      <pubDate>Wed, 17 Jun 2026 05:27:19 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 45, Empirical 55, Reproducibility 35, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index signals, DOI, journal, or conference venue, quantitative metrics, dataset details, baseline names beyond forward-only methods&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-17 in cs.CV.; Abstract identifies forward-only temporal generation as the core limitation of existing autoregressive video diffusion methods.; Method introduces blockwise anchor latents and a bidirectional distillation framework named UniTemp.; Abstract claims competitive short- and long-video generation compared with forward-only methods, but gives no numbers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; UniTemp trains one autoregressive video diffusion model to generate video forward, backward, or between given frames by addressing causal-latent boundary issues with blockwise anchor latents and bidirectional distillation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Existing autoregressive video diffusion methods mainly generate in forward temporal order, limiting workflows that need future conditioning, backward extension, or inbetween generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper proposes UniTemp, a bidirectional distillation framework for any-direction autoregressive video generation, using blockwise anchor latents to supply missing past context at block boundaries when a Causal 3D VAE is used for backward generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is adapting causal-latent autoregressive video diffusion to arbitrary temporal generation orders within a single student model, rather than maintaining only forward temporal causality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports competitive short- and long-video generation versus forward-only methods while enabling bidirectional extension, inbetween generation, looping, scene transition, and visual story generation; no quantitative metrics are provided in the supplied abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report specific datasets, metrics, ablations, robustness tests, code availability, or quantitative comparisons, so empirical strength and reproducibility are uncertain from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The matched query is causality: the paper directly studies limitations of causal temporal latent encoding in video diffusion and proposes a mechanism to relax forward-only causal generation order.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; video-generation, diffusion-models, autoregressive-modeling, causal-vae, bidirectional-generation, inbetweening&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the UniTemp pipeline: Causal 3D VAE latents, blockwise anchor latents at temporal block boundaries, bidirectional distillation from teacher to student, and inference modes for backward, forward, and inbetween generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Lin Zhang, Sicheng Mo, Zefan Cai, Jinhong Lin, Zihao Lin, Jiuxiang Gu, Krishna Kumar Singh, Yuheng Li, Yin Li&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18702v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>ForecastBench-Sim: A Simulated-World Forecasting Benchmark</title>
+      <link>http://arxiv.org/abs/2606.18686v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18686v1</guid>
+      <pubDate>Wed, 17 Jun 2026 04:52:41 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 60/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 44, Paper 63, Empirical 55, Reproducibility 60, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index not supplied., No DOI or journal reference supplied., No code repository URL supplied., No public data or artifact link visible in supplied metadata beyond release-artifact mention in abstract., No quantitative model results in abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract identifies concrete benchmark limitations: slow resolution, rare tail events, and difficult counterfactual scoring.; Method uses Freeciv rollouts and structured world reports to score forecasts after continuing simulation.; Claims support for arbitrary horizons, binary or continuous questions, intervention-paired worlds, and rare outcomes.; Metadata says arXiv v1, 15 pages, 5 main figures, 6 appendix figures, and spotlight presentation at an ICML 2026 AI Forecasting workshop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; ForecastBench-Sim proposes a Freeciv-based simulated-world benchmark for evaluating AI forecasting under controllable, immediately resolvable dynamic-world scenarios, including conditional and causal questions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies limitations of real-world forecasting benchmarks for general-purpose AI: slow outcome resolution, rarity of tail events, and difficulty scoring counterfactual or causal questions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces a benchmark pipeline built from Freeciv game rollouts: models receive a structured world-state report, answer questions about hidden future states, then the simulation is continued and forecasts are scored. The setup can generate continuous or binary questions at arbitrary horizons, intervention-paired worlds, and rare or disruptive outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is using a controllable simulated strategy-game world to create immediately resolvable forecasting tasks, including paired intervention worlds for conditional or causal forecasting, rather than relying only on naturally resolving real-world events.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports validation slices from model evaluations and an anonymized human pilot, but does not provide quantitative performance numbers or detailed comparisons.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not show benchmark scale, model leaderboard results, baselines, ablations, robustness checks, code quality, or evidence that Freeciv forecasting transfers to real-world forecasting ability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the matched query `causality` because the benchmark explicitly supports paired intervention worlds for conditional or causal questions, giving a controlled testbed for causal forecasting and counterfactual reasoning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; forecasting, benchmark, simulated environments, causal reasoning, counterfactuals, AI evaluation, Freeciv&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A benchmark pipeline or architecture figure showing Freeciv state generation, world report construction, question generation, simulation rollout, intervention-paired worlds, and scoring would be useful; the metadata indicates main figures exist, but no direct image URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jaeho Lee, Nick Merrill, Ezra Karger&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18686v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>APT: Atomic Physical Transitions for Causal Video-Language Understanding</title>
+      <link>http://arxiv.org/abs/2606.18586v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18586v1</guid>
+      <pubDate>Wed, 17 Jun 2026 01:26:50 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 45, Empirical 68, Reproducibility 45, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations are not supplied., Citation counts and h-index signals are not supplied., No DOI, journal, or conference reference is supplied., No code repository or data release link is supplied., Exact tuned metrics are not in the abstract., Ablations, statistical robustness, and detailed baseline comparisons are not visible in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-17 in cs.CV and cs.AI.; Defines APTs as minimal temporally localized state changes with visible cues, physical mechanisms, and before/after dynamical regimes.; Dataset covers 14 transition types and 27,303 timed instances over 1,246 trials.; Reports zero-shot VLM recall at most 14% for transition-level physics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper introduces Atomic Physical Transitions and APT-Tune to supervise video-language models on causal, transition-level physical state changes rather than only clip-level event labels.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Clip-level video event labels such as &amp;quot;bounce&amp;quot; hide the causal physical process that makes an event valid, so current VLMs may recognize event names without understanding the underlying state transitions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper defines Atomic Physical Transitions as minimal temporally localized state changes linking visible cues, active physical mechanisms, and before/after dynamical regimes; builds mixed human-annotated and simulator-derived APT data; and proposes APT-Tune, a parameter-efficient LoRA tuning recipe with image-pad-aware supervision, format-conditional co-training, and mechanism-conditioned domain-to-type decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is framing physical video understanding as ordered causal transition chains and using those chains as supervision for VLMs, rather than treating them as another event-label answer format.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: current VLMs perform poorly on transition-level physics, with zero-shot recall at most 14%; direct fine-tuning improves transition detection but causes event-level forgetting; APT-Tune improves APT recall and event-level video transfer using 11M LoRA parameters on Qwen3-VL-2B. Exact post-tuning metrics are not provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report exact final scores, baselines beyond current VLMs/direct fine-tuning, ablations, robustness tests, public code, public dataset release, or evaluation breadth beyond the stated APT data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;quot;causality&amp;quot; because the paper explicitly models videos as causal chains of physical state transitions and evaluates whether VLMs can detect transition-level causal mechanisms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, video-language models, physical reasoning, computer vision, LoRA fine-tuning, event understanding, simulation data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s pipeline or framework figure showing how video clips are converted into ordered APT chains and how APT-Tune trains/decodes causal transition predictions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Shang Wu, Haoran Lu, Songling Liu, Chenwei Xu, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Zhaoran Wang, Han Liu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18586v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>TS-Fault: Benchmarking Time Series Forecasters Against Structural Faults</title>
+      <link>http://arxiv.org/abs/2606.18539v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18539v1</guid>
+      <pubDate>Tue, 16 Jun 2026 23:15:20 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 60/100 (Skim, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 44, Paper 45, Empirical 78, Reproducibility 70, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index information, DOI, journal, or conference acceptance, citation or influential-citation hints, statistical significance or confidence intervals, ablation studies&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-16.; Public code URL is included in the abstract: https://github.com/Ray-zyy/TS-Fault.; Benchmark evaluates 21 models across 6 datasets, 4 modes, and 5 difficulty levels.; Fault taxonomy uses observation-vs-mechanism and univariate-vs-multivariate axes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; TS-Fault is a benchmark for testing time-series forecasters under structured, parameterized fault scenarios rather than only clean held-out accuracy or generic noise corruption.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whether standard time-series forecasting leaderboards based on average clean-data error predict deployed reliability when real systems face structured faults such as temporal events, broken cross-variable dependencies, missingness under regime change, and causal propagation through sensing pipelines.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes TS-Fault, a benchmark that defines four fault modes along observation-vs-mechanism and univariate-vs-multivariate axes, injects faults into prediction-critical windows using a unified importance score, and evaluates models with paired clean/corrupt protocols across controllable difficulty levels.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, from the abstract, is treating TSF robustness as structured fault benchmarking with semantic difficulty and mechanism-level disruptions, instead of reducing robustness to i.i.d. noise sensitivity or clean-data leaderboard accuracy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports evaluation of 21 models across 6 datasets, 4 fault modes, and 5 difficulty levels, finding that clean-data accuracy anti-correlates with robustness, observation-level faults mostly preserve clean rankings, mechanism-level faults reshuffle rankings, and catastrophic failures occur under mechanism-level faults, especially for high-accuracy foundation models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report statistical significance, ablations, detailed dataset names, implementation details, repository quality, or whether the benchmark covers all realistic fault classes; author affiliations and citation signals are also absent from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;#x27;causality&amp;#x27; because the benchmark explicitly includes causal propagation across sensing pipelines and mechanism-level faults, though the paper appears focused on robustness benchmarking rather than causal inference methodology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; time-series forecasting, robustness benchmark, structural faults, mechanism-level faults, causal propagation, foundation models, cs.LG, stat.ML&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the TS-Fault pipeline or taxonomy figure showing the two fault axes, four modes, importance-score-based injection window, and paired clean/corrupt evaluation protocol.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yuyang Zhao, Lian Xu, Hao Miao, Chenxi Liu, Hao Xue&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18539v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+    </item>
     <item>
       <title>Tensor-based second-order causal discovery</title>
       <link>http://arxiv.org/abs/2606.18074v1</link>
