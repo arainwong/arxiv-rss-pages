@@ -9,12 +9,248 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Thu, 18 Jun 2026 08:56:37 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 07:56:37 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
     <item>
+      <title>DeepSWIP: Quotient-WMC Counterfactuals for Neural Probabilistic Logic Programs</title>
+      <link>http://arxiv.org/abs/2606.20526v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.20526v1</guid>
+      <pubDate>Thu, 18 Jun 2026 17:39:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 62/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 48, Empirical 74, Reproducibility 78, Manuscript 86&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations absent from supplied metadata., Citation count and h-index signals absent., No DOI, journal, or conference acceptance information supplied., No ablation study mentioned in the abstract., No statistical significance, confidence intervals, or robustness analysis mentioned., Repository quality and runnable reproduction instructions not assessed from supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-18 in cs.AI.; Code URL is included in the abstract: https://github.com/saibib/deep_SWIP.; Reports validation against DeepTwin on 12,000 MPI3D queries.; Reports a 2.14x inference speedup from avoiding Twin endogenous duplication.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; DeepSWIP gives DeepProbLog-style neural probabilistic logic programs a single-world counterfactual semantics by materializing neural predicates, applying SWIP transformations, and computing counterfactuals via quotient weighted model counting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to perform counterfactual reasoning in neurosymbolic systems such as DeepProbLog, where standard inference is associational and lacks causal semantics for interventions plus evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces DeepSWIP, which reduces fixed-context neural predicates to ordinary ProbLog choices through neural materialization, applies Single World Intervention Programs, and computes counterfactuals with weighted model counting over one transformed program.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a single-world counterfactual semantics for DeepProbLog programs that avoids Twin-network endogenous duplication while preserving exactness under finite grounding and unique-supported-model assumptions relative to the learned materialized FCM.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports MPI3D experiments validating the transformation against a DeepTwin construction on 12,000 queries and showing a 2.14x inference speedup; a SUMO HOV experiment suggests neural miscalibration biases plug-in estimates while a scoped randomized-policy AIPW estimator removes most first-order bias for population mean and ATE estimands.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Exactness is conditional on finite grounding, unique-supported-model assumptions, and the learned materialized FCM; the abstract does not report statistical uncertainty, ablations, broader benchmark coverage, or external validation beyond MPI3D and SUMO HOV.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;quot;causality&amp;quot; because it directly targets counterfactual semantics, interventions, evidence, causal estimands, and bias correction in neural probabilistic logic programs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, counterfactual reasoning, neurosymbolic AI, probabilistic logic programming, DeepProbLog, weighted model counting, AIPW&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the DeepSWIP pipeline: neural predicate materialization, SWIP intervention transformation, quotient-WMC counterfactual computation, and comparison with the DeepTwin construction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Saimun Habib, Vaishak Belle, Fengxiang He&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.20526v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Private Rate-Double-Robust Inference</title>
+      <link>http://arxiv.org/abs/2606.20427v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.20427v1</guid>
+      <pubDate>Thu, 18 Jun 2026 16:08:49 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 47, Paper 45, Empirical 20, Reproducibility 35, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; affiliations, citation_count, h_index, DOI, journal_or_conference_acceptance, open_source_code&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract explicitly addresses local privacy mechanisms that inject noise into sensitive data.; Abstract claims transfer of semiparametric properties and rate-double-robustness to the private setting.; Abstract says the target-parameter class includes causal parameters.; Metadata shows arXiv v1, published 2026-06-18, with no DOI or journal reference supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper develops locally private inference theory for rate-double-robust semiparametric target parameters, including causal parameters, by designing privacy mechanisms and private nuisance estimators that preserve key large-sample properties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to perform statistically efficient inference for rate-double-robust target parameters when individual-level sensitive data are only observed through a local privacy mechanism that injects noise.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper considers a class of target parameters indexed linearly by an infinite-dimensional component and nonlinearly by a low-dimensional regression, then shows that suitable local privacy mechanisms transfer semiparametric properties from the sensitive-data model to the private setting. It also proposes transformations of nonparametric nuisance estimators into private estimators and develops a private method-of-moments estimator for parametric nuisance models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim in the abstract is a reconciliation of local privacy with rate-double-robust, unbiased, semiparametrically efficient inference, including preservation of nuisance-estimator convergence properties under privatization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical result is reported in the abstract. The main result appears theoretical: rate-double-robustness and semiparametric efficiency can be transferred to the locally private setting under suitable privacy mechanisms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify assumptions, privacy-loss parameters, concrete causal estimands, simulations, empirical benchmarks, code, or robustness checks, so the practical scope and finite-sample behavior are unclear from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;quot;causality&amp;quot; because the proposed target-parameter class explicitly includes causal parameters, and it may be relevant to researchers interested in causal inference under local privacy constraints.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal-inference, local-privacy, semiparametric-inference, double-robustness, method-of-moments, theory&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the pipeline from sensitive data through local noise injection to private nuisance estimation and rate-double-robust target-parameter inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Máté Kormos, Aad van der Vaart&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.20427v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>math.ST</category>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>Actionable Activation Directions for Detecting and Mitigating Emergent Misalignment Across Language Model Families</title>
+      <link>http://arxiv.org/abs/2606.20225v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.20225v1</guid>
+      <pubDate>Thu, 18 Jun 2026 13:39:59 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 51/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 45, Empirical 65, Reproducibility 35, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No affiliation metadata supplied., No citation count or h-index metadata supplied., No DOI, journal, or conference venue supplied., No open-source code or repository mentioned., No public dataset or benchmark details mentioned., No statistical uncertainty or robustness analysis described in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-18.; Abstract reports four instruction-tuned model families: Qwen2.5-1.5B, Gemma-2-2B, Llama-3.2-1B, and Ministral-3-3B.; Abstract reports 99.6% separation of aligned and misaligned activations at each model&amp;#x27;s final layer.; Abstract reports causal steering reductions in code spillover of 21-51 points.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that emergent misalignment induced by fine-tuning on insecure code can be detected and partly mitigated by causal activation-space directions, but that these directions are specific within a model and unreliable as specific corrections across architectures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether language models fine-tuned on insecure code develop a causally actionable internal misalignment direction, and whether such a direction is shared across different instruction-tuned model families.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper compares aligned and misaligned activations across four identically fine-tuned model families, constructs difference-in-means activation directions at the final layer, tests causal steering by subtracting those directions, and evaluates cross-architecture transfer using ridge-regression maps plus specificity controls.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a two-tier specificity result: within-model activation directions appear highly separable, causally actionable, and content-specific, while cross-model transferred directions can suppress behavior but fail specificity controls because random and orthogonal directions perform comparably.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: the final-layer direction separates aligned from misaligned activations with 99.6% accuracy across the four model families; subtracting the direction reduces code spillover by 21-51 points; cross-architecture transfer suppresses behavior by up to 46 points but is not specific under controls.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code release, datasets, full evaluation protocol, statistical robustness, ablations beyond the stated controls, or whether results generalize beyond insecure-code fine-tuning and the four small instruction-tuned model families.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the query &amp;#x27;causality&amp;#x27; because the paper explicitly tests whether activation directions are causally actionable for detecting and mitigating misalignment, rather than merely correlational probes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal intervention, activation steering, emergent misalignment, mechanistic interpretability, cross-architecture transfer, LLM safety&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; The comment says the paper has 2 figures; a useful image would likely be a pipeline or geometry figure showing within-model activation-direction steering and cross-architecture ridge-regression transfer, but no direct image URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Abdul Rafay Syed&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.20225v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>A case study of causal mediation using Bayesian nonparametrics and semiparametric corrections</title>
+      <link>http://arxiv.org/abs/2606.20148v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.20148v1</guid>
+      <pubDate>Thu, 18 Jun 2026 12:11:01 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 49/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 40, Empirical 65, Reproducibility 30, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; affiliations, citation counts, h-index or author impact metadata, DOI, journal or conference venue, code availability&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract targets NDE and NIE estimation in causal mediation with post-treatment confounders.; Method uses a truncated EDPM model, blocked Gibbs sampler, cluster reallocation Metropolis-Hastings, and efficient-influence-function posterior correction.; Abstract states simulations and a weight management clinical trial application were conducted.; Metadata shows arXiv v1, no DOI, no journal reference, and no comment field content.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a Bayesian nonparametric causal mediation method for estimating natural direct and indirect effects when post-treatment confounders are present, using an EDPM model plus semiparametric posterior correction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Estimating natural direct effects (NDE) and natural indirect effects (NIE) in causal mediation analysis when post-treatment confounders complicate identification and inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; A truncated Enriched Dirichlet Process mixture model is used for flexible joint distribution modeling, with a cluster reallocation Metropolis-Hastings step inside a blocked Gibbs sampler and a one-step posterior correction based on the efficient influence function.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, as stated in the abstract, is combining Bayesian nonparametric mediation modeling with an efficient-influence-function posterior correction intended to give reliable causal-estimand-specific posteriors and frequentist coverage for NDE/NIE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports simulation studies and an application to a weight management clinical trial, but does not provide quantitative performance results, baselines, or effect estimates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; No quantitative simulation results, baseline comparisons, robustness checks, code, data availability, DOI, venue, affiliations, or limitations are provided in the supplied metadata/abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because it directly studies causal mediation estimands and inference under post-treatment confounding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal mediation, Bayesian nonparametrics, Enriched Dirichlet Process mixture, natural direct effect, natural indirect effect, post-treatment confounding, semiparametric correction, efficient influence function&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or graphical-model figure showing the EDPM causal mediation model, Gibbs/MH sampling loop, and one-step efficient-influence-function posterior correction for NDE/NIE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yuhua Zhang, Michael J. Daniels&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.20148v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>EventVLA: Event-Driven Visual Evidence Memory for Long-Horizon Vision-Language-Action Policies</title>
+      <link>http://arxiv.org/abs/2606.20092v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.20092v1</guid>
+      <pubDate>Thu, 18 Jun 2026 11:11:37 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 37, Paper 40, Empirical 76, Reproducibility 35, Manuscript 74&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index signals, DOI or venue, code repository, public dataset or benchmark release details, specific baseline names&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-06-18; no DOI, journal, or conference metadata supplied.; Abstract defines a concrete memory bottleneck problem for long-horizon VLA manipulation.; Method includes foundational visual anchors and a Keyframe Evidence Memory module predicting future keyframe probabilities from latent embeddings.; Evaluation claim covers 17 simulation tasks and 4 real-world bimanual tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; EventVLA proposes sparse, event-driven visual evidence memory for long-horizon VLA robotic manipulation, using predicted future keyframe utility to preserve task-critical observations before they disappear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies memory failures in long-horizon robotic manipulation, especially when task-relevant visual cues become occluded or unobservable and standard VLA policies cannot retain the needed evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces EventVLA, an end-to-end VLA framework with sparse visual evidence memory: foundational visual anchors for initial and short-term context plus a dynamic Keyframe Evidence Memory module that predicts future keyframe probabilities from latent VLA embeddings and stores selected task-critical visual events.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is a foresight-driven memory mechanism that selects observations based on predicted future causal utility, avoiding compressed bottleneck memory, high-latency dual-system designs, and unselective redundant visual buffers; it also introduces RoboTwin-MeM for diagnosing non-Markovian manipulation with interactive visual evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports extensive evaluation on 17 memory-requiring simulation tasks and 4 real-world bimanual tasks, with EventVLA achieving an average success-rate improvement of +40% over state-of-the-art memory-augmented VLAs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code availability, dataset release status, specific baselines, ablations, statistical robustness, failure cases, compute/latency costs, or how the keyframe-probability objective is supervised or validated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; because the method explicitly frames memory selection around the future causal utility of current observations, though the paper appears primarily about VLA memory for robotics rather than causal inference theory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robotics, vision-language-action, long-horizon manipulation, memory, keyframe selection, causal utility, benchmark&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework figure showing how foundational visual anchors, latent embeddings, keyframe probability prediction, and Keyframe Evidence Memory interact with the VLA policy would be useful, but no direct image URL is provided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ganlin Yang, Zhangzheng Tu, Yuqiang Yang, Sitong Mao, Junyi Dong, Tianxing Chen, Jiaqi Peng, Jing Xiong, Jiafei Cao, Jifeng Dai, Wengang Zhou, Yao Mu, Tai Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.20092v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>Generative Engine Optimization at Scale: Measuring Brand Visibility Across AI Search Engines</title>
+      <link>http://arxiv.org/abs/2606.20065v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.20065v1</guid>
+      <pubDate>Thu, 18 Jun 2026 10:36:13 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 42/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 22, Paper 45, Empirical 60, Reproducibility 20, Manuscript 65&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation not supplied, citation count or h-index not supplied, DOI, journal, or conference venue not supplied, open-source code not mentioned, public dataset not mentioned, baselines not described in abstract&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 preprint, published 2026-06-18, with comment: 14 pages, 4 tables; v1.0 preprint.; Abstract claims analysis of 100K+ prompt responses across 100+ brands from March to May 2026.; Reports three visibility tiers: 73%, 44%, and 11% first-run appearance rates by brand stature.; Reports citation-source and content-format findings: 78% corporate websites and 21% best-of listicles.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This v1 arXiv preprint measures brand visibility across AI search engines at scale and reports large differences by brand maturity, citation source type, and sentiment stability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how brands are represented, cited, and recommended by AI search engines such as ChatGPT, Claude, Perplexity, and Gemini, especially for brands that are not already dominant authorities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It analyzes 100K+ prompt responses across 100+ brands tracked on Ranqo from March to May 2026, measuring mention visibility, cited source types, content formats, sentiment instability, and differences across brand-stature tiers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a large-scale empirical baseline for Generative Engine Optimization / Answer Engine Optimization visibility, including quantified brand-stature effects and citation-source patterns, plus proposed v1.1 protocols for future causal testing of visibility interventions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that global household names appear in 73% of relevant AI answers on first run, mid-market/regional brands in 44%, and niche/small brands in 11%; about 78% of citations go to corporate websites, and ranked best-of listicles account for about 21% of citations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report causal intervention results, open code/data, detailed engine-specific methods, statistical uncertainty, robustness checks, or independent replication; the causal component is framed as proposed future protocols rather than demonstrated effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The matched query is &amp;quot;causality&amp;quot;. Relevance is partial: the paper is mainly an observational measurement study of AI search visibility, but it explicitly proposes protocols to test whether recommendations can causally improve AI visibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; generative-engine-optimization, answer-engine-optimization, AI-search, brand-visibility, information-retrieval, LLM-evaluation, observational-study, causal-protocols&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or framework figure showing prompt sampling, AI engine response collection, brand visibility metrics, citation-source classification, sentiment tracking, and proposed causal-test protocols.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Pratyush Kumar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.20065v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.IR</category>
+      <category>cs.CL</category>
+      <category>cs.CY</category>
+    </item>
+    <item>
+      <title>GEMS: Geometric Constraints Enable Multi-Semantic Superposition in LLMs</title>
+      <link>http://arxiv.org/abs/2606.19946v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19946v1</guid>
+      <pubDate>Thu, 18 Jun 2026 08:43:33 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 57/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 32, Paper 45, Empirical 78, Reproducibility 75, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation not supplied, citation count or h-index not supplied, DOI, venue, or journal reference absent, statistical significance or confidence intervals not described in abstract, complete baseline set not visible from abstract, robustness and failure cases not visible from abstract&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-18.; Single listed author: Yu Deng.; Comment states 30 pages, 5 figures, 20 tables.; Comment provides code and logs URL: https://github.com/LuLu663939/gems-multi-semantic-steering.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; GEMS proposes geometric constraints that let LLM activation steering combine multiple semantic directions at inference time without the collapse seen under naive additive steering.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies why multi-direction activation steering fails when several semantic directions are injected simultaneously into LLM hidden states without retraining.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It decomposes steering collapse into distributional deviation and directional interference, then proposes GEMS: norm-preserving weighted superposition, targeted attention-pathway injection, and real-time orthogonalization of semantic directions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a two-source geometric explanation of multi-direction steering collapse, paired with a training-free intervention framework that maps each failure source to a specific constraint.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: on GSM8K, injecting three concurrent non-mathematical directions preserves accuracy at 98% versus a 92% baseline, while unconstrained addition collapses to 4%; on Wikitext-2, the same injection increases perplexity by only 2.2%.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report statistical uncertainty, full baseline coverage, robustness details, or external validation beyond the stated tasks and qualitative architecture transfer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Matched query is &amp;quot;causality&amp;quot;. Relevance is indirect: the paper uses component ablations and layer-level probes to argue causal roles for its constraints, but the main topic is activation steering and representation intervention rather than causal inference as a field.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; activation-steering, LLMs, representation-intervention, multi-semantic-steering, geometric-constraints, causal-ablation, cs.CL, cs.LG&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s framework figure showing the two collapse sources and the GEMS constraints: norm-preserving superposition, attention-pathway injection, and real-time orthogonalization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yu Deng&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19946v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>The Tao of Agency: Autotelic AI, Embedded Agency and Dissolution of the Self</title>
+      <link>http://arxiv.org/abs/2606.19924v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19924v1</guid>
+      <pubDate>Thu, 18 Jun 2026 08:20:33 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 20/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 10, Paper 25, Empirical 8, Reproducibility 5, Manuscript 58&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, citation count or h-index, DOI or venue signal, open-source code, public data, implementation details for the LLM instantiation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-06-18 in cs.AI.; Abstract explicitly mentions causal-interventional learning as part of the framework.; Abstract claims embeddedness is necessary but not sufficient for autotelic agency.; Abstract describes a concrete LLM-based agentic instantiation but gives no evaluation details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This paper proposes a conceptual framework for autotelic AI in which agents generate not only their own goals but also the self-boundaries to which those goals are assigned.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies what happens when AI agents are not given fixed designer-specified goals but instead discover or generate their own goals, with special attention to how an embedded agent defines the boundary between self and environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The abstract describes a synthetic framework connecting intrinsic motivation, resource-driven priors, causal-interventional learning, homeostasis, embedded agency, a quantum agent-environment cut, non-dual philosophical interpretations, and an LLM-based agentic instantiation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Its claimed novelty is reframing autotelic AI around self-individuation: the central issue is not only goal generation, but how an agent constructs, believes in, and relativizes the self to which goals belong.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical result is reported in the abstract; the contribution appears primarily conceptual, with a proposed framework and an LLM-based instantiation mentioned but not evaluated in the supplied text.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide experiments, baselines, implementation details, code, data, robustness checks, or concrete evidence that the LLM-based instantiation works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the causality feed through its discussion of causal-interventional learning, but causality appears to be one component in a broader philosophical and agency-theoretic framework rather than the paper&amp;#x27;s main technical focus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; autotelic AI, embedded agency, intrinsic motivation, causal-interventional learning, agent self-boundaries, LLM agents, conceptual framework&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the proposed framework linking intrinsic motivation, causal-interventional learning, homeostasis, embeddedness, self-boundary construction, and the LLM-based instantiation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aritra Sarkar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19924v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Where Does Social Reasoning Come From? Capability Provenance in Language Models</title>
+      <link>http://arxiv.org/abs/2606.19625v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19625v1</guid>
+      <pubDate>Wed, 17 Jun 2026 22:06:19 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 59/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 50, Empirical 78, Reproducibility 88, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations are not supplied., Citation counts and h-index signals are not supplied., No DOI, accepted venue, or journal reference is supplied., Abstract does not report numerical effect sizes or confidence intervals., Abstract does not mention ablations beyond random within-bin baselines., Abstract does not report robustness across multiple model sizes or pretraining corpora.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Uses TrackStar via Bergson for gradient-based attribution.; Aggregates influence across WebOrganizer&amp;#x27;s 576 taxonomy bins.; Benchmarks include SocialIQA, MMLU Social Sciences, ARC-Challenge, and MMLU STEM.; Uses targeted machine unlearning against within-bin random baselines for partial causal validation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper uses gradient-based training-data attribution plus targeted unlearning to map which regions of OLMo3-7B&amp;#x27;s pretraining corpus support social reasoning versus STEM reasoning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Document-level training-data attribution is noisy for discovering which parts of a pretraining corpus support specific model capabilities, and prior work has focused more on factual knowledge than reasoning capabilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors compute TrackStar/Bergson gradient-based attribution over a working set from the de-duplicated Dolma3 mix, aggregate influence into WebOrganizer&amp;#x27;s 24-format by 24-topic taxonomy, compare social versus STEM and reasoning versus knowledge benchmarks in a 2x2 design, and use targeted machine unlearning as partial causal validation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel contribution is capability-level provenance analysis: aggregating training influence by corpus taxonomy bins and contrasting benchmark pairs to show that social and STEM reasoning depend on qualitatively different pretraining regions, with unlearning used to test whether high-attribution bins are causally relevant.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, social and STEM reasoning draw on distinct corpus regions, and this separation is sharper for reasoning benchmarks than for knowledge benchmarks; unlearning high-attribution bins such as Literature for SocialIQA degrades aligned benchmarks more than within-bin random baselines.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only partial causal validation and does not provide effect sizes, statistical robustness, full metric tables, ablation details, or evidence that the findings generalize beyond OLMo3-7B, Dolma3, and the selected benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper is relevant to the matched query &amp;#x27;causality&amp;#x27; because it moves beyond correlational attribution by using targeted machine unlearning as a partial causal test of whether influential pretraining corpus regions support specific reasoning capabilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; training-data attribution, capability provenance, language models, machine unlearning, causal validation, social reasoning, STEM reasoning, OLMo3&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s pipeline or heatmap figure showing attribution aggregation from documents into WebOrganizer topic/format bins and the social-vs-STEM reasoning contrast matrix.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Glenn Matlin, Chandreyi Chakraborty, Saehee Eom, Mika Okamoto, Rayan Castilla, Louis Jaburi, Alvin Deng, Taywon Min, Lucia Quirke, Stella Biderman, Mark Riedl&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19625v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Latent Confounded Causal Discovery via Lie Bracket Geometry</title>
+      <link>http://arxiv.org/abs/2606.19610v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19610v1</guid>
+      <pubDate>Wed, 17 Jun 2026 21:31:16 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 49/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 45, Empirical 50, Reproducibility 25, Manuscript 60&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Affiliation or institution metadata not supplied., Citation count and h-index not supplied., No DOI, journal, or conference venue listed., No code repository or implementation link supplied., No public dataset or benchmark names supplied., No baseline methods, ablations, statistical uncertainty, robustness checks, or quantitative metrics visible in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper posted 2026-06-17 in cs.LG and cs.AI.; Abstract introduces two named algorithms: BRIDGE and Spectral Kan-Do Flow Matching.; Abstract targets causal discovery under latent confounding.; Abstract claims experiments show discovery of causal models with latent confounders and large DAG-search-space reductions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes Lie-bracket-geometric algorithms, BRIDGE and SKFM, for causal discovery with latent confounding by using intervention-induced flow geometry to identify visible non-integrability as evidence of hidden structure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Causal discovery under latent confounding, especially how to reduce the combinatorial search over possible DAGs when passive observations and active interventions may imply hidden or unmodeled causal structure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper builds on Kan-Do-Calculus, modeling interventions and conditioning through categorical Kan-extension structure, then derives local causal vector fields from Radon-Nikodym derivatives between observational and interventional measures. BRIDGE uses Lie-bracket/Frobenius residuals as a geometric screen before downstream discovery, while SKFM learns amortized intervention fields and spectrally factors latent curvature.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; It frames latent confounding as a failure of visible causal vector fields to close under Lie brackets, using computable Frobenius residuals as witnesses of latent obstruction; this is a geometric/categorical alternative to standard constraint-based, score-based, or purely differentiable DAG search approaches.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract claims detailed experiments where BRIDGE and SKFM discover causal models with latent confounders and reduce the super-exponential DAG search space by many orders of magnitude, but it does not provide datasets, metrics, baselines, or numerical results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract gives no concrete empirical numbers, named datasets, baseline comparisons, ablations, robustness tests, code availability, or implementation details, so the strength of the evidence cannot be assessed from the supplied metadata alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;quot;causal discovery&amp;quot; because it directly proposes two causal discovery algorithms for settings with latent confounders, a central difficulty in causal inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, latent confounding, causal inference, Lie brackets, information geometry, category theory, Kan-Do-Calculus, interventional data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing observational/interventional measures, Radon-Nikodym ratio estimation, induced causal vector fields, Lie-bracket residual screening in BRIDGE, and spectral latent-curvature factorization in SKFM.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sridhar Mahadevan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19610v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
       <title>TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology</title>
-      <link>http://arxiv.org/abs/2606.19245v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.19245v1</guid>
+      <link>http://arxiv.org/abs/2606.19245v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.19245v2</guid>
       <pubDate>Wed, 17 Jun 2026 16:23:45 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 22, Paper 48, Empirical 82, Reproducibility 48, Manuscript 76&lt;/p&gt;
@@ -31,7 +267,7 @@
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline or benchmark schematic would be useful, showing workflow snapshots, file inspection by agents, structured answer generation, deterministic grading, and the preclinical pharmacology task categories.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hannah Le, Ramesh Ramasamy, Alex Urrutia, Mahsa Yazdani, Tim Proctor, Kenny Workman&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19245v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.19245v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.AI</category>
       <category>cs.LG</category>
     </item>
