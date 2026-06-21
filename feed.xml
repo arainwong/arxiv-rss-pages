@@ -9,7 +9,7 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Sat, 20 Jun 2026 07:45:27 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 10:18:28 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
     <item>
       <title>DeepSWIP: Quotient-WMC Counterfactuals for Neural Probabilistic Logic Programs</title>
@@ -804,6 +804,31 @@
       <category>cs.LG</category>
     </item>
     <item>
+      <title>TIGER: Inverting Transformer Gradients via Embedding-Subspace Distance Optimization</title>
+      <link>http://arxiv.org/abs/2606.18312v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18312v1</guid>
+      <pubDate>Tue, 16 Jun 2026 10:24:40 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 48/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 26, Paper 45, Empirical 65, Reproducibility 25, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, conference, or journal venue, code repository, public data or benchmark details, exact metrics and effect sizes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16; no DOI or journal reference supplied.; Abstract names TIGER and describes a continuous differentiable objective over token embeddings.; Abstract claims experiments on encoder-only and decoder models, with improved reconstruction quality/runtime and DP-defended reconstructions.; Categories are cs.CR, cs.DC, and cs.LG, aligning with ML security and federated learning rather than causality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; TIGER proposes a continuous embedding-subspace optimization attack for reconstructing transformer inputs from federated-learning gradients, improving robustness and runtime over prior token-search or full-gradient-matching attacks according to the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies privacy leakage in federated learning for transformers, where client gradient updates can reveal enough information to reconstruct private inputs. It focuses on weaknesses of prior transformer gradient inversion attacks: expensive and unstable full-gradient matching, and brittle/scaling-limited subspace token membership tests under numerical noise, quantization, DP, and non-causal encoder attention.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; TIGER converts the low-rank attention-gradient subspace signal into a differentiable objective. Instead of searching discrete token candidates or matching full gradients, it directly optimizes token embeddings to minimize distance to the inferred embedding subspace.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is replacing brittle discrete token membership testing with continuous embedding-subspace distance optimization, enabling gradient inversion for transformers that is faster for encoder-only models and more robust for decoder models under noisy or DP-defended settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports substantial improvements in reconstruction quality and runtime on encoder-only models versus existing attacks, and greater robustness on decoder models, including the first successful reconstructions in DP-defended federated learning settings. Exact datasets, metrics, effect sizes, and baselines are not provided in the supplied abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The supplied metadata/abstract does not report code, public data, exact benchmarks, quantitative metrics, ablations, statistical robustness, DP parameters, or affiliations. Claims about empirical strength therefore require checking the full paper.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevance to the configured query &amp;#x27;causality&amp;#x27; appears weak: the match likely comes from the phrase &amp;#x27;non-causal attention&amp;#x27; rather than causal inference or causality research. It may still interest researchers tracking transformer internals, privacy, or attention mechanisms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; federated-learning, gradient-inversion, transformers, privacy-attacks, differential-privacy, embedding-optimization, cs.CR, weak-causality-match&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the TIGER pipeline: extracting the attention-gradient subspace, optimizing continuous token embeddings by subspace distance, and decoding/reconstructing inputs, preferably contrasted with discrete token membership testing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; William Kalikman, Ivo Petrov, Dimitar I. Dimitrov, Martin Vechev&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18312v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CR</category>
+      <category>cs.DC</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
       <title>ActWorld: From Explorable to Interactive World Model via Action-Aware Memory</title>
       <link>http://arxiv.org/abs/2606.17730v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2606.17730v1</guid>
@@ -874,6 +899,228 @@
       <category>stat.ME</category>
       <category>math.ST</category>
       <category>stat.ML</category>
+    </item>
+    <item>
+      <title>SpatioTemporal Causal Network Diagnostics for Geographic Tipping Point Early Warning</title>
+      <link>http://arxiv.org/abs/2606.17553v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17553v1</guid>
+      <pubDate>Tue, 16 Jun 2026 05:57:16 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 51/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 40, Empirical 78, Reproducibility 30, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index not supplied., No DOI, journal, or conference venue supplied., No code repository or implementation release mentioned., No data availability statement mentioned., No ablations, uncertainty intervals, statistical tests, or robustness analysis mentioned in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16 in cs.LG.; Method uses transfer entropy, dynamic mode decomposition, and three vulnerability signals.; Empirical validation includes synthetic bifurcations plus Indo-Pacific SST and North Atlantic AMOC benchmarks.; AMOC task reports AUROC 0.783 and critical-subnetwork IoU 0.378.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes ST-CND, a transfer-entropy and dynamic-mode-decomposition framework for localized early warning of geographic tipping points by modeling spatial fields as time-evolving directed causal networks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Localized early warning for geographic tipping points in ecosystems, climate subsystems, and ice sheets, where classical global spatial indicators such as Moran&amp;#x27;s I can fail under spatial dilution, Euclidean-neighborhood assumptions, and correlated noise.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; ST-CND builds a directed information-flow topology using transfer entropy, estimates local recovery rates for candidate subnetworks with dynamic mode decomposition, and ranks vulnerable subnetworks using internal fluctuation, internal synchronization, and low external coupling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element described in the abstract is combining causal network inference with local dynamical recovery diagnostics to replace fixed Euclidean neighborhoods and reduce false alarms from spatially correlated noise.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Validated on synthetic bifurcations and two observational SST benchmarks; on the North Atlantic AMOC task, ST-CND reports AUROC 0.783 and critical-subnetwork IoU 0.378, outperforming recurrence-network and lambda-AR1 baselines.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code, data availability, ablations, statistical uncertainty, robustness tests, parameter sensitivity, affiliations, citation signals, DOI, or peer-review venue.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because the central framework uses transfer entropy to infer directed causal/information-flow networks for spatial early-warning diagnostics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, transfer-entropy, spatiotemporal-modeling, early-warning-signals, climate-science, dynamic-mode-decomposition, network-diagnostics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the ST-CND pipeline diagram showing spatial nodes, transfer-entropy directed edges, candidate subnetworks, DMD recovery-rate estimation, and final vulnerable-subnetwork ranking.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zhaoyuan Yu, Zhangyong Liang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17553v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>FoundCause: Causal Discovery with Latent Confounders from Observational Data</title>
+      <link>http://arxiv.org/abs/2606.17516v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17516v1</guid>
+      <pubDate>Tue, 16 Jun 2026 04:50:01 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 61/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 45, Paper 50, Empirical 78, Reproducibility 70, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No DOI, journal, or conference venue in metadata., No citation count or h-index metadata supplied., No explicit affiliations supplied, aside from an amazon-science GitHub link., No ablation results in the abstract., No statistical significance or confidence intervals reported in the abstract., No dataset names or scenario details in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16.; Abstract claims training entirely on synthetic structural causal models.; Abstract claims explicit latent confounder modeling via learnable latent tokens.; Abstract reports comparisons against 11 classical and 4 amortized causal discovery methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; FoundCause is an amortized transformer-based causal discovery model trained on synthetic SCMs to infer causal graphs, including latent confounders, from observational data in a single forward pass.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies causal discovery from observational data, specifically recovering directed causal structure and latent confounding when interventions are unavailable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes FoundCause, an amortized causal discovery architecture trained entirely on synthetic structural causal models. The model uses a permutation-invariant transformer with alternating sample/variable attention, statistics-conditioned attention from pairwise asymmetry measures, a factorized edge/direction decoder, triangular motif refinement, masked handling of missing data, and a latent-token confounder module.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main claimed novelty is explicitly modeling latent confounding within an amortized causal discovery model, while combining learned synthetic-data transfer with classical causal asymmetry features and higher-order motif reasoning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, FoundCause outperforms 11 classical non-amortized methods and 4 amortized methods on 15 real-world datasets, with +9.6% F1, +1.2% AUROC, and 18.9% lower structural Hamming distance versus the strongest non-amortized methods, while requiring only one forward pass at inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report ablations, statistical uncertainty, robustness tests, details of the 15 datasets, failure cases, or how synthetic-training assumptions affect real-world generalization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;quot;causal discovery&amp;quot; because it directly targets observational causal graph recovery, compares against PC/GES/NOTEARS-style methods, and focuses on latent confounders, a central challenge in causality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, latent confounding, observational data, amortized inference, transformer, synthetic SCMs, graph learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the FoundCause architecture or pipeline figure showing the alternating sample/variable transformer encoder, statistics-conditioned attention, factorized decoder, triangular refinement, and latent confounder module.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Patrick Blöbaum, Krishnakumar Balasubramanian, Shiva Prasad Kasiviswanathan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17516v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+    </item>
+    <item>
+      <title>WeaveLA: Event Driven Cross-Subtask Latent Memory Weaving for Repetitive Robot Manipulation</title>
+      <link>http://arxiv.org/abs/2606.17463v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17463v1</guid>
+      <pubDate>Tue, 16 Jun 2026 03:25:34 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 45, Paper 40, Empirical 70, Reproducibility 35, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index, DOI or venue acceptance, open-source code, repository quality, public implementation details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16 in cs.CV and cs.RO.; Method is described as a frozen VLA backbone plus event-triggered latent memory routed into action generation.; Evaluation uses RoboMME with a pi_0.5 backbone and reports SwingXtimes N=3 success rising from 0% to 47.8%.; Abstract claims single-execution episodes remain unchanged and paired analysis localizes gains to causally dependent tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; WeaveLA adds event-triggered latent memory tokens to a frozen VLA policy so repetitive robot manipulation tasks can carry information from one completed subtask into the next action-generation step.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies brittleness in short-window Vision-Language-Action policies on multi-stage or repetitive manipulation tasks where later subtasks depend on information produced by earlier subtasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes WeaveLA, a cross-subtask memory interface layered on a frozen VLA backbone: after each sub-goal completion event, the completed segment is compressed into latent tokens using query-driven attention pooling, then routed into the action-generation path for the next subtask.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty claimed in the abstract is an explicit subtask-to-subtask hand-off at sub-goal completion events, injected on the action side, rather than frame-level memory writing, demonstration-stage retrieval, or event-triggered memory without direct action-expert routing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On RoboMME with a pi_0.5 backbone, WeaveLA improves the hardest repetition slice, SwingXtimes with N=3, from 0% to 47.8% success, while single-execution episodes remain unchanged; paired analysis attributes gains to tasks requiring cross-subtask information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code, ablations, broader benchmarks beyond RoboMME, robustness tests, statistical confidence intervals, or real-robot validation; the result may be specific to repetitive tasks with clear sub-goal completion events.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The matched query is causality, and the paper explicitly targets tasks whose causal structure requires information transfer across subtasks, making it relevant despite being primarily a robotics/VLA memory paper rather than a causal inference paper.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; vision-language-action, robot manipulation, latent memory, cross-subtask reasoning, event-triggered memory, causal structure, RoboMME&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the WeaveLA pipeline: completed subtask segment -&amp;gt; query-driven attention pooling -&amp;gt; latent memory tokens -&amp;gt; action-generation path for the next subtask on top of a frozen VLA backbone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Shoujing Zhu, Zhenyang Liu, Fungmiu Wang, Jiafeng Wang, Bo Yue, Guiliang Liu, Simo Wu, Xiangyang Xue, Taiping Zeng&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17463v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.RO</category>
+    </item>
+    <item>
+      <title>MODE-RAG: Manifold Outlier Diagnosis and Energy-based Retrieval-Augmented Generation Evaluation</title>
+      <link>http://arxiv.org/abs/2606.17449v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17449v1</guid>
+      <pubDate>Tue, 16 Jun 2026 03:06:35 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 51/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 62, Empirical 55, Reproducibility 25, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations not supplied, citation or h-index signals not supplied, DOI not supplied, journal reference not supplied, code repository not supplied, public data release details not supplied&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-16.; Comment says: To be presented at ACL 2026.; The abstract names MODE-RAG as a multi-agent system driven by Variational Free Energy and internal attention states.; The method routes high-risk queries to five stage-specific agents and integrates MCTS for causal derivation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MODE-RAG proposes a dynamically gated multi-agent framework for reducing cross-modal hallucinations, causal fabrications, and sycophancy in multimodal retrieval-augmented generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies hallucination failure modes in M-RAG systems, especially cross-modal mismatches, causal fabrications, and sycophantic generations that can cascade when multimodal reasoning is left unguided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes MODE-RAG, a multi-agent system using Variational Free Energy and internal attention states to decide when to intervene; high-risk queries are routed through five stage-specific agents, with MCTS for causal derivation, logit perturbations to penalize sycophancy, and Correction/Overseer agents for formatting stability and post-hoc factual verification.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty claimed in the abstract is dynamic intervention gating for M-RAG hallucination mitigation, combining VFE/attention-based risk diagnosis with agent routing, MCTS-based causal reasoning, and sycophancy-targeted logit perturbation rather than relying on static rules or fully unguided generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports extensive experiments showing reduced hallucination rates and logical fabrication on ModeVent, a challenging subset derived from MultiVent, but it does not provide numerical gains, baselines, or statistical details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The supplied metadata/abstract does not disclose exact metrics, baseline systems, ablations, robustness tests, code availability, data release details, or implementation specifics; the effectiveness claim is therefore not independently assessable from the abstract alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the &amp;#x27;causality&amp;#x27; feed because it explicitly targets causal fabrications in multimodal RAG and uses MCTS for causal derivation, though the work appears more focused on hallucination mitigation than on general causal inference methodology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; multimodal RAG, hallucination mitigation, causal fabrication, multi-agent systems, MCTS, sycophancy, vision-language models, ACL 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework figure would be useful: VFE/attention risk diagnosis, dynamic intervention gate, routing to five agents, MCTS causal derivation, logit perturbation, Correction agent, Overseer verification, and final M-RAG output.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zehang Wei, Jiaxin Dai, Jiamin Yan, Xiang Xiang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17449v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.AI</category>
+      <category>cs.CV</category>
+      <category>cs.LG</category>
+      <category>cs.MM</category>
+    </item>
+    <item>
+      <title>A Closer Look at Failure Modes in Temporal Understanding of Large Audio-Language Models</title>
+      <link>http://arxiv.org/abs/2606.17417v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17417v1</guid>
+      <pubDate>Tue, 16 Jun 2026 01:57:56 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 55/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 72, Empirical 68, Reproducibility 35, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index signals not supplied., DOI and journal reference absent., Code availability not supplied., Public data or benchmark release status not supplied., Evaluated model list not specified in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Accepted to Interspeech 2026.; arXiv version is v1, published 2026-06-16.; Introduces a benchmark with 1,657 questions across three foundational tasks.; Reports causal mechanistic analysis of temporal reasoning failures in LALMs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies why Large Audio Language Models fail at temporal audio reasoning and introduces a benchmark plus causal attention-based mechanistic analyses to diagnose and partially improve those failures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; LALMs perform well on many audio understanding tasks but struggle with temporal reasoning, and existing benchmarks mainly expose performance gaps without explaining the mechanisms behind the failures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors introduce a 1,657-question benchmark across three temporal reasoning tasks, run behavioral analyses under varying input settings, and perform causal mechanistic interventions on attention over audio tokens, including attention upweighting, scaling, bottleneck-layer targeting, and task-relevant token targeting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, based on the abstract, is a benchmark designed for mechanistic analysis of LALM temporal reasoning plus a claimed first causal mechanistic analysis showing that redistributing attention across audio tokens can matter more than simply increasing audio attention.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Attention scaling at bottleneck layers improves accuracy from 55.9% to 59.1% without fine-tuning; the abstract also reports that models often under-use audio when textual cues are available and that task-relevant token targeting yields further gains.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify the evaluated models, datasets beyond the new benchmark, baselines, ablations, statistical significance, robustness checks, code release, or whether the benchmark/data will be public.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query &amp;#x27;causality&amp;#x27; because it frames LALM temporal reasoning failures through causal mechanistic analysis rather than only benchmark evaluation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; large-audio-language-models, temporal-reasoning, causal-mechanistic-analysis, attention-intervention, audio-language-benchmark, cs.SD, cs.LG&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the proposed benchmark/pipeline and the causal attention intervention setup, especially where bottleneck layers and task-relevant audio tokens are targeted.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Apoorva Kulkarni, Kaousheik Jayakumar, Sreyan Ghosh, Sarah Wiegreffe, Dinesh Manocha, Ramani Duraiswami&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17417v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.SD</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Visuals Lie, Consistency Speaks: Disentangling Spatial Attention from Reliability in Vision-Language Models</title>
+      <link>http://arxiv.org/abs/2606.17389v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17389v1</guid>
+      <pubDate>Tue, 16 Jun 2026 00:58:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 16, Paper 55, Empirical 70, Reproducibility 70, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Author citation or h-index signals not supplied., No DOI or journal reference supplied., Dataset names and scenario coverage not specified in the abstract., Baselines against existing reliability methods not specified., Ablations and statistical robustness not specified.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Accepted to the ICLR 2026 Workshop on Multimodal Intelligence.; Code link is provided in the arXiv comment.; Abstract reports a systematic cross-family VLM study.; Abstract gives quantitative correlations: spatial attention R approximately 0.001 with accuracy; self-consistency R = 0.429.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that spatial attention maps are poor reliability signals for contemporary VLMs, while generation-time self-consistency and hidden-state probes better predict truthful answers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to detect when multimodal foundation models are reliable or hallucinating, especially whether visual attention/grounding patterns can serve as confidence signals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors propose the VLM Reliability Probe (VRP), a cross-family study using structural-attention metrics such as cluster counts, spatial entropy, layerwise entropy change, self-consistency across sampled reasoning paths, hidden-state probes, and causal interventions on model layers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim from the abstract is a direct challenge to the Attention-Confidence Assumption: visual attention concentration is empirically detached from answer correctness, and reliability is instead tied to generation dynamics and internal-state distributions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Spatial attention reportedly has near-zero correlation with accuracy (R approximately 0.001), while self-consistency is the strongest reported predictor of truth (R = 0.429). Causal interventions also reveal architectural differences between LLaVA and PaliGemma/Qwen2-VL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify datasets, task coverage, baselines against existing reliability estimators, statistical uncertainty, ablations, or whether the released code fully reproduces all experiments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it uses causal interventions to test where reliability information is represented inside VLM architectures, though its primary focus is VLM reliability rather than causal inference theory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; vision-language-models, reliability, hallucination-detection, attention-analysis, self-consistency, causal-interventions, hidden-state-probing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s VRP pipeline or architecture/intervention figure showing attention metrics, hidden-state probes, self-consistency sampling, and causal layer interventions across VLM families.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Logan Mann, Yi Xia, Ajit Saravanan, Ishan Dave, Saadullah Ismail, Shikhar Shiromani, Emily Huang, Ruizhe Li, Kevin Zhu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17389v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Transformer-Based Warm-Starting for Feasible and Optimal Terminal Approach to Tumbling Objects with Space Manipulators</title>
+      <link>http://arxiv.org/abs/2606.17317v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17317v1</guid>
+      <pubDate>Mon, 15 Jun 2026 21:54:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 35, Empirical 78, Reproducibility 30, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index signals, DOI, venue, or journal reference, open-source code repository, public dataset or scenario generator, full baseline list&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-15 with no DOI or journal reference in supplied metadata.; Abstract reports evaluation across 300 held-out scenarios.; Abstract compares linear and flow-matching action decoders under different action chunking and training dataset sizes.; Reported gains include up to 28% fewer second-stage SCP iterations and 23% lower runtime.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a causal-transformer warm-start for the computational bottleneck in sequential convex programming for terminal approach trajectories of space manipulators toward tumbling targets, reporting up to 23% runtime reduction on held-out scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Real-time trajectory generation for on-orbit robotic servicing is difficult because spacecraft bus motion, manipulator dynamics, visibility constraints, and trajectory-level safety constraints are nonlinearly coupled.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The framework splits planning into a system center-of-mass translational planning stage and a coupled attitude-manipulator torque-allocation stage, then applies a causal transformer warm-start to the second SCP stage; linear and flow-matching action decoders are compared across action chunking and training-set sizes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is using sequence-model warm-starts, specifically a causal transformer, to accelerate and stabilize the dominant SCP stage for space-manipulator terminal guidance rather than relying on heuristic initialization alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across 300 held-out scenarios, learned warm-starts reduce second-stage SCP iterations by up to 28% and runtime by 23% while preserving the final control-cost distribution; for nonconvex feasibility projection, they nearly halve runtime relative to cost-optimal SCP and avoid high-cost tails seen with heuristic initialization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not mention open-source code, public datasets, statistical uncertainty, detailed baselines beyond heuristic initialization, robustness tests outside the 300 scenarios, or real hardware/flight validation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query through the phrase &amp;#x27;causal transformer&amp;#x27;; it is relevant if the feed is tracking causal sequence models or transformer-based planning, but less relevant if the intended topic is causal inference or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robotics, space robotics, trajectory optimization, sequential convex programming, transformer, warm-starting, optimal control&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the framework/pipeline figure showing the two-stage planning decomposition and where the causal-transformer warm-start feeds into the attitude-manipulator SCP stage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yuji Takubo, Maximilian Adang, Mac Schwager, Simone D&amp;#x27;Amico&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17317v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+      <category>cs.AI</category>
+      <category>math.OC</category>
+    </item>
+    <item>
+      <title>Kernel-Based Functional Balancing for Causal Inference with Compositional Treatments</title>
+      <link>http://arxiv.org/abs/2606.17308v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17308v2</guid>
+      <pubDate>Mon, 15 Jun 2026 21:24:58 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 55, Empirical 60, Reproducibility 40, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index information, DOI or peer-reviewed venue, open-source code, public data availability, specific datasets&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v2 paper in stat.ME and stat.ML, updated 2026-06-17.; Abstract explicitly targets causal effect estimation with compositional treatments on a simplex.; Method uses RKHS worst-case balancing error rather than a treatment assignment model.; Claims sqrt(n)-consistency and asymptotic normality around a sample-specific target.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a kernel-based functional balancing and augmented weighted estimation framework for causal effect estimation when treatments are compositional vectors on a simplex.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies causal effect estimation for compositional treatments, where exposure values are proportions constrained to a simplex rather than binary, scalar, or unconstrained multivariate treatments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors construct weights by minimizing worst-case covariate-treatment balancing error over an RKHS on the joint treatment-covariate space, then combine these weights with kernel ridge regression outcome estimation in an augmented weighted estimator. They formulate the estimator as a finite-dimensional convex optimization problem using a representer theorem and low-rank approximation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, based on the abstract, is extending functional balancing to compositional treatment spaces and avoiding explicit treatment-assignment model estimation while still claiming root-n consistency for an augmented estimator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract claims sqrt(n)-consistency without requiring consistent weight estimation or smoothness of the weights, plus asymptotic normality around a sample-specific target. Empirical evidence is said to include simulations and a real data application, but no quantitative results are provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report baselines, effect sizes, datasets, code availability, robustness checks, or how strong the real-data evidence is. The asymptotic normality target is sample-specific, which may limit direct interpretability relative to a fixed population estimand.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured causal inference query and is especially relevant if the researcher tracks nonstandard treatment regimes, continuous/multivariate exposures, RKHS balancing, or causal estimands for compositional data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, compositional treatments, kernel methods, covariate balancing, RKHS, augmented weighted estimator, semiparametric estimation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; The paper likely contains useful figures because the metadata reports 3 figures; a pipeline diagram showing RKHS balancing weight construction followed by augmented weighted estimation would be the most useful image, but no direct image URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sungbum Kim, Jiayi Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17308v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+    </item>
+    <item>
+      <title>Semiparametric Mediation Analysis with Separately Observed Mediator and Outcome under Unmeasured Confounding</title>
+      <link>http://arxiv.org/abs/2606.17232v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.17232v1</guid>
+      <pubDate>Mon, 15 Jun 2026 19:26:28 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 50, Empirical 50, Reproducibility 35, Manuscript 80&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations absent from supplied metadata., Citation count and h-index absent., No DOI, journal, or conference reference supplied., No code repository or data availability statement supplied., No simulation metrics, baselines, ablations, or robustness results visible in the abstract., No quantitative empirical result for the dementia application in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper in stat.ME, published 2026-06-15.; Abstract states mediator M and outcome Y are never jointly observed in the target setting.; Uses shared instrumental variables and gives separate strategies for known and learned valid IVs.; Claims semiparametric influence-function estimators with multiple robustness and efficiency-bound attainment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes a causal data-fusion framework for mediation analysis when the mediator and outcome are observed in separate datasets, using shared instrumental variables to identify natural direct and indirect effects under unmeasured confounding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Standard mediation analysis for natural direct and indirect effects typically requires joint observation of mediator M and outcome Y, but many real-world studies observe M in one source and Y in another, breaking the usual identification strategy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper introduces a semiparametric data-fusion framework that combines two incomplete data sources through shared instrumental variables, supports known-IV and learned-IV settings, handles unmeasured confounding under a no-interaction condition, and allows covariate/exposure shifts under a latent alignment condition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is identification and efficient estimation of mediation effects without joint M,Y observation, using shared IV structure plus data-source alignment assumptions rather than complete-case or standard mediation identification.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, the main result is theoretical: two identification strategies, multiply robust influence-function-based estimators, and an estimator attaining the semiparametric efficiency bound under suitable conditions. The paper also reports an application to SNP rs610932, dementia risk, and immune-related gene-expression mediation, but the abstract gives no quantitative effect estimate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract relies on strong assumptions including valid shared IVs, no-interaction, and latent alignment; it does not report simulation results, baselines, robustness checks, code, data availability, or quantitative findings from the dementia application.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;quot;causality&amp;quot; because it targets causal mediation, unmeasured confounding, IV-based identification, and semiparametric causal effect estimation under incomplete data fusion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, mediation-analysis, data-fusion, instrumental-variables, semiparametric-estimation, unmeasured-confounding, statistics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; The paper metadata says it contains 2 figures, but no direct image URL is supplied. A useful image would likely be the framework or causal graph showing two data sources, shared IVs, mediator M, outcome Y, and the data-fusion identification pipeline.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sijia Li, Ruoyu Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.17232v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
     </item>
     <item>
       <title>The Value Axis: Language Models Encode Whether They're on the Right Track</title>
@@ -2123,245 +2370,6 @@
       <category>cs.CL</category>
       <category>cs.AI</category>
       <category>cs.LG</category>
-    </item>
-    <item>
-      <title>Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents</title>
-      <link>http://arxiv.org/abs/2606.11680v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11680v1</guid>
-      <pubDate>Wed, 10 Jun 2026 05:49:14 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; HORMA proposes a hierarchical file-system-like working memory for LLM agents that preserves raw trajectories while enabling efficient navigation-based retrieval for long-horizon tasks.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how LLM agents can maintain useful working memory over long-horizon, multi-step tasks without relying on ever-growing contexts that degrade reasoning quality, increase cost, and add latency.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; HORMA builds a hierarchical memory structure from agent experience, linking summarized entities to raw trajectories, then uses a lightweight reinforcement-learning-trained navigation agent to traverse the hierarchy and retrieve minimal sufficient context for the current task.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty is an organize-then-retrieve memory framework that explicitly preserves temporal structure and causal dependencies by connecting summaries to raw experience, instead of depending only on lossy compression or similarity-based retrieval.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, HORMA improves task performance under constrained context budgets across ALFWorld, LoCoMo, and LongMemEval, using at most 22.17% of baseline token usage in long conversation tasks while improving efficiency-performance trade-offs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify exact accuracy gains, ablation results, training cost for the retrieval agent, or whether the method scales to very large real-world agent histories beyond the evaluated benchmarks.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it targets memory retrieval methods that preserve temporal structure and causal dependencies needed for multi-step agent behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM agents, working memory, hierarchical retrieval, long-horizon tasks, causal dependencies, reinforcement learning, agent memory&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or architecture diagram showing HORMA&amp;#x27;s two stages: hierarchical memory construction linking summaries to raw trajectories, followed by navigation-based retrieval through the memory tree.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hao-Lun Hsu, Nikki Lijing Kuang, Boyi Liu, Zhewei Yao, Yuxiong He&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11680v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-      <category>cs.CL</category>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>The Periodic Table of LLM Reasoning: A Structured Survey of Reasoning Paradigms, Methods, and Failure Modes</title>
-      <link>http://arxiv.org/abs/2606.11470v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11470v1</guid>
-      <pubDate>Tue, 09 Jun 2026 21:59:37 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 40/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 52, Empirical 35, Reproducibility 15, Manuscript 62&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI or peer-reviewed venue, citation or influential-citation hints, explicit paper-selection protocol, code or repository&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09 in cs.CL.; Abstract states the survey analyzes more than 300 recent papers.; Claims a structured taxonomy of LLM reasoning paradigms.; Explicitly lists weak causal abstraction among recurring failure modes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This arXiv v1 survey organizes recent work on LLM reasoning into a broad taxonomy and highlights recurring failure modes, including weak causal abstraction, but it is only tangentially aligned with a causality-focused feed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies why reliable reasoning in LLMs remains difficult despite progress in structured inference, multi-step problem solving, and contextual understanding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It presents a systematic survey of more than 300 recent papers from arXiv, Semantic Scholar, Google Scholar, Papers with Code, and ACL Anthology, organized into a taxonomy of reasoning paradigms and methodological trends.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty claimed in the abstract is a unified structured taxonomy spanning CoT, multi-hop, mathematical, commonsense, visual, temporal, code, retrieval-augmented, tool-augmented, agentic, and reinforcement-learning-based reasoning, together with synthesized failure modes and future directions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No new empirical result is reported in the abstract; the main outcome is a literature synthesis identifying common limitations such as reasoning hallucinations, brittle multi-step inference, weak causal abstraction, and poor cross-domain generalization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not mention quantitative survey methodology, selection criteria, inter-annotator agreement, benchmark reanalysis, code/data release, ablations, or robustness checks.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; only because it explicitly discusses weak causal abstraction as an LLM reasoning failure mode; the paper is broader than causality and appears primarily useful as background on LLM reasoning taxonomies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM reasoning, survey, taxonomy, chain-of-thought, multi-hop reasoning, agentic reasoning, causal abstraction, failure modes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A taxonomy or framework figure mapping LLM reasoning paradigms, methods, and failure modes would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Avinash Anand, Mahisha Ramesh, Avni Mittal, Ashutosh Kumar, Erik Cambria, Zhengkui Wang, Timothy Liu, Aik Beng Ng, Simon See, Rajiv Ratn Shah&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11470v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CL</category>
-    </item>
-    <item>
-      <title>Bayesian Causal Machine Learning for Cure Models</title>
-      <link>http://arxiv.org/abs/2606.11405v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11405v1</guid>
-      <pubDate>Tue, 09 Jun 2026 19:55:11 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 48/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 40, Empirical 70, Reproducibility 25, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation and h-index information not supplied., No DOI, journal, or conference venue supplied., No code repository or implementation details mentioned in the abstract., No public data or reproducibility package mentioned., No quantitative simulation metrics reported in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Defines causal effects for survival settings with a cured subpopulation.; Proposes BartCure, a Bayesian causal machine learning approach.; Decomposes RMST causal effects into stochastic cure and stochastic latency components.; Reports simulations and an application to the CALGB 40101 breast cancer trial.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper introduces BartCure, a Bayesian causal machine learning approach for decomposing treatment effects in survival settings with a cured subpopulation into cure-probability and latency mechanisms.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies causal effect estimation in survival studies where treatment may work either by increasing the probability of cure or by delaying failure among patients who are not cured, including whether these mechanisms vary across subpopulations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It defines causal estimands for cure-model settings and proposes BartCure, a Bayesian causal machine learning method to estimate average and subgroup effects, including a decomposition of restricted mean survival time effects into stochastic cure and stochastic latency components.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a causal framework for cure models that separates treatment benefit into cure and latency mechanisms, connecting these effects to stochastic intervention effects and principal-strata causal effects rather than only estimating finite-horizon survival or RMST.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, simulations show BartCure is competitive for average-effect estimation and especially effective at conservatively detecting the direction of treatment-effect heterogeneity; the method is also applied to the CALGB 40101 breast cancer trial.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative metrics, comparison baselines, ablations, robustness checks, code availability, or detailed dataset coverage, so empirical strength and reproducibility cannot be fully assessed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;quot;causality&amp;quot; because it proposes new causal estimands and a causal machine learning method for survival analysis with cure structures and heterogeneous treatment effects.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, survival analysis, cure models, Bayesian machine learning, heterogeneous treatment effects, restricted mean survival time&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework diagram showing how BartCure separates treatment effects into cure-probability and latency components and how these combine into RMST effects.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Antonio R. Linero, F. Javier Rubio, Piyali Basak&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11405v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>stat.ME</category>
-      <category>stat.AP</category>
-    </item>
-    <item>
-      <title>Next Forcing: Causal World Modeling with Multi-Chunk Prediction</title>
-      <link>http://arxiv.org/abs/2606.11187v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11187v1</guid>
-      <pubDate>Tue, 09 Jun 2026 17:59:22 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 45, Empirical 78, Reproducibility 35, Manuscript 72&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index not supplied., No DOI, conference, journal, or peer-review status supplied., No code repository or license mentioned in supplied metadata., No ablation, statistical significance, robustness, compute cost, or failure-case details visible in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09 in cs.CV.; Abstract states explicit comparison to LingBot-VA at 50 fps with 93.1% relative improvement at 5k steps.; Abstract reports 2.3x faster convergence and 2x inference acceleration.; Abstract reports RoboTwin Clean/Random scores of 94.1/93.5 and improvements on PhyWorld and FVD.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Next Forcing proposes a multi-chunk prediction framework for causal world/action video models that adds auxiliary future-chunk denoising modules to improve training speed, accuracy, and inference latency.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies slow convergence, limited high-frame-rate accuracy, and slow iterative-denoising inference in autoregressive video generation for World Action Models, arguing that standard supervision over only the current chunk gives weak signals about future dynamics.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces Next Forcing, a multi-chunk prediction objective with lightweight auxiliary MCP modules that denoise multiple future chunks at horizons next^1, next^2, and next^3. The modules form a causal prediction chain, fuse intermediate features from multiple main-model layers, and can be kept at inference to predict the next chunk in parallel with the current chunk.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel element is dense multi-scale temporal supervision across future video chunks, inspired by multi-token prediction in LLMs, plus a training-time auxiliary module design that can also be reused for 2x faster inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: at 50 fps, Next Forcing reports a 93.1% relative improvement over LingBot-VA at 5k training steps, 2.3x faster convergence, RoboTwin Clean/Random scores of 94.1/93.5%, significant PhyWorld gains, over 50% FVD reduction in general video pretraining, and 2x inference acceleration.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code availability, ablations, statistical robustness, implementation cost, model size overhead, or whether gains persist across many architectures beyond the named benchmarks.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the keyword &amp;#x27;causality&amp;#x27; because it focuses on causal world modeling and future-dynamics prediction, although the abstract appears to use &amp;#x27;causal&amp;#x27; in the temporal/autoregressive modeling sense rather than causal inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal-world-modeling, autoregressive-video-generation, world-action-models, multi-chunk-prediction, robotics-benchmarks, video-denoising&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the Next Forcing pipeline: the main causal video model, auxiliary MCP modules for next^1/next^2/next^3 chunk denoising, the causal chain across future horizons, feature fusion from intermediate layers, and parallel next-chunk inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Gangwei Xu, Qihang Zhang, Jiaming Zhou, Xing Zhu, Yujun Shen, Xin Yang, Yinghao Xu&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11187v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CV</category>
-    </item>
-    <item>
-      <title>Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization</title>
-      <link>http://arxiv.org/abs/2606.11180v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11180v1</guid>
-      <pubDate>Tue, 09 Jun 2026 17:56:36 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 50, Empirical 70, Reproducibility 35, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation count or h-index, DOI, venue, or peer-review status, code repository, public data or benchmark names, full baseline list&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract states the method distills a 14B audio-conditioned bidirectional video diffusion teacher into causal students.; Abstract reports two denoising steps and no inference-time CFG.; Abstract reports 31 FPS for the 1.3B student and 17.6x speedup over a same-scale bidirectional model.; Abstract reports 39.8x speedup for the 14B student over its teacher at comparable reference fidelity.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Lip Forcing distills a large bidirectional audio-conditioned video diffusion lip-sync teacher into causal autoregressive students that generate real-time lip-synchronized video chunks in two denoising steps.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to make diffusion-based video-to-video lip synchronization practical for real-time inference, since standard bidirectional full-sequence attention and many denoising steps are too slow despite strong visual quality and audio-visual alignment.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes an autoregressive diffusion framework, Lip Forcing, that distills a 14B audio-conditioned bidirectional video diffusion teacher into causal student models. The method uses teacher-trajectory analysis to design Sync-Window DMD, a two-step inference schedule, and a SyncNet-based reward, avoiding inference-time classifier-free guidance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a few-step causal/autoregressive diffusion approach for V2V lip synchronization, derived from an analysis of a CFG fidelity-sync tradeoff and enabling streaming-style generation rather than full bidirectional sequence processing.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: a 1.3B student reaches real-time streaming at 31 FPS, 17.6x faster than its same-scale bidirectional model; a 14B student runs 39.8x faster than its teacher at comparable reference fidelity; time-to-first-frame is sub-millisecond at both scales.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The supplied abstract does not provide dataset names, benchmark details, code availability, ablations beyond the named components, robustness analysis, human evaluation details, or external validation; the claimed first/fastest status cannot be verified from the abstract alone.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because its central technical move is replacing bidirectional diffusion inference with causal autoregressive student models for real-time lip synchronization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; cs.CV, lip synchronization, video diffusion, autoregressive generation, causal modeling, distillation, real-time inference, video-to-video&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the framework/pipeline diagram showing the 14B bidirectional teacher, causal student distillation, Sync-Window DMD, two-step schedule, and streaming chunk generation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Paul Hyunbin Cho, Jinhyuk Jang, SeokYoung Lee, Joungbin Lee, Siyoon Jin, Heeseong Shin, Jung Yi, Yunjin Park, Chulmin Park, Seungryong Kim&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11180v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CV</category>
-    </item>
-    <item>
-      <title>Empirical stratification for treatment effect heterogeneity with post-treatment variables</title>
-      <link>http://arxiv.org/abs/2606.11013v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.11013v1</guid>
-      <pubDate>Tue, 09 Jun 2026 15:53:00 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 39, Paper 45, Empirical 50, Reproducibility 30, Manuscript 78&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal, or conference venue, citation or influential-citation counts, open-source code, public data availability&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper posted 2026-06-09 in stat.ME.; Defines empirical scores using predicted potential post-treatment-variable responses based on baseline covariates.; Claims empirical-stratum treatment effects are identifiable under standard causal assumptions.; Connects average ETEs to principal causal effects under principal ignorability.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes an assumption-lean empirical stratification framework for estimating treatment effect heterogeneity with respect to post-treatment variables without directly conditioning on observed post-treatment values.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Existing heterogeneous treatment effect methods usually condition on baseline covariates, while conditioning on observed post-treatment variables can create endogenous selection bias; principal stratification addresses this but often relies on latent strata and strong identifying assumptions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors define empirical scores from predicted potential post-treatment-variable responses using baseline covariates, construct accessible empirical strata, define empirical-stratum treatment effects, connect them to principal causal effects, and develop efficient influence-function-based semiparametric estimators plus projected ETE curves.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is replacing latent principal strata or biased conditioning on observed post-treatment variables with identifiable empirical strata based on predicted potential post-treatment responses, while retaining a formal connection to principal stratification under principal ignorability.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that ETEs are identifiable under standard causal assumptions and that the framework is illustrated in two real-world applications, but it does not provide quantitative empirical results.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report datasets, numerical findings, baselines, ablations, robustness checks, software, or data availability; the assumptions behind predicted potential post-treatment responses are only summarized at a high level.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the causality query because it studies causal treatment effect heterogeneity, post-treatment variables, principal stratification, identifiability, and semiparametric causal inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, treatment effect heterogeneity, post-treatment variables, principal stratification, semiparametric inference, stat.ME&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework diagram showing baseline covariates feeding into predicted potential post-treatment-variable responses, empirical score construction, empirical strata, and ETE estimation with the link to principal stratification.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Chao Cheng, Rui Wang, Yichi Zhang&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.11013v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>stat.ME</category>
-    </item>
-    <item>
-      <title>Express Language Modeling</title>
-      <link>http://arxiv.org/abs/2606.10944v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.10944v1</guid>
-      <pubDate>Tue, 09 Jun 2026 14:48:56 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 45, Empirical 60, Reproducibility 35, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, venue, or peer-review status, citation or influential-citation counts, open-source code link, public datasets or benchmark details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09.; Abstract claims Express converts non-causal attention approximations into causal approximations with matching guarantees.; Abstract reports log^(3/2)(n)/s approximation error with O(s) memory and O(s^2 log^2(n)) compression overhead when combined with Thinformer.; Abstract claims substantial speedups over FlashAttention 2 but gives no numeric benchmark details.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Express converts non-causal attention approximations into causal approximations with matched guarantees, targeting faster and more memory-efficient long-context language modeling.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to obtain efficient causal attention approximations for language models without losing the approximation guarantees available to stronger non-causal attention methods, especially under long-context and decoding resource constraints.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes Express, a tool/framework that transforms a non-causal attention approximation into a causal approximation, combines it with Thinformer, and implements the resulting method with an I/O-aware Triton kernel.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a general conversion from non-causal to causal attention approximation with matching guarantees, yielding improved known causal attention error and memory/compression bounds when paired with Thinformer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: Express with Thinformer achieves log^(3/2)(n)/s approximation error using O(s) memory and O(s^2 log^2(n)) compression overhead, shows substantial speedups over FlashAttention 2, and addresses four language-modeling bottlenecks: long-context prefill, KV cache compression, memory-constrained decoding, and compute-constrained decoding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide exact speedup numbers, benchmark settings, model sizes, datasets, ablations, robustness checks, code availability, or failure cases, so empirical strength and reproducibility cannot be fully assessed from the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query only if the feed uses &amp;#x27;causality&amp;#x27; broadly enough to include causal attention in autoregressive language modeling; it is not about causal inference or causal discovery.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal attention, attention approximation, long-context language modeling, KV cache compression, Triton, FlashAttention comparison, Thinformer&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the Express pipeline: starting from a non-causal attention approximation, converting it into a causal approximation, then applying it to long-context prefill, KV cache compression, and decoding bottlenecks.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Albert Gong, Annabelle Michael Carrell, Raaz Dwivedi, Lester Mackey&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10944v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.DS</category>
-      <category>math.ST</category>
-      <category>stat.ME</category>
-      <category>stat.ML</category>
-    </item>
-    <item>
-      <title>What Do Deepfake Speech Detectors Actually Hear?</title>
-      <link>http://arxiv.org/abs/2606.10912v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.10912v1</guid>
-      <pubDate>Tue, 09 Jun 2026 14:21:45 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 58/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 45, Empirical 78, Reproducibility 45, Manuscript 72&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index metadata not supplied., No DOI, journal, or conference signal supplied., No code repository or implementation-release signal in the abstract., No quantitative performance-degradation values in the abstract., No statistical robustness or uncertainty reporting visible in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09.; Uses Integrated Gradients on time-aligned self-supervised WavLM representations.; Evaluates three WavLM-based detectors: AASIST, CA-MHFA, and SLS.; Uses ASVspoof 5 and manual annotation of high-attribution regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes an audio-native explainability pipeline to identify and causally validate the temporal cues used by deepfake speech detectors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Deepfake speech detectors often produce opaque single-score decisions without indicating which parts of an audio signal or which acoustic cues caused a sample to be flagged.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors apply Integrated Gradients to time-aligned self-supervised WavLM representations for three WavLM-based detectors, then manually annotate high-attribution regions and test the explanations with causal masking of the identified cues.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is the combination of time-localized attribution, semantic annotation of detector cues, and causal masking validation to move from speculative detector explanations toward evidence-backed cue semantics in deepfake speech detection.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On ASVspoof 5, three similarly performing detectors appear to rely on different evidence: AASIST on non-speech/environment cues, CA-MHFA on localized phoneme artifacts, and SLS on word boundaries and spectral integrity; masking these primary cues degrades performance, supporting the explanations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative degradation values, detector baseline metrics, statistical robustness, code availability, ablations beyond causal masking, or whether the cue annotations generalize beyond ASVspoof 5 and the three tested detectors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the configured query &amp;#x27;causality&amp;#x27; because it uses causal masking to validate whether attributed audio regions are actually decision-relevant for deepfake speech detectors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; deepfake-speech-detection, explainability, integrated-gradients, causal-masking, WavLM, ASVspoof, audio-forensics&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the proposed pipeline: audio input, WavLM feature extraction, detector scoring, Integrated Gradients attribution over time, semantic cue annotation, and causal masking validation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Vojtěch Staněk, Veronika Jirmusová, Anton Firc, Kamil Malinka, Jakub Reš, Martin Perešíni&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10912v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.SD</category>
-      <category>cs.AI</category>
-      <category>cs.CR</category>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>When Do Autoregressive Sequence Models Forecast Physical Wavefields? A Controlled Study on Synthetic Seismograms</title>
-      <link>http://arxiv.org/abs/2606.10868v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.10868v1</guid>
-      <pubDate>Tue, 09 Jun 2026 13:46:14 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 51/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 22, Paper 50, Empirical 75, Reproducibility 35, Manuscript 82&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No affiliation metadata supplied., No citation count or h-index metadata supplied., No DOI, journal, or conference venue supplied., No code repository mentioned in the supplied metadata or abstract., No public dataset or data-generation details beyond synthetic seismograms in the abstract., No full baseline suite across other forecasting architectures described in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-09 in cs.LG and astro-ph.IM.; Uses synthetic three-component seismograms as a physically structured testbed.; Evaluates controlled intra-architecture ablations on free-running rollout with paired significance tests.; Reports multi-token prediction gives +0.040 median NCC over a single-token baseline.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies when causal autoregressive sequence models can stably forecast long-horizon oscillatory physical wavefields, using SeismoGPT on synthetic three-component seismograms.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Long free-running autoregressive forecasts of oscillatory signals accumulate small per-step errors into phase drift, and standard pointwise metrics may miss this instability.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors run controlled intra-architecture ablations of the SeismoGPT autoregressive forecaster on synthetic seismograms, evaluating free-running rollouts with paired significance tests and comparing design choices such as multi-token prediction, a horizon-embedding hybrid prediction head, and a cross-horizon STFT-magnitude coherence loss.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a controlled rollout-stability analysis for oscillatory physical wavefields, isolating which architectural and loss-design choices stabilize long-horizon forecasts rather than presenting another broad forecasting benchmark.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Multi-token prediction is reported as the dominant stabilizer, contributing almost all of the improvement over a single-token baseline with +0.040 median NCC; the hybrid prediction head and STFT-magnitude coherence loss add smaller consistent gains. The abstract also reports a sharp context-ratio threshold near one, below which rollout generalization collapses.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The study is limited to synthetic seismograms and one model family, SeismoGPT. The authors explicitly say it is not a benchmark of forecasting architectures. The main residual failure is polarity inversion, which the magnitude-based spectral loss cannot penalize, suggesting missing phase-aware objectives.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the query `causality` is indirect: the paper concerns causal/autoregressive forecasting models rather than causal inference. It is most relevant if the feed is intended to capture causal sequence modeling or physically constrained autoregressive dynamics.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; autoregressive forecasting, physical wavefields, seismograms, rollout stability, multi-token prediction, causal sequence models, phase drift&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or ablation figure showing SeismoGPT rollout, multi-token prediction, horizon embedding, STFT-magnitude coherence loss, and how phase drift or polarity inversion appears over long-horizon forecasts.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Waleed Esmail, Stuart Russell, Jana Klinge, Alexander Kappes, Christine Thomas&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10868v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>astro-ph.IM</category>
-    </item>
-    <item>
-      <title>K-Forcing: Joint Next-K-Token Decoding via Push-Forward Language Modeling</title>
-      <link>http://arxiv.org/abs/2606.10820v2</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.10820v2</guid>
-      <pubDate>Tue, 09 Jun 2026 13:02:00 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 41/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 18, Paper 40, Empirical 60, Reproducibility 25, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index signals, DOI or peer-reviewed venue, open-source code, implementation details sufficient for reproduction, public checkpoint or trained model&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v2, published 2026-06-09 and updated 2026-06-10.; Evaluated on LM1B and OpenWebText using a standard causal Transformer backbone.; Reports 2.4-3.5x speedup when generating k=4 tokens per forward pass.; Abstract states quality degradation is modest relative to the AR teacher.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; K-Forcing proposes distilling an autoregressive language model into a push-forward model that jointly decodes the next k tokens in one forward pass to improve high-load batch serving throughput.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies inefficient, memory-bound autoregressive token-by-token inference, especially under high-load batch serving where common acceleration methods such as speculative decoding or diffusion language models may not directly address industrial deployment constraints.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces K-Forcing, which trains a conditional push-forward mapping from independent uniform noise variables to a joint sample of multiple future tokens, reusing an AR teacher backbone and standard AR serving infrastructure. Training uses progressive self-forcing distillation to expand the prediction window while matching the teacher sequence distribution.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is joint fixed-length next-k-token decoding via a distilled push-forward mapping that remains compatible with conventional AR infrastructure, rather than relying on draft-model acceptance loops or a non-AR generation paradigm.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On LM1B and OpenWebText with a standard causal Transformer backbone, the abstract reports about 2.4-3.5x speedup for k=4 across batch sizes, with modest quality degradation versus the AR teacher.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide detailed quality metrics, baselines beyond broad method classes, ablations, robustness analysis, model scale, code availability, or deployment measurements beyond the reported speedup range.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the configured query &amp;#x27;causality&amp;#x27; appears weak: the paper concerns causal/autoregressive language modeling and causal Transformer backbones, not causal inference or causality as a scientific topic.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; language-modeling, inference-acceleration, autoregressive-decoding, distillation, push-forward-modeling, low-causality-relevance&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing AR teacher distillation into the K-Forcing push-forward mapper and one-pass joint next-k-token generation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zhiwei Tang, Yuanyu He, Yizheng Han, Wangbo Zhao, Jiasheng Tang, Fan Wang, Bohan Zhuang&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.10820v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-      <category>cs.CL</category>
     </item>
   </channel>
 </rss>
