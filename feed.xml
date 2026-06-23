@@ -9,8 +9,200 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Mon, 22 Jun 2026 07:14:41 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 08:27:07 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>Lift4D: Harmonizing Single-View 3D Estimation for 4D Reconstruction In-the-Wild</title>
+      <link>http://arxiv.org/abs/2606.23688v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23688v1</guid>
+      <pubDate>Mon, 22 Jun 2026 17:59:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 26, Paper 45, Empirical 55, Reproducibility 25, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; affiliations, citation count, h-index or author impact metadata, DOI, journal or conference venue, open-source code&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper in cs.CV, published 2026-06-22.; Abstract states the target setting is monocular video reconstruction of dynamic non-rigid objects with large deformations and occlusions.; Method includes causal latent conditioning, deformable 3D Gaussian Splatting, occlusion-aware optimization, and a view-conditioned diffusion prior.; Comment lists a webpage and demos: https://lift4d.github.io.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Lift4D proposes a test-time optimization framework for reconstructing dynamic non-rigid 4D objects from monocular in-the-wild video by combining temporally consistent single-view 3D priors, deformable 3D Gaussian Splatting, occlusion-aware fitting, and diffusion-based completion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies monocular 4D reconstruction of dynamic non-rigid objects under large deformation, severe occlusion, and in-the-wild video conditions, where direct 4D prediction lacks enough training data and deform-and-refine methods stop using learned priors after initialization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; Lift4D adapts a single-view 3D reconstruction model with causal latent conditioning to produce temporally consistent per-frame predictions, initializes a deformable 3D Gaussian Splatting representation, then refines it with occlusion-aware video optimization and a view-conditioned diffusion prior for unobserved regions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty is the test-time combination of temporally conditioned single-view 3D estimates with deformable 3DGS optimization and diffusion-prior completion, so learned priors guide both initialization and recovery of occluded or unobserved geometry rather than only the first frame or initial reconstruction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that Lift4D clearly improves over prior 4D reconstruction methods, especially on challenging in-the-wild sequences with severe occlusions and non-rigid motion, but gives no quantitative metrics or dataset details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The supplied abstract does not provide metrics, benchmark names, ablations, runtime, robustness analysis, code availability, public data, or failure cases; the relevance to the configured query &amp;#x27;causality&amp;#x27; appears mostly limited to causal latent conditioning rather than causal inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant if the feed uses &amp;#x27;causality&amp;#x27; broadly enough to include causal temporal conditioning in generative or reconstruction pipelines; otherwise this is primarily a computer vision 4D reconstruction paper, not a causality paper in the statistical or interventionist sense.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; 4D reconstruction, monocular video, non-rigid reconstruction, 3D Gaussian Splatting, test-time optimization, diffusion prior, causal latent conditioning, computer vision&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the Lift4D pipeline figure showing monocular video input, causal latent-conditioned single-view 3D predictions, deformable 3D Gaussian Splatting initialization/refinement, occlusion-aware sculpting, and diffusion-based completion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yehonathan Litman, Xiaoxuan Ma, Manan Shah, Nicolas Ugrinovic, Kris Kitani, Fernando De la Torre, Shubham Tulsiani&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23688v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>Causal Inference with Multiple Misclassified Exposures: A Control Variate-Adjusted Calibration Weighting Approach</title>
+      <link>http://arxiv.org/abs/2606.23656v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23656v1</guid>
+      <pubDate>Mon, 22 Jun 2026 17:41:52 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 32, Paper 45, Empirical 78, Reproducibility 35, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal or conference venue, open-source code, public data availability&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper in stat.ME and stat.AP, published 2026-06-22.; Abstract states calibration weighting and control variate estimators for causal inference with multiple misclassified binary exposures and clustered observations.; Abstract claims consistency without modelling the misclassification mechanism and double robustness inherited from component estimators.; Empirical application uses 651 cystic fibrosis patients ages 6-21 and reports effect estimates with a confidence interval for the sputum-based estimate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes calibration weighting plus control-variate estimators for causal inference when multiple binary exposures are misclassified, motivated by throat-swab versus sputum culture measurements in cystic fibrosis infection studies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies causal effect estimation with multiple misclassified binary exposures and clustered observations, where commonly used proxy measurements such as throat swabs have imperfect sensitivity and specificity relative to gold-standard sputum cultures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors develop calibration weighting estimators that treat exposure misclassification as a missing-data problem and add a control-variate adjustment that uses error-prone observations to reduce variance while preserving consistency of the gold-standard estimator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution, as supported by the abstract, is a framework for multiple misclassified exposures that combines calibration weighting with control variates, inherits double robustness from component estimators, and characterizes a bivariate efficiency ceiling caused by the probability of jointly correct classification.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Simulations reportedly confirm consistency and double robustness under model misspecification. In a cohort of 651 cystic fibrosis patients ages 6-21, swab-based estimates attenuated the estimated effect of P. aeruginosa on percent predicted FEV1 by about 69% relative to sputum-based estimates: -2.67 versus -8.52 percentage points, with a sputum-based 95% CI of -13.40 to -3.63.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code, data availability, detailed baselines, ablations, robustness checks beyond simulations under misspecification, affiliations, DOI, peer-review venue, or external validation beyond the cystic fibrosis cohort.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;#x27;causal inference&amp;#x27; because it proposes estimators for causal effects under exposure measurement error, a core problem in observational causal studies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, measurement error, misclassification, calibration weighting, control variates, double robustness, clustered data, cystic fibrosis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or causal diagram showing gold-standard sputum cultures, error-prone throat swabs, multiple binary exposures, calibration weighting, and the control-variate adjustment feeding into the causal effect estimator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Nandini Murali, Keith Barnatchez, Jordana E. Hoppe, Brandie D. Wagner, Kayleigh P. Keller, Kevin P. Josey&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23656v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>stat.AP</category>
+    </item>
+    <item>
+      <title>Causal Discovery in the Era of Agents</title>
+      <link>http://arxiv.org/abs/2606.23608v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23608v1</guid>
+      <pubDate>Mon, 22 Jun 2026 17:09:22 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 55, Paper 48, Empirical 38, Reproducibility 50, Manuscript 76&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index metadata, DOI or peer-reviewed venue, open-source code repository details, public dataset details, quantitative metrics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-06-22.; Abstract explicitly contrasts the proposal with approaches where LLMs infer pairwise directions, propose graphs, or provide priors/constraints.; Proposed platform is causal-learn+, built around the causal-learn ecosystem.; Abstract reports a Big Five personality data case study.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that LLM agents should support causal-discovery workflows without supplying causal edges, priors, constraints, or conclusions, and instantiates this position in the causal-learn+ platform.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to use LLM/agent systems in causal discovery without letting textual associations, prompt artifacts, or hallucinated mechanisms contaminate causal evidence that should come from data, assumptions, formal algorithms, diagnostics, and expert decisions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes a workflow principle and platform, causal-learn+, where agents assist with data inspection, context retrieval, assumption explanation, method recommendation, preprocessing, expert-knowledge incorporation, formal discovery, and interpretation around the causal-learn algorithm ecosystem, while causal claims remain outside the agent&amp;#x27;s authority.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a role separation framework for agent-assisted causal discovery: agents can coordinate and explain the workflow, but must not generate graph edges, orientations, priors, constraints, or causal conclusions as evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports a case study on Big Five personality data illustrating the agent-assisted causal-discovery pipeline, but does not provide quantitative performance metrics, baselines, or robustness results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence appears limited to a platform description and one case study in the abstract; no baselines, ablations, statistical validation, user study, open-source repository details, or data availability are stated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;quot;causal discovery&amp;quot; because it addresses how agents and LLMs should be integrated into causal-discovery workflows while preserving formal causal-evidence standards.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, LLM agents, causal-learn, workflow platform, human-in-the-loop causality&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing the causal-learn+ workflow: data inspection, preprocessing, agent-assisted context and assumption explanation, method recommendation, expert-knowledge input, formal causal discovery, diagnostics, and interpretation, with a clear boundary preventing agents from supplying causal claims.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yujia Zheng, Vishal Verma, Mantej Gill, Haoyue Dai, Peter Spirtes, Kun Zhang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23608v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+      <category>cs.SE</category>
+      <category>stat.AP</category>
+    </item>
+    <item>
+      <title>Evaluation Awareness Is Not One Capability: Evidence from Open Language Models</title>
+      <link>http://arxiv.org/abs/2606.23583v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23583v1</guid>
+      <pubDate>Mon, 22 Jun 2026 16:48:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 55/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 50, Empirical 85, Reproducibility 25, Manuscript 85&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index data, DOI, journal or conference venue, open-source code, public datasets&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Eight experiments across 37 open-weight models and seven families are reported in the abstract.; Detection, behavior-shift, representation-probe, steering, and correlation results are quantified.; The abstract explicitly claims evaluation awareness dimensions are weakly coupled.; arXiv v1 only; DOI, journal reference, and comment fields are empty in supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that language-model evaluation awareness is a multivariate safety risk, not a single capability, using experiments on open-weight models to show that detecting evaluation cues, changing safety behavior, and steerable internal representations can diverge.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Safety benchmarks often assume behavior under an evaluation harness predicts deployment behavior; the paper studies how models may detect test conditions and adapt, creating an optimistic gap between benchmark compliance and real deployment safety.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors run eight experiments across 37 open-weight models from seven families, measuring evaluation-cue detection, safety behavior changes under framing shifts, representation-level probes, multi-layer steering interventions, and correlations among these axes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new framing is the &amp;#x27;benchmark illusion&amp;#x27;: evaluation awareness is decomposed into separable dimensions of detectability, behavioral manifestation, and controllability, with evidence that no single awareness score reliably proxies deployment safety.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: 24 of 37 models exceed chance at detection, best model AUROC is 0.714 versus 0.819 for humans; hard refusals drop 5.8 percentage points under hypothetical framing; compliance can rise up to 30 percentage points; probes retain AUROC 0.98 under behavior-collapsing rewrites; and only 1 of 15 axis correlations is significant, with behavioral detection versus framing resistance at rho = -0.79, p &amp;lt; 0.001.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code, public data, affiliations, peer-review status, detailed baselines, ablations, or robustness checks beyond the summarized experiments; evidence is also limited to open-weight models as described.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The matched query is &amp;#x27;causality&amp;#x27;; the paper is relevant because it includes causal intervention evidence via multi-layer steering that moves downstream tasks, though the central topic is language-model safety benchmarking rather than causal inference methodology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; language-model-safety, evaluation-awareness, benchmarking, open-weight-models, representation-probing, causal-steering, harmbench&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework figure separating evaluation awareness into detectability, behavioral manifestation, and controllability, with arrows showing how these axes relate to the benchmark illusion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Nilesh Nayan, Aishwarya Sampath Kumar, Rishiraj Girmal, Shivani Anilkumar, Sankaran Vaidyanathan, David A. Nader Palacio, Reshmi Ghosh, Soundararajan Srinivasan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23583v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>War in the Abstract: The Rise and Consequences of Militarized Language in Scientific Communication</title>
+      <link>http://arxiv.org/abs/2606.23462v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23462v1</guid>
+      <pubDate>Mon, 22 Jun 2026 15:10:32 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 62/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 45, Empirical 86, Reproducibility 45, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal or conference venue, open-source code, repository quality&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Analyzes 21.4 million papers from 2010-2025 using OpenAlex and PubMed.; Reports a within-subject experiment with N = 801 and 32,040 trials.; Reports effect sizes, confidence interval, correlations, and p-values in the abstract.; arXiv v1; no DOI or journal reference supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper quantifies the rise of militarized language in scientific abstracts from 2010-2025 and experimentally tests whether war framing affects perceived credibility, funding willingness, policy support, and urgency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether warfare-related vocabulary has become more common in scientific abstracts and whether such framing changes how scientific claims are received by readers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors analyze 21.4 million abstracts from OpenAlex and PubMed, relate militaristic-language prevalence to conflict-aligned country and annual measures, and run a within-subject war-framing experiment with 801 participants and 32,040 trials.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novelty is the combination of large-scale diachronic corpus evidence with a causal framing experiment, linking the spread of militarized scientific language to measurable persuasion outcomes rather than only documenting word-frequency trends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Militaristic terms rose 48% in OpenAlex and 32% in PubMed from 2010-2025, with acceleration after 2019; experimentally, war framing reduced credibility by -0.18 Likert units with 95% CI [-0.21, -0.14], and also reduced funding willingness and policy support while slightly increasing urgency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not mention open code, preregistration, full operational definitions for militaristic terms, robustness checks, alternative lexicons, sampling details for the experiment, or whether causal conclusions generalize beyond the tested framings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; It matches the keyword &amp;#x27;causality&amp;#x27; because the paper includes a within-subject framing experiment intended to provide causal evidence about the effects of militaristic language on persuasion outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; scientific communication, causal experiment, framing effects, corpus analysis, militarized language, science of science, NLP for social analysis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or main-results figure showing corpus construction, militaristic-term measurement over time, conflict-alignment analysis, and the within-subject framing experiment outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sovesh Mohapatra, David Lydon-Staley, Dani S. Bassett&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23462v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.AI</category>
+      <category>cs.CY</category>
+      <category>cs.DL</category>
+    </item>
+    <item>
+      <title>From Pixels to Concepts: Growing Rich 3D Semantic Scene Graph Forests utilizing Foundation Models</title>
+      <link>http://arxiv.org/abs/2606.23312v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23312v1</guid>
+      <pubDate>Mon, 22 Jun 2026 13:26:17 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 56/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 62, Empirical 68, Reproducibility 35, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and citation or h-index signals are not supplied., No DOI or journal reference is supplied., No exact quantitative metrics are given in the abstract., No baselines, ablations, statistical robustness, or failure analysis are described in the abstract., No code repository, implementation details, or data-release statement is provided., No direct evidence is supplied for how foundation-model hallucinations or incorrect inferred relationships are handled.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-22, category cs.RO.; Comment says the paper is to be published in IEEE/RSJ IROS 2026 proceedings.; Uses a VLM to identify instance-specific concept nodes and relationships, then an LLM to infer broader abstract concepts and relationships.; Evaluated on uHumans2 and ScanNet, with a real-world indoor deployment using Boston Dynamics Spot.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes using VLMs and LLMs to build hierarchical 3D scene-graph forests with open semantic and abstract concept relationships for richer robotic scene understanding and object retrieval.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Robots need functional semantic world models for complex real-world environments, but many 3D scene graph methods rely on fixed relationship classes and rigid structures that miss broader semantic links such as causal relations and environmental context.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The method identifies instance-specific concept nodes and relationships with a vision-language model, expands them with an LLM to infer more abstract concepts and relations, and assembles object nodes, concept nodes, and open semantic relationships into forests of hierarchical 3D scene graphs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Its main novelty is extending hierarchical 3D scene graphs beyond pre-defined relation taxonomies by adding foundation-model-derived concept nodes and open semantic relationships, including abstract context-level links relevant to robotics tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports evaluation on uHumans2 and ScanNet for relationship accuracy and relevance, plus downstream open-vocabulary object retrieval on ScanNet and a real-world indoor Boston Dynamics Spot deployment; exact metrics and baseline comparisons are not provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not state quantitative results, baselines, ablations, robustness tests, code availability, or how hallucinated VLM/LLM relationships are controlled.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;#x27;causality&amp;#x27; because it explicitly targets semantic connections neglected by standard 3D scene graphs, including causal connections, though causality appears to be one example of open relationships rather than the sole focus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robotics, 3D scene graphs, foundation models, VLM, LLM, semantic mapping, open-vocabulary retrieval, causal relationships&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s pipeline or architecture figure showing pixels/instances passing through VLM and LLM stages into a forest of hierarchical 3D scene graphs with object nodes, concept nodes, and open semantic relationships.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Oberacker, Meike Deitersen, Niklas Spielbauer, Tristan Schnell, Georg Heppner, Arne Roennau&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23312v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+    </item>
+    <item>
+      <title>Causal Reward World Models: Zero-shot Reward Design for Automated Skill Generation</title>
+      <link>http://arxiv.org/abs/2606.23280v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.23280v1</guid>
+      <pubDate>Mon, 22 Jun 2026 12:57:17 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 51/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 48, Paper 45, Empirical 65, Reproducibility 30, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation count or h-index signal, DOI or peer-reviewed venue, open-source code, public datasets or environment list, named baselines&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-22 in cs.RO.; Abstract explicitly frames the method around causal topological relationships between reward components and physical variables.; Comment reports 22 pages and 18 figures.; Abstract claims extensive experiments on complex continuous-control benchmarks with state-of-the-art-level performance and generalization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; CRWM proposes a causal world-model prior that constrains LLM-generated reinforcement-learning rewards, aiming to enable zero-shot automated reward design without iterative environment-feedback refinement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies Automated Reward Design for reinforcement learning, focusing on the inefficiency and causal unreliability of LLM-based reward synthesis methods that iteratively refine semantically plausible reward hypotheses using task-specific environmental feedback.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes a Causal Reward World Model that offline pre-trains causal topological relationships between candidate reward components and task-targeted physical variables from multi-task interaction data, then uses coarse-to-fine pre-training plus Explicit Mechanism Decoupling and Confidence-Aware Soft Fusion to form an interpretable causal skeleton used as a prior for LLM reward generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is shifting ARD from correlation-driven, feedback-refined LLM reward search to a white-box causal-prior framework that constrains reward generation and supports zero-shot reward design across tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports extensive experiments on complex continuous-control benchmarks where CRWM produces executable rewards without feedback-driven refinement, reduces reward-design latency, matches or surpasses state-of-the-art performance, and generalizes to unseen tasks and diverse robotic embodiments; exact metrics, benchmarks, and baselines are not provided in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The supplied metadata/abstract does not provide code, datasets, benchmark names, numerical results, ablations, statistical robustness, affiliations, citation signals, DOI, or venue status, so empirical strength and reproducibility remain uncertain from the abstract alone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because the central mechanism is an explicit causal model of reward components and physical task variables, applied to automated reward design for robotics and reinforcement learning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, reinforcement-learning, automated-reward-design, robotics, LLM, world-model, zero-shot-generalization&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A CRWM architecture or pipeline figure showing offline causal topology pre-training, coarse-to-fine refinement, Explicit Mechanism Decoupling, Confidence-Aware Soft Fusion, and LLM-constrained zero-shot reward generation would be useful, but no direct image URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yang Yang, Yuchuang Tong, Zhengtao Zhang, Xu Ding, Ning Yang, Yifan Zhang, Haipeng Li, Kehu Yang, Miao Xin&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.23280v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.RO</category>
+    </item>
+    <item>
+      <title>Semiparametric Efficiency Theory as Differential Calculus on a Space of Probability Distributions</title>
+      <link>http://arxiv.org/abs/2606.22784v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.22784v1</guid>
+      <pubDate>Mon, 22 Jun 2026 02:47:03 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 42/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 49, Paper 45, Empirical 15, Reproducibility 20, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, citation count or h-index, DOI or venue, peer-review status, code repository, public data or reproducible examples&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-22.; Single listed author: Razieh Nabi.; Categories are stat.ME and math.ST.; Abstract explicitly connects semiparametric efficiency to causal inference and missing data analysis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This tutorial reframes semiparametric efficiency theory and influence-function-based inference as differential calculus on a space of probability distributions, emphasizing geometric intuition for scores, tangent spaces, nuisance tangent spaces, and efficient influence functions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper addresses the opacity of standard semiparametric efficiency presentations, where influence functions and tangent-space constructions are often used technically without clear geometric intuition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes a tutorial framework drawing parallels with multivariable calculus: distributional paths as curves, scores as velocity vectors, influence functions as gradients, and efficient influence functions as projected gradients.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution, as described in the abstract, is a unified geometric exposition that explains why perturbation directions are functions, why tangent spaces are model-dependent, why nuisance tangent spaces depend on the target parameter, and why efficient influence functions arise via orthogonal projection.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No empirical result is reported in the abstract; this appears to be a conceptual/tutorial paper rather than an experimental study.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report formal theorems, examples, empirical validation, code, exercises, or comparison against existing tutorials, so its practical usefulness must be judged from the full manuscript.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched causal inference query because semiparametric efficiency and influence-function-based estimation underpin modern causal inference methods, including one-step estimators and targeted minimum loss estimators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; semiparametric efficiency, influence functions, causal inference, missing data, tangent spaces, tutorial, statistical theory&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would be a geometric pipeline diagram mapping distributional paths to scores, influence functions as gradients, nuisance tangent spaces, and efficient influence functions as orthogonal projections.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Razieh Nabi&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.22784v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+      <category>math.ST</category>
+    </item>
     <item>
       <title>DeepSWIP: Quotient-WMC Counterfactuals for Neural Probabilistic Logic Programs</title>
       <link>http://arxiv.org/abs/2606.20526v1</link>
@@ -370,8 +562,8 @@
     </item>
     <item>
       <title>Balanced Twins: Causal Inference on Time Series with Hidden Confounding</title>
-      <link>http://arxiv.org/abs/2606.18969v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.18969v1</guid>
+      <link>http://arxiv.org/abs/2606.18969v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18969v2</guid>
       <pubDate>Wed, 17 Jun 2026 11:52:59 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 38, Empirical 50, Reproducibility 30, Manuscript 65&lt;/p&gt;
@@ -386,9 +578,9 @@
 &lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query because it directly addresses causal inference for time-series interventions, hidden confounding, counterfactual estimation, propensity scores, and ATT/ITE estimation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, time series, hidden confounding, individual treatment effects, ATT, propensity scores, matching, synthetic control&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline diagram showing time-series inputs, joint latent representation and propensity learning, matching-based counterfactual construction, ITE estimation, and ATT aggregation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ouali Maha, Ghattas Badih, Flachaire Emmanuel, Charpentier Philippe, Bozzi Laurent&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Maha Ouali, Badih Ghattas, Emmanuel Flachaire, Philippe Charpentier, Laurent Bozzi&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18969v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18969v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>stat.ME</category>
       <category>cs.MS</category>
       <category>stat.ML</category>
@@ -708,8 +900,8 @@
     </item>
     <item>
       <title>Fast Nonparametric Conditional Independence Testing via Two-Stage Regression</title>
-      <link>http://arxiv.org/abs/2606.18011v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.18011v1</guid>
+      <link>http://arxiv.org/abs/2606.18011v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.18011v2</guid>
       <pubDate>Tue, 16 Jun 2026 14:55:00 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 57/100 (Skim, confidence: medium)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 44, Paper 45, Empirical 65, Reproducibility 70, Manuscript 78&lt;/p&gt;
@@ -726,7 +918,7 @@
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the BLITZ pipeline: conditioning-set polynomial residualization, nonlinear feature map construction, shallow-tree residualization, residual cross-covariance statistic, and chi-square null approximation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Eric V. Strobl&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18011v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.18011v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>stat.ML</category>
       <category>cs.LG</category>
       <category>stat.ME</category>
@@ -2225,191 +2417,6 @@
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13171v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.CL</category>
       <category>cs.AI</category>
-    </item>
-    <item>
-      <title>When Does Routing Become Interpretable? Causal Probes on Block Attention Residuals</title>
-      <link>http://arxiv.org/abs/2606.13168v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13168v1</guid>
-      <pubDate>Thu, 11 Jun 2026 10:37:04 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 45, Empirical 62, Reproducibility 35, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, author citation or h-index signal, DOI or venue, citation count, open-source code URL, public data or benchmark details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.LG.; Abstract reports two same-scale 0.6B Block AttnRes/Qwen3 checkpoints.; Uses identical routing-ablation interventions across a wrapped vanilla Qwen3 baseline and a trained AttnRes checkpoint.; Finds dissociation between average routing mass and causal importance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper tests whether learned cross-layer routing in Block Attention Residuals is actually interpretable by comparing descriptive routing weights with causal ablation effects in two 0.6B Qwen3-based checkpoints.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether exposing residual-stream routing as an explicit forward-pass tensor is enough to support mechanistic interpretation of information flow across model depth.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The author applies identical routing-ablation interventions to two same-scale 0.6B checkpoints: a vanilla Qwen3 wrapped with a deterministic recency-bias routing schedule, and a Block AttnRes Qwen3 trained from scratch with routing included in optimization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is the distinction between observable routing mass and causal mechanism: explicit architectural routing makes depth-source paths inspectable, but the paper argues those paths must still be validated with interventions because routing weights alone can be misleading.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The wrapped baseline shows content-independent routing matching the analytic schedule, while the trained AttnRes model develops three localized routing motifs; however, the largest average routing-mass slice is not the largest causal contributor, and one source family has appreciable mass without detectable causal effect under intervention.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only two 0.6B checkpoints and does not mention datasets, downstream metrics, statistical robustness, code release, broader model scales, or independent replications.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is highly relevant to the matched query &amp;#x27;causality&amp;#x27; because the central evidence comes from causal routing-ablation probes and explicitly contrasts correlational routing summaries with causal importance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, mechanistic-interpretability, transformer-routing, residual-connections, ablation, Qwen3&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the Block Attention Residual routing tensor across depth sources, the three reported routing motifs, and how routing-ablation interventions compare routing mass with causal contribution.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aydin Javadov&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13168v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>MiniPIC: Flexible Position-Independent Caching in &lt;100LOC</title>
-      <link>http://arxiv.org/abs/2606.13126v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13126v1</guid>
-      <pubDate>Thu, 11 Jun 2026 09:51:36 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 42/100 (TL;DR only, confidence: high)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 14, Paper 35, Empirical 65, Reproducibility 35, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation count, h-index or author impact signals, DOI, conference or journal venue, open-source code&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11.; Abstract claims fewer than 100 lines of core-engine changes plus a custom attention backend.; Evaluated on 2WikiMultihopQA against baseline vLLM.; Reported metrics include 49% prefill throughput improvement, up to two orders of magnitude cached-span TTFT reduction, linear uncached-span scaling, and 5.7% worst-case overhead.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MiniPIC is a small vLLM design for position-independent KV-cache reuse of recurring document/code spans in retrieval-augmented and agentic workloads.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to reuse KV-cache entries for recurring structured inputs that do not appear as identical prefixes, a case where standard prefix caching in engines like vLLM fails and existing production PIC approaches can require invasive server changes or costly host-device KV transfers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; MiniPIC combines a positional-encoding-free KV cache with user-controlled token-level cache-reuse primitives. It stores unrotated K vectors, applies RoPE to K tiles inside attention using per-request logical positions, and exposes block-aligned padding, span separator, and prompt depend primitives to control hashing and effective block-level causal attention.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a minimal production-oriented PIC interface for vLLM: fewer than 100 lines of core-engine changes plus a custom attention backend are claimed to support multiple PIC methods, including Block-Attention, EPIC, and Prompt Cache, within one running vLLM instance while integrating with KV-cache CPU offload.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On 2WikiMultihopQA, MiniPIC with interleaved scheduling reportedly improves prefill throughput by 49% over baseline vLLM, reduces cached-span time-to-first-token by up to two orders of magnitude, preserves linear prefill scaling for uncached spans, and has 5.7% worst-case overhead.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports one named benchmark and headline systems metrics, but does not mention code release, public artifacts, ablations, statistical robustness, broader workload coverage, affiliations, citations, DOI, or peer review status.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the configured query &amp;#x27;causality&amp;#x27; appears indirect: the paper discusses causal attention structure in inference caching, not causal inference or causal modeling. It is more relevant to LLM serving, RAG systems, and KV-cache optimization than to causality research.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM inference, KV cache, position-independent caching, vLLM, RAG systems, agentic workloads, systems optimization&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the MiniPIC pipeline inside vLLM, especially how unrotated K vectors, per-request logical positions, span separators, prompt dependencies, and block-level causal attention interact.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Nathan Ordonez, Thomas Parnell&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13126v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-      <category>cs.CL</category>
-    </item>
-    <item>
-      <title>MP3: Multi-Period Pattern Pre-training forSpatio-Temporal Forecasting</title>
-      <link>http://arxiv.org/abs/2606.13119v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13119v1</guid>
-      <pubDate>Thu, 11 Jun 2026 09:48:18 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 48, Empirical 74, Reproducibility 68, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI or peer-reviewed venue, citation count or influential-citation signal, ablation results, statistical significance or confidence intervals&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11.; Abstract evaluates five STGNN baselines across five real-world datasets.; Reports average MAE reduction of 4.7% and RMSE reduction of 5.0%.; Code URL is supplied: https://github.com/YAN-outlook/MP3.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MP3 is a plug-and-play pre-training plugin for spatio-temporal graph neural networks that learns multi-period temporal, spatial, and cross-period causal patterns to reduce forecasting errors caused by temporal mirages.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies spatio-temporal forecasting in urban data, focusing on &amp;#x27;temporal mirage&amp;#x27; cases where similar short-window histories lead to divergent futures, or dissimilar histories lead to similar futures, which existing STGNNs are said to miss.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes Multi-Period Pattern Pre-training (MP3), a pre-training plugin for existing STGNN backbones. MP3 uses edge-convolution-based multi-period temporal modeling, bottleneck projection plus a global memory bank for heterogeneous global spatial relations, and a causality-enhanced Transformer for cross-period pattern interaction.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, as described in the abstract, is framing temporal mirages as arising from incomplete period observation, heterogeneous global spatial correlation, and cross-period superposition causality, then addressing them with a multi-period pre-training module that can be attached to multiple STGNN backbones.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across five STGNN baselines and five real-world datasets, including a large-scale CA dataset, MP3 reportedly gives consistent improvements, reducing MAE by 4.7% and RMSE by 5.0% on average.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report ablations, statistical significance, full dataset details, robustness tests, or peer-review status; code is linked, but repository quality and reproducibility are not verifiable from the supplied metadata alone.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the configured query &amp;#x27;causality&amp;#x27; because the framework explicitly includes a causality-enhanced Transformer to model cross-period dependencies in spatio-temporal forecasting.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; spatio-temporal forecasting, STGNN, pre-training, causality, time series, urban computing, graph neural networks&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the MP3 architecture or pipeline figure showing multi-period temporal modeling, multi-period spatial modeling with memory bank, and causality-enhanced Transformer integration with STGNN backbones.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Lilan Peng, Yandi Liu, Qingren Yao, Chongshou Li, Tianrui Li&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13119v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-      <category>cs.NE</category>
-    </item>
-    <item>
-      <title>Demystifying Hidden-State Recurrence: Switchable Latent Reasoning with On-Policy Reinforcement Learning</title>
-      <link>http://arxiv.org/abs/2606.13106v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13106v1</guid>
-      <pubDate>Thu, 11 Jun 2026 09:33:40 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; SWITCH makes latent chain-of-thought reasoning trainable with on-policy RL and more causally interpretable by using explicit discrete tokens to enter and exit hidden-state recurrence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to make latent chain-of-thought methods based on hidden-state recurrence easier to optimize with standard on-policy reinforcement learning and easier to analyze mechanistically or causally.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes SWITCH, where a model emits &amp;lt;swi&amp;gt; to enter latent reasoning mode and &amp;lt;/swi&amp;gt; to exit, trains with a visible-to-latent curriculum, and uses a Switch-GRPO objective that propagates gradients through recurrent latent computation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel idea is to use ordinary discrete boundary tokens as both RL-compatible decision anchors and intervention/probing points for mechanistic analysis of latent reasoning steps.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, SWITCH consistently outperforms prior hidden-state-recurrence latent reasoning approaches at similar scale, and boundary-token analysis suggests the entry transition performs problem-specific, causally important computation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify benchmark names, quantitative gains, model scale details, or whether the mechanistic findings generalize beyond the tested tasks and training setup.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the query &amp;#x27;causality&amp;#x27; because the paper explicitly studies causal intervention and mechanistic analysis of latent reasoning, including identifying causally important hidden-state transitions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; latent reasoning, chain-of-thought, reinforcement learning, GRPO, mechanistic interpretability, causal intervention, language models&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the SWITCH pipeline or architecture diagram showing visible reasoning, &amp;lt;swi&amp;gt;/&amp;lt;/swi&amp;gt; boundary tokens, recurrent latent steps, GRPO training, and causal probes at the boundary transitions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jiayu Yang, Chao Chen, Shengen Wu, Yinhong Liu, Yuxuan Fan, Lujundong Li, Songning Lai, Chengwei Qin, Zhijiang Guo&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13106v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.CL</category>
-    </item>
-    <item>
-      <title>CausalMoE: A Billion-Scale Multimodal Foundation Model for Granger Causal Discovery with Pattern-Routed Heterogeneous Experts</title>
-      <link>http://arxiv.org/abs/2606.13024v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13024v1</guid>
-      <pubDate>Thu, 11 Jun 2026 07:57:23 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; CausalMoE proposes a billion-scale multimodal Mixture-of-Experts foundation model for Granger causal discovery that routes time-series patches by latent temporal patterns to improve causal graph recovery under regime shifts.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies Granger causal discovery for real-world time series where distribution shifts, dynamic regimes, and heterogeneous temporal patterns cause standard neural methods to learn entangled representations and spurious causal graphs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes CausalMoE, combining pattern-routed heterogeneous experts for patch-level temporal heterogeneity, causality-aware self-attention across variables for sparse graph recovery via proximal optimization, and multimodal alignment with LLM/VLM priors to regularize causal estimation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a billion-scale multimodal Granger causal foundation model that explicitly routes temporal patches to specialized experts and integrates textual and visual priors, rather than using a single shared neural causal discovery model for all regimes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports new state-of-the-art results on fully supervised benchmarks and improved generalization in few-shot settings where traditional methods fail, but it does not provide quantitative metrics.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify benchmark names, effect sizes, ablation evidence, computational cost, or whether multimodal priors improve causal validity beyond benchmark performance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This directly matches the configured query &amp;#x27;causal discovery&amp;#x27; because it targets Granger causal graph recovery and proposes a new neural framework for causality in temporal systems.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal discovery, Granger causality, time series, mixture of experts, foundation model, multimodal learning, few-shot generalization&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the model pipeline showing patch-level pattern routing, heterogeneous experts, causality-aware variable attention, and LLM/VLM prior alignment for causal graph recovery.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Bo Liu, Di Dai, Jingwei Liu, Jiarui Jin, Xiaocheng Fang, Guangkun Nie, Hongyan Li, Shenda Hong&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal discovery, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13024v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>SciR: A Controllable Benchmark for Scientific Reasoning in LLMs</title>
-      <link>http://arxiv.org/abs/2606.13020v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.13020v1</guid>
-      <pubDate>Thu, 11 Jun 2026 07:54:22 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 45, Paper 50, Empirical 65, Reproducibility 35, Manuscript 78&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation counts or h-index signals not supplied., DOI, venue, or peer-review status not supplied., Code repository availability not stated., Public data or benchmark release details not stated., Exact metrics, benchmark size, model list, and statistical robustness not reported in abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.AI.; Benchmark covers deduction, induction, and causal abduction.; Tasks are generated from formal objects with verifiable answers.; Difficulty is varied along extraction and inference axes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; SciR is a controllable benchmark for evaluating LLM scientific reasoning across deduction, induction, and causal abduction, with separate difficulty controls for information extraction and formal inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to reliably evaluate LLMs on scientific reasoning when human-annotated scientific benchmarks are expensive and lack mechanistic ground truth, while synthetic logic benchmarks often fail to resemble real scientific documents.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; SciR generates tasks from formal objects, including deduction trees, inductive rule hypotheses, and causal graphs, then renders them into multi-document scientific discourse using domain-tuned genres. This gives verifiable answers and lets the benchmark independently vary extraction difficulty and inference difficulty.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a multi-paradigm scientific-reasoning benchmark with parametric control over both document-level extraction difficulty and underlying inference difficulty, including causal abduction as one of the reasoning paradigms.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports experiments on six models: both extraction and inference difficulty hurt all models, the effects compound, scientific rendering hurts even neurosymbolic solver pipelines, and reasoning models such as deepseek-r1 outperform non-reasoning instruct models mainly on the inference axis.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report exact datasets, metrics, model list, code/data availability, statistical robustness, or detailed benchmark size, so empirical strength and reproducibility cannot be fully assessed from the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This matches the configured query &amp;#x27;causality&amp;#x27; because one SciR track is explicitly based on causal graphs and causal abduction, making it relevant to evaluating causal reasoning in LLMs within scientific-text settings.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM evaluation, scientific reasoning, causal abduction, causal graphs, benchmark, deduction, induction, multi-document reasoning&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the SciR pipeline: formal objects for deduction, induction, and causal graphs feeding controllable scientific document rendering, then evaluation across extraction and inference difficulty axes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Pierre Beckmann, Marco Valentino, Andre Freitas&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.13020v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Circuit Synchronization Precedes Generalization: Causal Evidence from Fourier Structure in Grokking Transformers</title>
-      <link>http://arxiv.org/abs/2606.12966v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.12966v1</guid>
-      <pubDate>Thu, 11 Jun 2026 06:52:10 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 38, Paper 45, Empirical 78, Reproducibility 45, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No affiliation or institution metadata supplied., No citation count or h-index metadata supplied., No DOI, venue, journal, or conference signal supplied., No code repository or reproducibility artifact mentioned., No public dataset artifact mentioned., No explicit limitations section visible from the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Introduces Frequency Synchronization Degree as a normalized, permutation-tested metric requiring no prior circuit knowledge.; Reports nine modular-addition configurations over primes p in {53, 71, 97, 113, 131} and three seeds.; FSD leads grokking in all nine cases with mean lead +1722 steps and sign-test p approximately 0.004.; Forking at the FSD-ceiling step and varying weight decay is reported to produce monotone earlier grokking with Delta_t proportional to 1/lambda.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes Frequency Synchronization Degree as an early, circuit-agnostic predictor of grokking in modular-addition transformers and reports causal intervention evidence linking the delay between circuit synchronization and generalization to weight decay.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies why transformer grokking on modular arithmetic occurs suddenly, with emphasis on the timing, causal structure, and controllability of the Fourier circuit thought to support generalization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper introduces Frequency Synchronization Degree, a normalized permutation-tested metric for Fourier circuit synchronization that requires no prior circuit knowledge, then evaluates it across modular-addition runs, compares it with a restricted-logit loss baseline, forks training at the FSD-ceiling step while varying weight decay, and performs architecture ablations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that Fourier-circuit synchronization can be detected before grokking without hand-identifying the circuit, and that the remaining delay to grokking follows a weight-decay-controlled law, providing causal rather than purely correlational evidence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across nine modular-addition configurations, FSD synchronizes 500-3000 steps before grokking with mean lead of 1722 steps and positive lead in all nine cases; forked-training interventions reportedly show earlier grokking monotonically with larger weight decay, with Delta_t approximately proportional to 1/lambda.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to modular addition grokking settings from the abstract; no code, public artifacts, affiliations, citation signals, robustness beyond the stated primes/seeds, or broader task transfer are provided in the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because it claims direct causal evidence about how regularization controls the timing between Fourier-circuit synchronization and generalization in grokking transformers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; grokking, mechanistic-interpretability, causality, Fourier-circuits, transformers, regularization, modular-arithmetic&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the proposed FSD pipeline and a timeline overlay where FSD synchronization, restricted-logit loss, and grokking occur across training steps.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Achyuthan Sivasankar&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12966v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.NE</category>
-    </item>
-    <item>
-      <title>Order Is Not Control</title>
-      <link>http://arxiv.org/abs/2606.12923v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.12923v1</guid>
-      <pubDate>Thu, 11 Jun 2026 05:27:42 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 45, Empirical 55, Reproducibility 25, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal, or conference status, citation or influential-citation counts, open-source code, public data or benchmark identifiers&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-11 in cs.LG, cs.AI, and cs.CL.; Abstract reports LLM component-sign accuracy of 72.8-73.7%, rising to 84.3-84.8% on nonzero components.; Abstract reports held-out observer prediction accuracies of 93.6% and 91.7%.; Abstract explicitly states several limits: no deployable pre-generation control, no hidden/logit causal sufficiency, no biological-to-LLM coordinate identity, and no literal thermodynamic quantities.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that order-inducing interventions are not sufficient for control and proposes a receiver-gated response-operator framework for identifying local admitted control across biological systems, LLMs, adapters, and stochastic-operator settings.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how to distinguish mere order, alignment, steering, interpretability structure, or perturbation response from actual control in systems where interventions can have medium-, bath-, receiver-, and comparator-dependent effects.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper proposes a denominator-indexed, receiver-gated response law: an operator mapping material state, action or drive, bath, and receiver state to response displacement, sinks, effort, and basin projection. It evaluates this framing across biological panels, LLM generated-output panels, constitution-conditioned adapters, and stochastic-operator panels.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a control criterion based on local receiver-gated response laws rather than coordinate identity, order induction, or controller attribution: control is assigned only when finite effort moves a target or outcome-readout class under the same denominator while damage, null/evasive behavior, invalid format, overdrive, and unnecessary effort remain bounded.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, LLM response vectors are predictable at 72.8-73.7% component-sign accuracy, increasing to 84.3-84.8% on nonzero components; held-out observers predict system-effect and target/oracle families at 93.6% and 91.7% accuracy. Biological panels are described as supporting physical response-operator evidence, but detailed sample sizes, datasets, and controls are not provided in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract explicitly leaves deployable pre-generation control, hidden/logit causal sufficiency, biological-to-LLM coordinate identity, and literal thermodynamic quantities outside scope. It also does not provide code, data, baselines, ablations, statistical robustness, sample sizes, or venue/peer-review signals in the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it proposes criteria for causal control rather than correlation/order: interventions are evaluated by receiver-gated response laws, finite-effort target movement, bounded failure modes, and separations between measured opportunity and deployable action policies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, control, AI alignment, interpretability, LLM steering, response operators, stochastic operators, biological systems&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework diagram showing the denominator-indexed response operator: material state, action/drive, bath, and receiver state flowing into response displacement, sinks, effort, and basin projection, with bounded failure modes used to decide local admitted control.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Gareth Seneque, Lap-Hang Ho, Nafise Erfanian Saeedi, Jeffrey Molendijk, Tim Elson&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.12923v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-      <category>cs.CL</category>
     </item>
   </channel>
 </rss>
