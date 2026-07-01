@@ -9,7 +9,7 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Tue, 30 Jun 2026 09:03:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 08:49:24 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
     <item>
       <title>Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models</title>
@@ -86,9 +86,9 @@
       <category>cs.LG</category>
     </item>
     <item>
-      <title>HSAP: A Hierachical Sequence-aware Parallelism for Hybrid-Context Generative Models</title>
-      <link>http://arxiv.org/abs/2606.30460v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.30460v1</guid>
+      <title>HSAP: A Hierarchical Sequence-aware Parallelism for Hybrid-Context Generative Models</title>
+      <link>http://arxiv.org/abs/2606.30460v2</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2606.30460v2</guid>
       <pubDate>Mon, 29 Jun 2026 15:26:55 GMT</pubDate>
       <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 38/100 (TL;DR only, confidence: medium)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 35, Empirical 45, Reproducibility 30, Manuscript 55&lt;/p&gt;
@@ -105,7 +105,7 @@
 &lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing packed hybrid-context sequences, device-group communication, and the hierarchical sequence-aware parallelism pipeline would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Songxin Zhang, Zejian Xie, Zhuoyang Song, Cong lin, Junyu Lu, Jiaxing Zhang, Bingyi Jing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.30460v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.30460v2"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.LG</category>
       <category>cs.DC</category>
     </item>
