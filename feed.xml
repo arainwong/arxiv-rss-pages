@@ -9,7 +9,7 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Fri, 10 Jul 2026 09:01:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 10:43:12 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
     <item>
       <title>DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding</title>
@@ -248,6 +248,54 @@
       <category>cs.AI</category>
     </item>
     <item>
+      <title>3100 Opinions on Code Review in an AI World: Building Causal Theory from Practitioner Discourse</title>
+      <link>http://arxiv.org/abs/2607.07980v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.07980v1</guid>
+      <pubDate>Wed, 08 Jul 2026 23:11:46 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 64/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 62, Empirical 72, Reproducibility 70, Manuscript 86&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-indexes, DOI or peer-reviewed venue, code repository URL and repository quality, dataset release details, inter-rater reliability or human validation of LLM-assisted coding&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper in cs.SE and cs.AI, published 2026-07-08.; Abstract reports 38,709 grey-literature documents and a coded stratified random sample of 3,100.; Causal model contains 26 constructs and 67 relationships, including 64 directed and 3 contested relationships.; Abstract says a public implementation is available.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies how coding agents change code review and proposes a grey-literature, LLM-assisted theory-building method that yields a causal model of how team expertise and review process choices moderate AI&amp;#x27;s impact.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Coding agents increasingly author pull requests, but existing repository-mining studies capture unstable surface trends and do not explain whether AI makes review a bottleneck, reduces the need for human review, or erodes reviewer understanding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors combine a motivating observational analysis of public GitHub pull requests with large-scale synthesis of practitioner discourse: 38,709 grey-literature documents are collected, filtered for code-review relevance, and a stratified random sample of 3,100 documents is coded using an LLM-assisted pipeline to construct a causal model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is an explicit causal theory of AI-era code review with 26 constructs and 67 relationships, plus a reusable LLM-assisted grey-literature theory-building pipeline for software-engineering research.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, agent-authored pull requests appear to be reviewed less often, merged several times faster, and discussed less than human-authored pull requests, but these trends reverse under defensible alternative analyses; the stronger contribution is the resulting causal model rather than a stable empirical effect estimate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports no validation against controlled studies, no ablations for the LLM-assisted coding pipeline, no inter-rater reliability details, and no robustness evidence beyond noting instability in repository-mining trends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because it turns conflicting observations about AI-authored pull requests into falsifiable causal propositions with named constructs, moderators, and directed or contested relationships.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; software-engineering, code-review, coding-agents, causal-theory, grey-literature, LLM-assisted-analysis, GitHub-mining&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s causal model diagram showing the 26 constructs and 67 relationships, especially moderators linking team expertise, review process structure, coding-agent use, and software outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Shyam Agarwal, Courtney Miller, Christian Kästner, Bogdan Vasilescu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07980v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.SE</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Mechanistic Interpretability of LLM Jailbreaks via Internal Attribution Graphs</title>
+      <link>http://arxiv.org/abs/2607.07903v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.07903v1</guid>
+      <pubDate>Wed, 08 Jul 2026 20:31:06 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 41/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 40, Empirical 62, Reproducibility 28, Manuscript 66&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index signals, DOI or venue signal, model names, benchmark names, quantitative metrics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 in cs.CR and cs.AI.; Abstract introduces paired internal computation graphs for clean and attacked prompts.; Abstract claims causal interventions on nodes, paths, and subgraphs.; Abstract reports experiments across multiple open-source LLMs and diverse adversarial/jailbreak benchmarks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes paired internal attribution/computation graphs as a causal diagnostic framework for understanding and mitigating LLM jailbreak vulnerabilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; LLMs remain vulnerable to adversarial prompts and jailbreaks, while common input-output or attribution analyses give limited visibility into how attacks alter internal reasoning and lead to unsafe behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors construct prompt-specific internal computation graphs for clean and attacked prompts, align paired graphs, decompose graph differences into invariant, suppressed, and emergent structures, identify recurring vulnerability motifs, and test causal interventions on nodes, paths, and subgraphs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is moving from descriptive attribution toward causal diagnosis of jailbreak failures by comparing aligned internal computation graphs and intervening on graph motifs linked to attack success.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports experiments across multiple open-source LLMs and diverse adversarial/jailbreak benchmarks, finding that structural deviations in internal computation graphs strongly correlate with unsafe behaviors and that targeted motif interventions improve robustness.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide model names, benchmark names, quantitative metrics, baselines, ablations, statistical robustness, code availability, or enough implementation detail to judge reproducibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query `causality` because it explicitly frames jailbreak analysis around structured causal interactions and causal interventions inside LLM computation graphs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; mechanistic-interpretability, llm-safety, jailbreaks, causal-intervention, attribution-graphs, adversarial-prompts&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the paired clean-vs-attacked internal computation graphs, their alignment, suppressed/emergent/invariant subgraphs, and the intervention points used to test vulnerability motifs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Anupam Wagle, Ifrat Ikhtear Uddin, Chaowei Zhang, Longwei Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07903v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CR</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
       <title>The Key to Going Linear: Analysis-Driven Transformer Linearization</title>
       <link>http://arxiv.org/abs/2607.07706v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2607.07706v1</guid>
@@ -317,6 +365,30 @@
       <category>cs.AI</category>
       <category>cs.GT</category>
       <category>cs.MA</category>
+    </item>
+    <item>
+      <title>Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure</title>
+      <link>http://arxiv.org/abs/2607.07773v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.07773v1</guid>
+      <pubDate>Wed, 08 Jul 2026 16:41:51 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 45/100 (TL;DR only, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 42, Empirical 62, Reproducibility 35, Manuscript 58&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index data, DOI, venue, or journal reference, open-source code link, full baseline list, ablation results&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 with no DOI or journal reference in supplied metadata.; Evaluated on SEED-IV and SEED-V datasets.; Reports three backbone architectures: AudioTransformer, Conformer, and DCGNN.; Reports best-case +5.42% accuracy and 39% reduction in psychologically implausible misclassifications.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes graph-based regularizers that encode psychological relationships among emotion labels to improve EEG emotion recognition across multiple neural backbones.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; EEG-based emotion recognition models commonly treat emotion classes as independent labels, which can ignore psychologically meaningful relationships between emotions and lead to implausible misclassifications.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It models emotion classes as nodes in a graph with edges derived from dimensional emotion theories, then regularizes predictions using Graph Label Smoothing, Graph Laplacian commuting distance, and Sliced Wasserstein Distance across AudioTransformer, Conformer, and DCGNN backbones.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is injecting a psychologically grounded emotion-label topology into otherwise standard EEG deep learning classifiers through architecture-agnostic graph regularization, rather than changing only the backbone architecture.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On SEED-IV and SEED-V, the abstract reports consistent gains, with a best-case accuracy improvement of up to 5.42% and a 39% reduction in psychologically implausible misclassifications.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report statistical significance, ablations, full baseline details, robustness tests, implementation details, or released code; it only states that code will be released.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the configured query &amp;#x27;causality&amp;#x27; mainly through its use of DCGNN as one evaluated backbone and graph-structured label dependencies, but the abstract does not indicate that the proposed method studies causal inference directly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; EEG, emotion recognition, graph regularization, label structure, graph Laplacian, optimal transport, deep learning, causality-adjacent&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the emotion graph topology and how the three regularizers act on model predictions across the EEG backbone outputs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Dongyang Kuang, Zizheng Ma, Yushan Zhang, Xiaocong Zeng&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07773v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
     </item>
     <item>
       <title>Infinite Worlds with Versatile Interactions</title>
@@ -485,6 +557,123 @@
       <category>cs.LG</category>
     </item>
     <item>
+      <title>A knowledge-augmented dataset of high-risk driving scenarios with LLM annotations for autonomous driving</title>
+      <link>http://arxiv.org/abs/2607.07103v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.07103v1</guid>
+      <pubDate>Wed, 08 Jul 2026 07:39:21 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 12, Paper 42, Empirical 68, Reproducibility 50, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, venue, or journal reference, benchmark baselines, ablation studies, statistical robustness&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08; no DOI or journal reference supplied.; Abstract reports integration of 20 trajectory datasets from Europe, China, and the United States.; Dataset size is stated as 31,398 high-risk events plus 1,036 extreme near-collision events.; Annotations include structured descriptions, abnormal-behavior notifications, and causal risk analyses/action recommendations for a representative subset.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; K-Risk is a knowledge-augmented autonomous-driving dataset that combines high-risk trajectory events with LLM-generated semantic safety annotations, including causal analyses and action recommendations for a subset of near-collision scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies the lack of standardized data for rare, high-risk and long-tail autonomous-driving safety scenarios, especially datasets that combine trajectories with risk labels, semantic annotations, and verifiable safety signals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes K-Risk, a dataset and risk-centric extraction pipeline that integrates 20 human-driven and autonomous-vehicle trajectory datasets from Europe, China, and the United States, extracts high-risk events, and augments them with LLM-generated language triplets: structured scenario descriptions, abnormal-behavior notifications, and for a representative subset, causal risk analyses plus action recommendations validated in a closed-loop simulator with iterative reflection.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, according to the abstract, is the combination of multi-source structured driving trajectories, risk-centric event extraction, LLM-generated semantic supervision, causal risk analysis, and simulator-validated decision recommendations in one standardized high-risk driving dataset.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that K-Risk contains 31,398 high-risk events and a 1,036-event extreme near-collision subset, covering highways, urban freeways, intersections, and roundabouts across Europe, China, and the United States.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report benchmark results, model performance gains, annotation quality metrics, inter-rater validation, baselines, ablations, code availability, or details on how simulator validation was quantified.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it includes causal risk analyses for safety-critical driving events, though the abstract frames causality mainly as part of dataset annotation and decision supervision rather than as a new causal inference method.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; autonomous-driving, traffic-safety, high-risk-events, long-tail-scenarios, LLM-annotations, causal-risk-analysis, trajectory-dataset&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the K-Risk pipeline figure showing multi-source trajectory ingestion, risk-centric event extraction, LLM semantic annotation, causal risk analysis, and closed-loop simulator validation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Heye Huang, Jingguang Li, Zhiyuan Zhou, Paul Liang, Mingyu Wu, Kitae Jang, Jianqiang Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07103v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.DB</category>
+    </item>
+    <item>
+      <title>Dissociating the Internal Representations of Sycophancy in LLMs</title>
+      <link>http://arxiv.org/abs/2607.07003v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.07003v1</guid>
+      <pubDate>Wed, 08 Jul 2026 04:54:54 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 62, Empirical 58, Reproducibility 35, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations are not provided., Citation count and h-index signals are not provided., DOI, journal reference, and full conference proceedings status are absent., Evaluated models are not named in the abstract., Datasets, metrics, baselines, ablations, and robustness checks are not specified in the abstract., Code, data, and implementation details are not provided in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08.; Comment says accepted to Mechanistic Interpretability Workshop at ICML 2026.; Abstract distinguishes factual sycophancy from opinion sycophancy.; Method uses linear probes and steering vectors on activations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies whether factual and opinion sycophancy in LLMs share internal representations, using probes and activation steering to test cross-subtype transfer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; LLM sycophancy is usually treated as one behavior, but the abstract argues it may consist of distinct factual and opinion-based forms with potentially different internal mechanisms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors dissociate sycophancy into factual and opinion subtypes, train linear probes on activations for one subtype, construct steering vectors, and evaluate transfer to the other subtype as evidence about shared versus distinct representations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; A representation-dissociation framework for complex LLM behaviors that tests whether behavioral subtypes share mechanisms or causally interfere when steered across subtypes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports evidence that different LLMs encode factual and opinion sycophancy differently: some appear more unified, while others show more distinct and causally interfering representations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not name the evaluated models, datasets, metrics, baselines, ablations, code availability, or robustness checks, so empirical strength and reproducibility cannot be fully assessed from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;#x27;causality&amp;#x27; because it uses activation steering and transfer tests to make causal claims about internal representations of sycophantic behavior in LLMs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM sycophancy, mechanistic interpretability, linear probes, activation steering, causal interventions, representation analysis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the dissociation pipeline: factual vs opinion sycophancy data, activation extraction, linear probing, steering-vector construction, and cross-subtype transfer/causal-interference evaluation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Anthony Baez, Sheer Karny, Pat Pataranutaporn&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07003v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Causal Inference for Case Studies in Behavioral Health</title>
+      <link>http://arxiv.org/abs/2607.06912v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.06912v1</guid>
+      <pubDate>Wed, 08 Jul 2026 02:04:36 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 49/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 50, Empirical 30, Reproducibility 20, Manuscript 65&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, author citation or h-index signal, DOI or peer-reviewed venue, citation or influential-citation signal, open-source code, public data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper in stat.ME, published 2026-07-08, 21 pages.; Abstract introduces Ω estimands as contrasts over outcome support rather than outcome distributions.; Claims observational and interventional supports coincide under positivity without measuring or adjusting for confounders.; Includes a CBT-for-anxiety case study illustration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This paper proposes support-based causal estimands for N=1 behavioral-health case studies that aim to remain informative under unmeasured confounding, illustrated with a CBT-for-anxiety case study.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies causal inference for behavioral health case studies and observational N=1 settings where standard adjustment-based causal methods are limited by unmeasured confounding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces Ω estimands, defined as contrasts of functions of the outcome support rather than contrasts of outcome distributions, and proves observational and interventional outcome supports coincide in a structural causal model under positivity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that support-based causal contrasts can avoid dependence on the probability distribution over outcomes, making them insensitive to unmeasured confounding under the stated support-positivity assumption.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports a theoretical identification result: observational and interventional supports coincide under positivity, without requiring confounders to be known, measured, or adjusted for. Empirical evidence appears limited to an illustrative CBT case study.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report validation against baselines, simulations, sensitivity analyses, statistical robustness, code, data, or real-world comparative outcomes; the framework also relies on positivity and optional interpretive conditions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to a causal inference feed because it proposes a new causal estimand class and identification argument for difficult observational single-case settings with unmeasured confounding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, N=1 studies, behavioral health, unmeasured confounding, structural causal models, support-based estimands, measurement-based care&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing the structural causal model, outcome-support mapping, Ω estimand construction, positivity assumption, and optional baseline/mean-contrast links would be useful; no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Shane Sparkes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.06912v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>Geometric Collapse: When Vision Models Fail to Verify Physical Causality</title>
+      <link>http://arxiv.org/abs/2607.06871v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.06871v1</guid>
+      <pubDate>Wed, 08 Jul 2026 00:04:02 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 60/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 32, Paper 70, Empirical 78, Reproducibility 35, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal reference, confirmed venue status beyond metadata comment, open-source code&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08.; Metadata comment says ICML 2026, but DOI and journal reference are absent.; Abstract reports experiments on NYU Depth v2 and KITTI across CNN, ViT, SSL, diffusion, and flow-matching depth estimators.; Abstract reports up to 3.2x larger deviation than energy-matched noise and only 47% recovery under oracle-mask output repair.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper introduces Scrambled Edges, a controlled counterfactual test showing that modern depth predictors can globally collapse when given physically unsupported edge cues.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether large-scale self-supervised and dense geometric vision models perform inference-time physical plausibility checks, especially when edge-like evidence violates surface continuity, illumination coherence, and occlusion ordering.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors propose Scrambled Edges, a counterfactual corruption that injects salient edge-like cues while using energy-matched and structure-matched controls to separate unsupported edge evidence from generic high-frequency noise or edge sparsity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a controlled behavioral probe for physical-causality failures in dense prediction: it tests whether models can quarantine implausible local cues rather than merely measuring robustness to standard noise or corruptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across CNN, ViT, and self-supervised depth predictors on NYU Depth v2 and KITTI, Scrambled Edges cause up to 3.2x larger deviation from clean predictions than energy-matched noise; diffusion and flow-matching depth estimators degrade less but still show significant collapse. Output-level repair with oracle mask knowledge recovers only 47%, with errors propagating outside the corrupted region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report full metric tables, statistical tests, exact model list, code/data availability, ablations beyond the named controls, or whether the ICML 2026 claim is accepted, under review, or workshop-related.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is relevant to the matched query &amp;#x27;causality&amp;#x27; because it directly frames dense vision failures as failures to verify physical causality and uses controlled counterfactual interventions to test causal plausibility in model predictions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; computer-vision, depth-estimation, causality, counterfactual-evaluation, robustness, physical-plausibility&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s framework or pipeline figure showing clean input, Scrambled Edges construction, matched controls, depth-predictor response, and global Geometric Collapse propagation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Wentao Zhang, Jinhu Qi, Weiqiang Jin, Yifei Zhang, Chan-Tong Lam, Irwin King&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.06871v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+    </item>
+    <item>
+      <title>LLMs Silently Correct African American English: Auditing and Mitigating Dialect Bias via Activation Steering</title>
+      <link>http://arxiv.org/abs/2607.06845v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.06845v1</guid>
+      <pubDate>Tue, 07 Jul 2026 22:36:30 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 59/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 52, Empirical 76, Reproducibility 55, Manuscript 73&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Author citation counts or h-index not supplied., No DOI, journal, or conference information supplied., No code repository mentioned in the supplied metadata or abstract., No full list of evaluated model names in the abstract., No ablation study details in the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper in cs.CL, published 2026-07-07.; Evaluates six instruction-tuned LLMs spanning 14B to 70B parameters.; Introduces conditional Dialect Group Invariance and feature-level localization analysis.; Reports negative concord as a universal trigger across all evaluated models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper audits and mitigates LLM bias that rewrites African American English into Standard American English, proposing cDGI auditing, feature-level bias localization, and activation steering as a training-free mitigation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Instruction-tuned LLMs may misinterpret or normalize African American English by preferring Standard American English continuations even when the input context is in AAE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors evaluate six instruction-tuned LLMs from 14B to 70B, introduce conditional Dialect Group Invariance to separate model bias from translation artifacts, localize AAE features that trigger bias, and apply causal-tracing-derived activation steering directions at test time to reduce dialect bias.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new elements claimed in the abstract are cDGI for dialect-bias auditing, feature-level localization of AAE markers that trigger bias, the first application of activation steering to dialect bias, and the REAL-AAE parallel corpus of 17,479 AAE/SAE/AAE_back tweet-derived triplets.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across all six models, syntactic constructions, especially negative concord such as &amp;quot;ain&amp;#x27;t nobody&amp;quot;, are universal bias triggers; activation steering reportedly reduces bias 5 to 20 times more than prompting while preserving SAE fluency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report full benchmark details, statistical uncertainty, ablations, robustness tests, code availability, model names, or whether results generalize beyond tweet-derived AAE data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Matched the configured query &amp;quot;causality&amp;quot; because the mitigation extracts dialect directions via causal tracing and uses activation steering, making it relevant to causal representation analysis in LLM behavior even though the main topic is dialect bias.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM bias, African American English, activation steering, causal tracing, dialect robustness, NLP fairness, cs.CL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the end-to-end audit-and-mitigation pipeline: AAE/SAE triplets, cDGI bias measurement, feature-level trigger localization, causal tracing to derive dialect directions, and layer-wise activation steering during generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Huan Wu, Ali Emami, Muhammad Furquan Hassan, Osaretin Igbinoba, Osakpolor Idusuyi, Osamede Igbinoba, Faiza Khan Khattak, Laleh Seyyed-Kalantari&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.06845v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
       <title>Embracing Spillover: Spatial Effects in Experiments</title>
       <link>http://arxiv.org/abs/2607.06506v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2607.06506v1</guid>
@@ -530,6 +719,30 @@
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.06481v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.CV</category>
       <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Final Checkpoints Are Not Enough: Analyzing Latent Reasoning Faithfulness Along Training Trajectories</title>
+      <link>http://arxiv.org/abs/2607.06648v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.06648v1</guid>
+      <pubDate>Tue, 07 Jul 2026 16:09:44 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 54/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 42, Empirical 62, Reproducibility 30, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and prior topic record not supplied., Citation count, h-index, and influential-citation signals not supplied., No DOI, venue, journal, or conference acceptance signal supplied., Datasets, model sizes, latent reasoning paradigms, metrics, baselines, ablations, and statistical robustness are not specified in the abstract., No code repository, public data link, or implementation details supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 published 2026-07-07; no DOI, journal reference, or comment supplied.; Abstract explicitly studies latent reasoning faithfulness across saved training checkpoints.; Method includes verifiable counterfactual input edits and noise-ablation activation patching.; Reported findings distinguish output-level and activation-level trajectories and note answer-format dependence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This paper studies how the causal faithfulness of latent reasoning steps changes during training, showing that final converged checkpoints can hide divergent training-time trajectories.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Latent reasoning methods perform multi-step inference in hidden states, but it is unclear whether those hidden-state reasoning steps faithfully and causally determine final answers, especially as training progresses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors track saved checkpoints across training for different latent reasoning paradigms, using verifiable counterfactual input edits and noise-ablation activation patching on latent reasoning steps.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel angle is temporal: instead of evaluating only converged checkpoints, the paper analyzes faithfulness trajectories during training and connects output-level counterfactual behavior with activation-level causal contribution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, converged latent reasoning methods can appear similarly unfaithful under counterfactual edits while having different training trajectories; activation-level contribution of latent reasoning decays across training for both paradigms, and the trajectory depends on answer format, decaying for binary choice but rising for open-ended decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify datasets, model families, exact latent reasoning paradigms, baselines, ablations beyond the stated interventions, statistical robustness, code release, or whether results generalize beyond the tested settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because it uses causal interventions and activation patching to test whether latent reasoning states causally drive model outputs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; latent reasoning, faithfulness, causal intervention, activation patching, training dynamics, counterfactual evaluation, cs.LG, cs.CL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would plot faithfulness over training checkpoints, with separate curves for output-level counterfactual flip behavior and activation-level causal contribution, split by latent reasoning paradigm and answer format.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hengyu Jin, Shu Yang, Di Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.06648v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.CL</category>
     </item>
     <item>
       <title>Direct and efficient estimation of bilinear forms in staggered tensor panels</title>
@@ -579,6 +792,30 @@
       <category>cs.AI</category>
       <category>cs.CV</category>
       <category>cs.RO</category>
+    </item>
+    <item>
+      <title>Cross-Trajectory Chimera Interventions Reveal Dissociable Roles of Weight Magnitude and Direction in Grokking</title>
+      <link>http://arxiv.org/abs/2607.06628v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.06628v1</guid>
+      <pubDate>Tue, 07 Jul 2026 12:12:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 26, Paper 42, Empirical 78, Reproducibility 35, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation absent, author citation count or h-index absent, DOI absent, journal or conference venue absent, open-source code not indicated, public data not indicated&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-07.; Abstract reports experiments on two modular-arithmetic tasks that grok.; Cross-trajectory chimera intervention recombines weight-vector norm and unit direction across two seeds.; Direction transfer reached donor circuit identity in 40/40 cases; random angle-matched control showed no shift.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes cross-trajectory chimera interventions to test which partially trained neural-network weight properties causally transfer across independently seeded grokking runs, finding that weight direction transfers circuit identity while norm mainly controls overwrite susceptibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether causal properties identified within one training trajectory are portable across independently trained networks, focusing on grokking in modular-arithmetic tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The method splits each run&amp;#x27;s weight vector into norm and unit direction, recombines one run&amp;#x27;s norm with another run&amp;#x27;s direction, resumes training, and compares the resulting circuit identity against controls and threshold-localization experiments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a cross-trajectory causal intervention framework showing a dissociation between weight direction and magnitude: direction carries transferable donor-specific solution identity, while norm predicts when that identity can overwrite the recipient trajectory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract: implanting a donor direction at the recipient norm drove the run to the donor&amp;#x27;s circuit in 40/40 cases, angle-matched random controls caused no shift, and threshold locations separated perfectly by norm class over 20 pairs with joint permutation probability 1.9e-4.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence in the abstract is limited to two modular-arithmetic grokking tasks; no code, public data, broader architectures, robustness tests, affiliations, DOI, peer-review venue, or independent replication evidence are provided in the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality feed because it introduces causal interventions for neural-network training trajectories and tests cross-run portability rather than single-run necessity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, grokking, mechanistic interpretability, training dynamics, cross-trajectory interventions, weight geometry&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the framework or pipeline figure showing donor and recipient trajectories, norm-direction recombination, resumed training, and the threshold-like transfer result; no direct image URL is available from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Truong Xuan Khanh&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.06628v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
     </item>
     <item>
       <title>MobileWan: Closing the Quality Gap for Mobile Video Diffusion</title>
@@ -2156,241 +2393,6 @@
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.27739v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.LG</category>
-    </item>
-    <item>
-      <title>PhysiFormer: Learning to Simulate Mechanics in World Space</title>
-      <link>http://arxiv.org/abs/2606.27364v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.27364v1</guid>
-      <pubDate>Thu, 25 Jun 2026 17:59:00 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 52/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 26, Paper 35, Empirical 70, Reproducibility 75, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation count, h-index or prior-author impact metadata, DOI, journal or conference venue, exact quantitative results&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-25.; Abstract states code and models are available at the project page.; Trained on over 100k simulated trajectories.; Claims substantial improvement over autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based consistency.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; PhysiFormer frames physically plausible 3D object motion prediction as coordinate-space diffusion over mesh vertex trajectories, avoiding explicit rigidity or causality constraints while modeling uncertainty over future dynamics.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to predict physically plausible future motion for rigid and elastic 3D objects in a view-invariant world-coordinate representation rather than view-dependent video pixels or hand-designed physics latents.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes PhysiFormer, a diffusion transformer that takes initial mesh vertex positions, velocities, and material type, then samples future vertex trajectories through a single denoising diffusion process in world coordinates. Attention is factorized over time, space, and objects for efficient multi-object reasoning.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is showing that direct world-coordinate diffusion over vertex trajectories can learn rigid and elastic mechanics without explicit rigidity, causality, or other strong physics inductive biases, while still supporting diverse plausible futures under uncertainty.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, PhysiFormer is trained on over 100k simulated trajectories, generalizes to mixed-material settings, unseen real-world geometries, and larger object counts, and substantially outperforms autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based physical consistency.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative metrics, dataset details, ablations, robustness analysis, exact baseline names, or evidence about real-world deployment beyond generalization to unseen real-world geometries.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; because the paper explicitly compares against neural physics methods that enforce causality, but its main contribution is a diffusion-based mechanics simulator that works without explicit causal inductive biases rather than a causality-focused method.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; 3D motion, diffusion transformer, world models, neural physics, mesh simulation, causality, robotics, computer vision&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the model or pipeline figure showing mesh inputs, coordinate-space diffusion over vertex trajectories, factorized attention over time/space/objects, and sampled future 3D motion outputs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yiming Chen, Yushi Lan, Andrea Vedaldi&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.27364v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CV</category>
-    </item>
-    <item>
-      <title>Forecasting With LLMs: Improved Generalization Through Feature Steering</title>
-      <link>http://arxiv.org/abs/2606.27199v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.27199v1</guid>
-      <pubDate>Thu, 25 Jun 2026 15:59:20 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 45, Empirical 62, Reproducibility 20, Manuscript 66&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation or h-index signal, DOI or venue signal, model names, dataset/task details, quantitative metrics&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-25 in cs.CL and cs.LG.; Uses sparse autoencoders to inspect LLM internal states on forecasting tasks.; Reports features associated with time-aware reasoning and look-ahead-biased reasoning.; Claims amplification of time-awareness features reduces look-ahead bias while preserving general reasoning performance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies whether sparse-autoencoder features inside LLMs can be steered to reduce look-ahead bias in forecasting tasks and improve historically grounded reasoning.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; LLMs used for forecasting may rely on future-leaking or time-specific knowledge rather than generalizable historical patterns, producing look-ahead-biased forecasts.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors apply LLMs to multiple forecasting tasks, inspect internal states with sparse autoencoders, identify temporal reasoning features, and intervene by steering those features in a separate domain.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is an interpretable feature-steering approach that amplifies time-awareness features to causally shift LLM forecasting behavior away from look-ahead bias while preserving general reasoning performance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; According to the abstract, amplifying time-awareness features substantially reduces look-ahead bias on forecasting prompts while preserving general reasoning performance; steering candidate look-ahead-bias features did not produce an effect.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify models, datasets, metrics, baselines, ablations, statistical robustness, code availability, or quantitative effect sizes, so the strength and reproducibility of the result are unclear.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This matches the query &amp;#x27;causality&amp;#x27; because it uses interventions on interpretable LLM features and claims a causal shift in model behavior, though the application domain is forecasting rather than causal inference broadly.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM forecasting, feature steering, sparse autoencoders, mechanistic interpretability, look-ahead bias, causal intervention&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or architecture figure showing forecasting prompts, sparse-autoencoder feature identification, feature steering interventions, and evaluation of look-ahead bias across domains.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Humzah Merchant, Bradford Levy&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.27199v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CL</category>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>OpenRCA 2.0: From Outcome Labels to Causal Process Supervision</title>
-      <link>http://arxiv.org/abs/2606.27154v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.27154v1</guid>
-      <pubDate>Thu, 25 Jun 2026 15:24:23 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 45, Empirical 75, Reproducibility 25, Manuscript 82&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI or venue signal, open-source code, public dataset link, baseline details beyond frontier LLM evaluation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-06-25, with comment &amp;#x27;work in progress.&amp;#x27;; Introduces PAVE and OpenRCA 2.0 with 500 instances.; Evaluates 11 frontier LLMs.; Reports exact root-cause recovery of 20.7%, partial service identification of 76.0%, and grounded causal-path success of 61.5%.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; OpenRCA 2.0 proposes PAVE, a step-wise causal process supervision protocol for root cause analysis benchmarks, showing that frontier LLM agents often identify plausible root causes without grounding them in verified causal propagation paths.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies root cause analysis evaluation for LLM agents, arguing that existing datasets label only final root causes and therefore can reward pattern matching rather than causal reasoning from fault to symptom.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces PAVE, a step-wise labeling protocol that uses known fault-injection interventions to reconstruct causal propagation paths via forward verification from cause to effect, and applies it to build OpenRCA 2.0 with 500 cross-system RCA instances.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The new contribution is causal process supervision for RCA: benchmarks include step-wise causal annotations connecting root causes to symptoms, not just outcome labels.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across 11 frontier LLMs, exact root-cause set recovery averages 20.7%; agents identify at least one correct root-cause service in 76.0% of cases but ground it in a verified causal path only 61.5% of the time.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code/data availability, system details, baselines beyond the 11 LLM comparison, ablations, statistical robustness, or whether the 500-instance benchmark is publicly released; the arXiv comment also says &amp;#x27;work in progress.&amp;#x27;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the &amp;#x27;causality&amp;#x27; feed because it centers on causal propagation paths, causal annotations, and forward verification for evaluating agentic RCA rather than outcome-only diagnosis.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, root-cause-analysis, LLM-agents, benchmark, process-supervision, fault-injection&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the PAVE pipeline: injected fault intervention, forward causal propagation verification, step-wise annotation, and comparison against outcome-only RCA labels.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aoyang Fang, Yifan Yang, Jin&amp;#x27;ao Shang, Qisheng Lu, Junjielung Xu, Rui Wang, Songhan Zhang, Yuzhong Zhang, Boxi Yu, Pinjia He&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.27154v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Cross-Head Attention Uplift Network with Inverse Propensity Score under Unobserved Confounding</title>
-      <link>http://arxiv.org/abs/2606.27114v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.27114v1</guid>
-      <pubDate>Thu, 25 Jun 2026 14:49:50 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 37, Paper 48, Empirical 72, Reproducibility 38, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal or conference venue, open-source code, implementation details beyond abstract&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-25 in cs.LG.; Abstract proposes CHAUN and RA-IPS for uplift modeling under unobserved confounding.; Experiments are reported on CRITEO-UPLIFT, LAZADA, and a production e-commerce dataset.; Abstract reports up to 25.6% relative QINI-score improvement and 5.4% robustness improvement over standard IPS.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes CHAUN, a cross-head attention uplift model, plus RA-IPS, an adversarial inverse-propensity weighting method intended to make uplift modeling more robust under unobserved confounding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies individual treatment effect estimation for uplift modeling, focusing on two challenges: modeling similarity and differences between treatment/control groups, and reducing bias when unobserved confounding affects propensity estimates.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; CHAUN uses shared feature embeddings with cross-head attention to dynamically combine treatment-specific and control-specific representations. RA-IPS adversarially optimizes propensity weights inside constrained uncertainty sets when true propensity scores are unavailable.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is the combination of cross-head attention for inter-group representation sharing in uplift modeling with a robust adversarial IPS scheme for unobserved confounding, supported by an identifiability result when true propensity scores are available.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across CRITEO-UPLIFT, LAZADA, and a production e-commerce dataset, the abstract reports up to 25.6% relative QINI-score improvement over state-of-the-art uplift models; RA-IPS reportedly improves robustness over standard IPS by 5.4% under unobserved confounding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not mention code release, affiliation, DOI, peer-review venue, ablations, statistical significance, uncertainty-set design details, or how unobserved confounding is simulated/measured, so reproducibility and robustness evidence remain unclear.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causal inference&amp;#x27; because it targets ITE/uplift modeling, propensity-score weighting, identifiability, and robustness to unobserved confounding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, uplift modeling, individual treatment effects, inverse propensity score, unobserved confounding, attention networks, robustness&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing CHAUN&amp;#x27;s shared embeddings, treatment/control heads, cross-head attention flow, and the RA-IPS adversarial propensity-weighting loop would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Haoran Zhang, Chuanpu Li, Yuxin Fu, Bin Tong, Guan Wang, Bo Zheng, Feng Zhou&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.27114v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>Inherited Circuits, Learned Semantics: How Fine-Tuning Creates Evasion Vulnerabilities Invisible to Standard Evaluation</title>
-      <link>http://arxiv.org/abs/2606.27091v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.27091v1</guid>
-      <pubDate>Thu, 25 Jun 2026 14:29:03 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 40/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 35, Empirical 60, Reproducibility 25, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation not supplied, citation count or h-index not supplied, DOI, venue, or peer-review status not supplied, code repository not supplied, dataset release not supplied, numeric benchmark results not supplied&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-25 with no DOI, journal reference, or conference metadata supplied.; Abstract explicitly studies Foundation-Sec-8B-Instruct and Llama-3.1-8B-Instruct on matched PowerShell classification cohorts.; Abstract reports causal interventions localizing the classification circuit to a late-attention route inherited from Llama.; Abstract describes a three-tier evasion benchmark and specific missed transformations: iwr substitution, Invoke-Expression reconstruction, and case mutation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that security fine-tuning can preserve standard held-out accuracy while creating transformation-sensitive evasion failures, and uses causal circuit analysis plus probing to identify brittle indicator-token semantics in PowerShell classifiers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Standard evaluation of fine-tuned LLM security classifiers on same-distribution held-out data can miss vulnerabilities that appear under behavior-preserving command transformations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper compares Foundation-Sec-8B-Instruct with its base Llama-3.1-8B-Instruct on matched PowerShell classification cohorts, applies causal interventions to localize a classification circuit, evaluates a three-tier evasion benchmark, and proposes pre-deployment monitoring via a linear probe plus an indicator-token sign test.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; It connects fine-tuning-induced evasion vulnerability to inherited model circuits whose semantics become concentrated and specialized after fine-tuning, rather than treating failures as ordinary distribution shift alone.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, Foundation-Sec improves baseline behavior but misses transformed variants involving iwr substitution, Invoke-Expression reconstruction, and case-mutated Invoke-Expression/IEX cases that the base Llama model does not share.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative accuracy, evasion rates, dataset sizes, statistical tests, code availability, or whether results generalize beyond PowerShell and the two studied 8B models.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because the paper uses causal interventions to localize classification circuits and studies how fine-tuning changes causal/semantic behavior in security classifiers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal-interventions, LLM-security, fine-tuning, evasion, mechanistic-interpretability, PowerShell, security-classification&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or circuit diagram showing the inherited late-attention route, how fine-tuning changes indicator-token semantics, and how the probe/sign-test monitoring prioritizes red-team variants.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ryan Fetterman&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.27091v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CR</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Where Do Models Find Happiness? Emotion Vectors in Open-Source LLMs</title>
-      <link>http://arxiv.org/abs/2606.26987v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.26987v1</guid>
-      <pubDate>Thu, 25 Jun 2026 13:01:11 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 35, Empirical 65, Reproducibility 75, Manuscript 72&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation counts and h-index signals not supplied., No DOI, journal, or conference venue supplied., No repository URL or repository-quality metadata supplied., No dataset size or public data URL supplied., No ablation details supplied in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-25 in cs.CL and cs.AI.; Studies Apertus-8B-Instruct-2509 and Gemma-4-E4B-it.; Reports peak PC1-valence correlations of r = 0.76 and r = 0.83.; Reports corpus-sensitive arousal alignment, with r up to 0.45 for Gemma-generated stories and r &amp;lt;= 0.21 for Apertus-generated stories.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper tests whether previously reported emotion-vector phenomena generalize from Claude Sonnet 4.5 to two open-weight instruction-tuned LLMs and finds strong but architecture- and corpus-dependent valence/arousal structure.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whether internal emotion representations, especially valence and arousal geometry, are a general property of language models rather than a finding specific to Claude Sonnet 4.5.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It extracts emotion contrast vectors across all layers of Apertus-8B-Instruct-2509 and Gemma-4-E4B-it using two model-generated corpora, then analyzes principal-component alignment with psychological dimensions such as valence and arousal.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Beyond replication, the novel contribution is a cross-model, layerwise comparison showing that valence representations emerge at different depths in different open-weight models, and that arousal alignment depends strongly on the corpus used for extraction.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Both models recover valence geometry, with peak PC1-valence correlations of r = 0.76 and r = 0.83, comparable to the r = 0.81 reported for Claude; arousal alignment is weaker and corpus-sensitive, reaching r up to 0.45 with Gemma-generated stories but no more than 0.21 with Apertus-generated stories.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report causal intervention results for the open-weight models, statistical uncertainty, ablations, full baseline details, dataset size, or robustness checks beyond the two models and two generated corpora.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;quot;causality&amp;quot; because it builds on prior work claiming emotion vectors causally influence model behavior, though the supplied abstract mainly supports representational replication and geometry analysis rather than new causal evidence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM interpretability, emotion vectors, representation geometry, mechanistic interpretability, open-weight models, valence, arousal, causality-adjacent&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a layerwise plot comparing valence/arousal alignment across Apertus and Gemma, plus a schematic of the emotion contrast-vector extraction pipeline.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sinie van der Ben, Raphaël Baur, Yannick Metz, Mennatallah El-Assady&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.26987v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CL</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Semiparametric Inference for Half-Trek Estimators in Linear Structural Equation Models</title>
-      <link>http://arxiv.org/abs/2606.26931v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.26931v1</guid>
-      <pubDate>Thu, 25 Jun 2026 12:05:54 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 50, Paper 50, Empirical 50, Reproducibility 40, Manuscript 82&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; No affiliation metadata supplied., No citation count or h-index metadata supplied., No DOI, journal, or conference reference supplied., No code repository or software availability mentioned., No simulation study, baselines, ablations, or robustness evidence mentioned in the abstract., No explicit limitations stated in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-06-25 in stat.ME and math.ST.; Abstract explicitly identifies the missing inferential theory for HTC estimators as the problem.; Claims derivation of semiparametric influence functions for all HTC-identified directed mixed graphs, including cyclic ones.; Claims asymptotic normality and closed-form variance for confidence regions, intervals, and Wald tests.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper derives asymptotically valid semiparametric inference for half-trek criterion estimators in linear structural equation models on directed mixed graphs, including cyclic graphs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Half-trek criterion identification gives closed-form rational estimators for structural coefficients in linear SEMs with latent confounding, but the abstract states that their asymptotic distribution, standard errors, and confidence regions had not been derived.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors derive the semiparametric influence function for HTC estimators across all HTC-identified directed mixed graphs, with recursive corrections for uncertainty from earlier estimation stages, then use it to obtain asymptotic normality and closed-form variance formulas.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is inferential theory for HTC estimators: influence functions, standard errors, confidence regions, marginal intervals, and Wald tests, rather than only point identification or closed-form estimation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract claims the HTC estimator is asymptotically normal with closed-form computable variance, and demonstrates the method on the Fulton Fish Market dataset to summarize the causal effect of supply on demand.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports one applied dataset but does not mention simulations, finite-sample performance, robustness checks, software, code, or comparisons against alternative inference methods.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because it targets causal effect estimation and inference in structural equation models with latent confounding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, structural-equation-models, half-trek-criterion, identifiability, semiparametric-inference, directed-mixed-graphs, latent-confounding&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline or graphical-model figure showing HTC identification, recursive influence-function correction across estimation stages, and resulting variance-based inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Leopold Mareis, Nils Sturma, Mathias Drton&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.26931v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>stat.ME</category>
-      <category>math.ST</category>
-    </item>
-    <item>
-      <title>TAVR-VLM: Risk-Conditioned Causal Grounding for Hallucination-Resistant Report Generation</title>
-      <link>http://arxiv.org/abs/2606.26874v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.26874v1</guid>
-      <pubDate>Thu, 25 Jun 2026 11:01:17 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 22, Paper 35, Empirical 70, Reproducibility 25, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation and h-index signals not supplied., No DOI, conference, or journal reference supplied., No code or repository information supplied., No public data availability information supplied., Baselines are not named in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract introduces TAVR-VLM with Risk-Conditioned Causal Grounding Attention.; Method claims a Risk -&amp;gt; Region -&amp;gt; Word structural grounding pathway.; Evaluation uses M3TAVR, described as a 1,482-patient cohort.; Reported metrics: AUROC 0.896, CIDEr 0.936, hallucination rate 8.1%.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; TAVR-VLM proposes a risk-conditioned causal grounding framework for TAVR report generation that aims to reduce anatomically ungrounded hallucinations in multimodal medical LLM outputs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies hallucination in multimodal large language models for high-stakes Transcatheter Aortic Valve Replacement planning, where generated reports may lack anatomical grounding despite requiring multimodal clinical reasoning.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces TAVR-VLM with Risk-Conditioned Causal Grounding Attention, which forms a model-internal Risk -&amp;gt; Region -&amp;gt; Word pathway: multimodal inputs are compressed through a causal risk bottleneck into a global risk mask, and autoregressive generation is constrained by a support-projected causal consistency objective at token level.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel element is the explicit risk-conditioned causal grounding mechanism that links predicted clinical risk to visual regions and generated words, rather than relying on generic multimodal attention or post-hoc grounding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, TAVR-VLM is evaluated on M3TAVR, a 1,482-patient cohort, and reports state-of-the-art performance with AUROC 0.896, CIDEr 0.936, and hallucination rate reduced to 8.1%.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report baselines, ablations, confidence intervals, external validation, code availability, data accessibility, or details on how hallucination rate was measured.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because its central mechanism is framed as causal grounding, including a causal risk bottleneck and causal consistency objective for multimodal generation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal-grounding, multimodal-llm, medical-ai, hallucination-reduction, report-generation, tavr&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework figure showing the Risk -&amp;gt; Region -&amp;gt; Word pathway, causal risk bottleneck, risk mask construction, and token-level grounding constraint would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zhixiang Lu, Xiwei Liu, Sifan Song, Changkai Ji, Anh Nguyen, Jionglong Su, Imran Razzak, Jinfeng Wang&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.26874v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Optimizing Experimental Design for Causal Effect Estimation with Partial Measurements</title>
-      <link>http://arxiv.org/abs/2606.26818v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.26818v1</guid>
-      <pubDate>Thu, 25 Jun 2026 10:00:43 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 57/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 46, Paper 75, Empirical 55, Reproducibility 35, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliation not supplied., Citation count and h-index not supplied., No open-source code or repository mentioned., No public dataset details mentioned., No baselines, ablations, or robustness checks visible in the abstract., No quantitative empirical results visible in the abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Abstract explicitly studies instrumental variable regression for causal effects between a confounded treatment and response using an instrument.; Method assumes a Gaussian graphical model and optimizes partial versus complete samples under a budget constraint.; Metadata lists DOI, Springer journal reference, and PCIC 2024 publication comment.; Abstract claims reduced asymptotic variance, budget, and complete-sample requirements but gives no numerical results.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper studies budget-aware experimental design for instrumental-variable causal effect estimation when partial measurements can be collected more cheaply than complete samples.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It addresses how to improve estimation accuracy for a causal effect in instrumental variable regression when some prior joint-distribution information is available but additional data collection is costly and can include partial measurements of only some variables.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper develops an adaptive design framework for a Gaussian graphical model, assigning costs to complete and partial samples and analytically optimizing the number of each sample type under a budget constraint. It also derives significance, power, and sample-size calculations for detecting a non-zero causal effect under the optimized allocation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, relative to standard IV estimation with uniformly complete samples, is the explicit use of costed partial measurements to reduce asymptotic estimator variance and budget requirements under specific Gaussian parameter configurations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract claims that partial samples such as measurements of X_12 can reduce asymptotic variance and that the proposed allocation can considerably reduce the required budget and number of complete samples, but it does not report concrete numerical effect sizes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract restricts the main theoretical claim to specific parameter configurations in a Gaussian graphical model and does not provide code, datasets, quantitative benchmark results, robustness checks, or details on how broad the practical gains are.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This directly matches the causal inference feed because it proposes an experimental design method for estimating causal effects with instrumental variables, with applications framed around adaptive causal effect estimation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal inference, instrumental variables, experimental design, partial measurements, Gaussian graphical models, budget allocation, sample-size planning&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would show the Gaussian graphical model/instrumental-variable setup and the budget-allocation pipeline comparing complete and partial sampling strategies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Leopold Mareis&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causal inference, causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.26818v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>stat.ME</category>
-      <category>math.ST</category>
-    </item>
-    <item>
-      <title>LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing</title>
-      <link>http://arxiv.org/abs/2606.26740v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2606.26740v1</guid>
-      <pubDate>Thu, 25 Jun 2026 08:24:03 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 57/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 75, Empirical 70, Reproducibility 35, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations not supplied., Citation count and h-index signals not supplied., DOI and journal reference absent., Code repository and license not supplied in metadata., Dataset details, benchmark composition, and public data availability not described in abstract., Ablations, statistical robustness, hardware setup, and resolution settings not described in abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Accepted by ECCV 2026 according to the comment metadata.; Project page is listed: https://live-edit.github.io.; Abstract claims a three-stage distillation pipeline from a bidirectional foundation model to a unidirectional streaming editor.; Abstract claims a dedicated benchmark and extensive evaluations against streaming baselines.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; LiveEdit proposes a diffusion-based framework for causal, frame-by-frame streaming video editing that preserves unedited content while reaching real-time-ish inference speed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies practical streaming video editing, where edited regions must be controlled while backgrounds and non-edited regions remain temporally stable, and where latency must be low enough for interactive or AR use.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces a three-stage distillation pipeline that transfers editing capability from a bidirectional foundation model to an efficient unidirectional streaming editor, plus an AR-oriented mask cache that reuses region-related computation across frames.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, based on the abstract, is combining causal unidirectional video editing with progressive distillation from a stronger bidirectional model and a mask-cache mechanism tailored to region-specific streaming edits.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports state-of-the-art visual quality among streaming baselines and inference speed of 12.66 FPS on a dedicated streaming video editing benchmark.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify datasets, model size, hardware, ablations, robustness tests, user studies, code release, or whether 12.66 FPS holds across resolutions and edit types.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query because it explicitly performs causal frame-by-frame editing with a unidirectional streaming editor, though the use of &amp;#x27;causal&amp;#x27; appears to mean temporally causal generation rather than causal inference.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; streaming-video-editing, diffusion-models, causal-generation, real-time-video, distillation, augmented-reality&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework or pipeline figure showing the three-stage distillation process, unidirectional streaming editor, and AR mask cache would be useful, but no direct image URL is available from the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xinyu Wang, Chongbo Zhao, Fangneng Zhan, Yue Ma&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2606.26740v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CV</category>
     </item>
   </channel>
 </rss>
