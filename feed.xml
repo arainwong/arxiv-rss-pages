@@ -9,7 +9,7 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Fri, 24 Jul 2026 07:55:58 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 06:46:29 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
     <item>
       <title>Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity</title>
@@ -224,6 +224,222 @@
       <category>cs.LG</category>
     </item>
     <item>
+      <title>Where Animacy Lives in Large Language Models: Tracing the Circuits of the Animacy Concept</title>
+      <link>http://arxiv.org/abs/2607.20995v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20995v1</guid>
+      <pubDate>Thu, 23 Jul 2026 07:19:44 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 48/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 18, Paper 45, Empirical 75, Reproducibility 35, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution information, Author citation counts and h-index signals, DOI, journal, or conference publication signal, Paper citation and influential-citation signals, Names and sizes of the four evaluated models, Dataset size, composition, and public-release status&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The study uses a controlled dataset of minimal pairs.; Circuit discovery is performed on four open-weight models.; The abstract explicitly reports in-depth experiments and ablations.; The discovered mechanism is described as less localized than other known circuits.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper uses controlled minimal pairs, circuit discovery, and causal ablations across four open-weight LLMs to identify an animacy-sensitive mechanism that is relatively distributed and only partly transferable across models and tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies whether LLM behavior sensitive to the distinction between animate and inanimate concepts—especially in contextual verb–argument interactions—can be causally attributed to a localized set of model components and connections.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors construct a controlled dataset of minimal pairs, apply circuit-discovery methods to four open-weight language models, and conduct experiments and ablations to test the causal relevance, localization, and cross-model and cross-task generalization of the resulting animacy circuit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is the discovery of a causally implicated animacy circuit, coupled with evidence that this semantic mechanism is less localized than previously known circuits and reflects the distributed, context-dependent, graded character of animacy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that a causal mechanism for animacy exists in all investigated models, but that the discovered circuit is comparatively diffuse and generalizes only partially across models and animacy tasks. No numerical effect sizes, model names, dataset size, or task-level metrics are provided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The evidence described in the abstract is limited to four unspecified open-weight models and partial cross-model/task generalization. It does not report dataset size, quantitative metrics, statistical robustness, comparison baselines, code or data availability, or tests on closed-weight and broader model families.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper strongly matches the query &amp;quot;causality&amp;quot; because it uses circuit discovery and ablation to move beyond behavioral correlation and test which internal LLM components causally support animacy-sensitive processing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; mechanistic interpretability, causal circuits, animacy, large language models, circuit discovery, causal ablation, linguistic concepts, cs.CL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A circuit diagram showing the causally relevant components and connections for animacy, alongside localization and cross-model/task overlap, would be the most useful figure; no direct image URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Samuele Punzo, Giovanni Cinà, Sandro Pezzelle&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20995v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>The Weight of Silence: A Causal Case for Weights Over the Scratchpad in Latent Chess Reasoning</title>
+      <link>http://arxiv.org/abs/2607.20952v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20952v1</guid>
+      <pubDate>Thu, 23 Jul 2026 06:18:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 51/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 55, Empirical 72, Reproducibility 25, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliation or institution, Author citation count or h-index, DOI, journal, or conference acceptance, Paper citation or influential-citation information, Open-source code or repository, Public training and evaluation data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The study compares the same chess model before and after an RL stage.; It reports six causal intervention conditions on latent thought vectors.; Move legality rises from 48% before RL to 61% afterward.; Exact-zero corruption yields 1% legality before RL and 9% after RL, with correction across the intervention battery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A causal intervention study of latent chess reasoning finds that reinforcement learning improves chess legality and robustness to disrupted latent states, but provides little evidence that the model actively consults the content of those states as an inference-time scratchpad.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper tests whether latent reasoning vectors function as an actively consulted internal scratchpad and whether reinforcement learning changes the model&amp;#x27;s causal reliance on those vectors—questions previously examined mainly within single checkpoints on math and logic tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The author trains a chess model using a staged latent-reasoning curriculum followed by reinforcement learning, then compares the same model before and after RL using six causal intervention conditions, including matched-noise substitution, noise addition, ablation, and exact-zero corruption of latent thought vectors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is the before-versus-after-RL causal comparison in a non-math domain. The observed pattern separates robustness from content reliance: RL makes the model less vulnerable to severe latent-state disruption without making performance measurably dependent on the specific information encoded in latent thoughts, suggesting that latent reasoning may primarily shape learned weights during training.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; After RL, legal chess moves increase from 48% to 61% and checkmate confabulation falls to zero. Noise substitution or addition has no reported effect, ablation causes only mild degradation, and exact-zero corruption collapses legality to 1% before RL versus 9% afterward; this pre/post gap remains significant after correction across the intervention battery, while milder-condition trends do not independently reach significance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports results for one chess-playing model and does not establish generality across architectures, model scales, random seeds, or domains. It supplies limited metric detail beyond legality and checkmate confabulation, and does not mention comparisons with strong alternative training methods, public code or data, implementation completeness, or broader robustness tests. The evidence therefore challenges the scratchpad interpretation in this setting but does not rule it out generally.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper is highly relevant to the matched query “causality” because causal interventions on internal latent representations are its central methodology, including controlled corruption conditions and a statistically corrected comparison of causal effects before and after reinforcement learning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, latent reasoning, reinforcement learning, language models, mechanistic analysis, chess, representation intervention, inference-time scratchpad&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing the latent-reasoning curriculum, RL stage, six intervention conditions, and pre/post-RL causal comparison would be most useful; the metadata reports five figures but provides no direct figure URL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ishan S. Kshirsagar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20952v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Chemical Chain-of-Thought Functions as a Hallucination-Prone Molecular Scratchpad</title>
+      <link>http://arxiv.org/abs/2607.20935v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20935v1</guid>
+      <pubDate>Thu, 23 Jul 2026 05:30:45 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 46/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 36, Empirical 67, Reproducibility 20, Manuscript 73&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations and institution metadata, author citation counts and h-indexes, DOI, journal, or conference acceptance, paper citation and influential-citation metadata, quantitative results and effect sizes, named datasets and task-level coverage details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The study covers four reasoning-model families and twelve chemistry tasks.; The abstract reports widespread hallucination that is largely decoupled from answer correctness.; Attribution analyses identify different scratchpad forms across Chem-R, ether-0, and ChemDFM-R.; Perturbing Chem-R&amp;#x27;s SMILES sketches reportedly degrades generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Across four chemical-reasoning model families and twelve chemistry tasks, the paper argues that chain-of-thought is often structurally hallucinatory yet can still function as a causally important molecular scratchpad.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whether chemical language models&amp;#x27; chain-of-thought traces faithfully explain how molecular answers are derived, particularly when answers are correct despite fabricated structural claims.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It evaluates hallucination and answer correctness across four reasoning-model families and twelve chemistry tasks, applies attribution analyses to characterize model-specific scratchpad behavior, and perturbs Chem-R&amp;#x27;s intermediate SMILES sketches to test their causal effect on generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The central distinction is between explanatory faithfulness and computational usefulness: chemical chain-of-thought can contain false verbal claims while intermediate structural drafts remain causally load-bearing, challenging both faithful-reasoning and purely post-hoc-rationalization interpretations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Hallucination is widespread and largely decoupled from answer correctness. Chem-R and ether-0 rely on fragmented SMILES drafts, while ChemDFM-R uses scaffold, positional, and naming cues; perturbing Chem-R&amp;#x27;s SMILES sketches degrades generation. The abstract provides no numerical effect sizes or task-level results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence in the abstract is incomplete: only Chem-R receives an explicitly described causal perturbation, attribution alone may not establish causality for the other models, and no quantitative hallucination rates, effect sizes, baselines, statistical tests, ablations, robustness checks, code, or data availability are reported.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query through an intervention on intermediate SMILES sketches, using performance degradation to argue that some chain-of-thought components are causally involved in chemical generation. Its broader focus is chemical reasoning and interpretability rather than general causal inference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, chain-of-thought, chemical reasoning, hallucination, mechanistic interpretability, SMILES, language models, process supervision&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing trace extraction, hallucination detection, attribution, SMILES perturbation, and the resulting generation-performance change would be most useful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jiatong Li, Yuxuan Ren, Weida Wang, Xiaoyong Wei, Yatao Bian&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20935v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CE</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Probabilistic Residual Learning for Online Recommendations</title>
+      <link>http://arxiv.org/abs/2607.20863v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20863v1</guid>
+      <pubDate>Thu, 23 Jul 2026 02:39:12 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 68, Empirical 45, Reproducibility 10, Manuscript 75&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institutional metadata, Author citation counts and h-indices, Paper citation and influential-citation data, DOI or journal reference, Named datasets and evaluation scenarios, Named baselines and quantitative metrics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The manuscript is arXiv v1, published July 23, 2026.; The metadata states acceptance at ACM RecSys 2026.; PRL explicitly models domain-level confounders and performs aggregation using do-calculus.; The abstract claims compatibility with various deep-learning recommenders and improved performance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; PRL is a plug-and-play causal Bayesian residual-learning framework that refines deep recommender predictions by probabilistically clustering users, modeling domain confounders, and aggregating cluster-specific corrections with do-calculus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Deep recommender systems are computationally complex and difficult to interpret or systematically improve; the paper studies how to enhance an existing model through targeted correction of the residual between its predictions and ground truth.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; Probabilistic Residual Learning models errors from a base recommender, probabilistically groups users for localized residual estimation, represents domain-level confounders affecting user and item embeddings, and uses do-calculus to aggregate cluster-specific residual predictions across those confounders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty claimed is a model-agnostic residual correction layer that combines probabilistic user clustering with explicit causal adjustment for domain confounders, rather than replacing or retraining the underlying deep recommender architecture.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports improvements across various base deep-learning recommender systems and the automatic discovery of meaningful user clusters, but supplies no datasets, metrics, effect sizes, named baselines, statistical tests, or ablation results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence in the abstract is qualitative: it does not establish the magnitude or robustness of improvements, validate the assumed causal graph or confounders, compare against specific residual or causal-recommendation baselines, quantify computational overhead, or report code and data availability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper strongly matches the query &amp;quot;causality&amp;quot; because causal confounder modeling and do-calculus are central components of its recommendation framework, rather than incidental terminology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal recommendation, recommender systems, probabilistic residual learning, Bayesian modeling, do-calculus, confounder adjustment, user clustering, plug-and-play refinement&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would diagram the PRL pipeline from base recommender predictions through probabilistic user clustering and domain-confounder adjustment to do-calculus aggregation and the final residual-corrected recommendation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Wenyuan Wang, Yusong Zhao, Zihao Xu, Hengyi Wang, Qi Xu, Zhigang Hua, Yan Xie, Yi Wang, Zihao Zhao, Bo Long, Chengzhi Mao, Shuang Yang, Hengguan Huang, Hao Wang&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20863v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.IR</category>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+    </item>
+    <item>
+      <title>Toward Mechanistic Interpretability of an AI Foundation Model Fine-Tuned for Atmospheric Chemistry</title>
+      <link>http://arxiv.org/abs/2607.20778v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20778v1</guid>
+      <pubDate>Wed, 22 Jul 2026 23:00:02 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 27, Paper 40, Empirical 60, Reproducibility 20, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institutional metadata, Author citation counts and h-indices, DOI, journal, or conference publication signal, Paper citation and influential-citation signals, Quantitative metrics and effect sizes, Explicit baselines and matched process-model comparisons&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The paper analyzes Microsoft Aurora using controlled chemical perturbations tested against known photochemical relationships.; It reports a first-order ozone response to reactive nitrogen alongside chemically inconsistent combinations of related species.; Internal representations are described as largely meteorological, with little chemistry-specific structure.; Sparse autoencoders identify components that causally control chemical forecasts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper uses controlled chemical perturbations and sparse-autoencoder analysis to test whether Microsoft Aurora’s atmospheric-chemistry forecasts reflect learned mechanisms, finding limited first-order chemical behavior but substantial chemical inconsistency and meteorology-dominated representations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; High benchmark skill does not establish whether weather foundation models fine-tuned for air-quality forecasting learn atmospheric chemistry or merely exploit statistical regularities in reanalysis data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors perturb chemical inputs to Aurora under controlled conditions, compare its responses with established photochemical relationships, inspect its internal representations, and use sparse autoencoders to identify components that causally affect chemical forecasts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; It claims the first mechanistic study of a foundation model fine-tuned for atmospheric chemistry and introduces a framework combining chemistry-based intervention tests, representation analysis, and causal manipulation of learned internal components.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Aurora captures a first-order ozone response to reactive nitrogen but produces chemically inconsistent species combinations, relaxes localized features such as wildfire plumes toward background, and retains representations organized mainly around meteorology. Sparse-autoencoder components can causally control chemical forecasts, but they do not correspond cleanly to individual atmospheric processes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports no quantitative effect sizes, benchmark comparisons, ablations, statistical robustness tests, scenario or dataset counts, code release, or comparison with a process-based model under matched forecasting conditions. Conclusions are based on Aurora, so generalization to other foundation models is not established.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query “causality”: the study uses controlled interventions and identifies internal components with causal effects on forecasts. Its notion of causality is mechanistic model analysis rather than causal discovery or causal-effect estimation from observational data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, mechanistic interpretability, foundation models, atmospheric chemistry, air-quality forecasting, sparse autoencoders, Aurora, AI for science&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would diagram the pipeline from controlled chemical perturbations through Aurora’s forecast response and internal activations to sparse-autoencoder features and causal interventions, alongside expected photochemical constraints.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jason Y. Hu, Ivan Higuera-Mendieta, Patrick Obin Sturm, Makoto M. Kelp&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20778v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>physics.ao-ph</category>
+    </item>
+    <item>
+      <title>Perspective Latents as an Architectural Condition for Causal Emergence in Active Inference Agents</title>
+      <link>http://arxiv.org/abs/2607.20708v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20708v1</guid>
+      <pubDate>Wed, 22 Jul 2026 20:25:29 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 44/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 39, Paper 45, Empirical 48, Reproducibility 20, Manuscript 72&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation and institution, author citation count and h-index, DOI, journal, or conference status, citation and influential-citation information, quantitative metrics and effect sizes, comparison baselines&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The paper is a first-version arXiv submission in cs.LG and q-bio.NC.; The architecture explicitly separates fast latent z from slow global latent g.; The evaluation uses a reward-free environmental regime-switching protocol.; The abstract reports that Φ_r concentrates in g and decreases with training.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper shows that causal-emergence signatures in a reward-free active-inference agent depend strongly on its slow global latent architecture, making scalar integrated-information measures unreliable as direct indicators of learned integration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It investigates how reward-free predictive learning in active-inference agents relates to causal emergence measured through Integrated Information Decomposition, particularly whether scalar Φ_r increases with learning as previously reported for reinforcement-learning agents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The author studies an active-inference architecture with a fast perceptual latent z and a slow global latent g, where g is driven by prediction error and isolated from policy gradients, using a reward-free environmental regime-switching protocol and analyzing both aggregate Φ_r and its atom-level composition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is the distinction between architecture-driven aggregate Φ_r and learning-dependent changes visible only in its compositional atoms: Φ_r concentrates in the slow global latent g, while decoupling and downward-causation components reveal different invariant and regime-dependent effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Aggregate Φ_r is largely determined by architecture and decreases during training. At the atom level, decoupling changes from negative to positive and becomes invariant across regimes, whereas downward causation captures adaptation to environmental regime changes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports no quantitative effect sizes, uncertainty estimates, statistical tests, baselines, architectural ablations, robustness checks, dataset or environment breadth, code, or public data. Consequently, it does not establish whether the findings generalize beyond the single described architecture and regime-switching protocol.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query through its analysis of causal emergence, downward causation, and integrated-information decomposition in learned agents. It is especially relevant for researchers studying causal organization in active inference, although its connection to conventional causal inference or causal identification appears limited.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causal emergence, active inference, Integrated Information Decomposition, downward causation, representation learning, regime switching, reward-free learning, latent architecture&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the fast z and slow g latent pathways, show g&amp;#x27;s separation from policy gradients, and map aggregate Φ_r and its atom-level components across training and environmental regime switches.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hongju Pae&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20708v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>q-bio.NC</category>
+    </item>
+    <item>
+      <title>CEDAR: Causal Edge Discovery for Autoregressive Processes</title>
+      <link>http://arxiv.org/abs/2607.20696v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20696v1</guid>
+      <pubDate>Wed, 22 Jul 2026 20:01:44 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 45/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 55, Empirical 30, Reproducibility 20, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliation or institution, Author citation count and h-index, DOI, journal, or conference acceptance, Quantitative experimental results, Named datasets or simulation scenarios, Baseline comparisons&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The metadata identifies a first-version arXiv preprint in cs.LG and stat.ME.; The abstract specifies screening, two targeted CI tests, one retained lag per ordered pair, and stable MCI pruning.; The claimed post-screening complexity is O(d^2) CI tests in sparse regimes.; The abstract explicitly states favorable and unfavorable operating regimes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; CEDAR is a constraint-based framework for discovering interpretable lagged causal edges in sparse autoregressive time series, designed especially for scarce-data settings with strong lag-1 self-dynamics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies lagged causal-edge discovery in sparse multivariate autoregressive time series, where limited observations make large conditioning sets and numerous conditional-independence tests problematic.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; CEDAR first screens cross-variable lag candidates using AR(1)-residualized, U-centered distance correlation, performs two targeted conditional-independence tests for each significant candidate, retains at most one lag per ordered variable pair, and uses stable MCI pruning to remove indirect edges. Optional deterministic C-nodes represent specified trend-like nonstationarity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main claimed novelty is a deliberately sparse, edge-interpretable causal-discovery pipeline that reduces post-screening complexity to O(d^2) conditional-independence tests when few candidate lags survive, while explicitly targeting scarce-data, lag-1 autoregressive regimes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract claims that CEDAR is most effective with scarce data and lag-1 self-dynamics, but reports no datasets, baselines, numerical metrics, uncertainty estimates, or quantitative improvement over competing methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The method assumes a sparse surviving candidate set, accepts at most one lag per ordered pair, and is less suitable for higher-order autoregression or simultaneous multi-lag effects. Trend adjustment requires specified deterministic C-nodes. The abstract provides no quantitative validation, robustness analysis, ablations, or reproducibility resources.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the query &amp;quot;causality&amp;quot; because it proposes a causal-discovery method for identifying directed, lagged relationships in autoregressive time series.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, causal discovery, time series, autoregressive processes, conditional independence, distance correlation, lag discovery, sparse models&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing AR(1) residualization, distance-correlation screening, targeted CI testing, one-lag selection, MCI pruning, and optional C-node adjustment would be useful; no direct figure URL is supplied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Mohammad Fesanghary&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20696v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>stat.ME</category>
+    </item>
+    <item>
+      <title>Scaling Interpretable Transformers with Parity Bottleneck Layers</title>
+      <link>http://arxiv.org/abs/2607.20652v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20652v1</guid>
+      <pubDate>Wed, 22 Jul 2026 18:25:16 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 45/100 (TL;DR only, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 12, Paper 55, Empirical 68, Reproducibility 18, Manuscript 80&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution evidence, Author citation counts and h-index signals, DOI, journal, or conference acceptance, Exact datasets, scenarios, and evaluation metrics, Numerical results and statistical uncertainty, Language-model capability or perplexity comparisons&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The submission is arXiv v1, published July 22, 2026, in cs.LG and cs.AI.; The architecture is described at GPT-2 scale.; Deep Parity Bottlenecks use a parameter-free algebraic dictionary with a claimed deterministic incoherence guarantee.; The abstract reports comparisons against post-hoc SAEs across probing, feature absorption, steering, and causal interventions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; ParityTransformer replaces costly learned over-complete bottlenecks with parameter-free, structured sparse parity dictionaries to make GPT-2-scale transformers interpretable during their forward pass rather than only through post-hoc analysis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to train transformers whose internal features are sparse and interpretable by construction, avoiding the prohibitive memory and compute cost of placing learned over-complete bottlenecks at every layer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces ParityTransformer, a GPT-2-scale architecture in which each layer uses a Deep Parity Bottleneck: a parameter-free algebraic dictionary with deterministic incoherence guarantees and hierarchical sparsity enforced through a hardware-aware, multi-level mixture-of-experts implementation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new idea is an efficient per-layer sparse bottleneck based on a fixed algebraic dictionary, making interpretable features native to the model&amp;#x27;s computation and ensuring downstream computation operates only on features that survive the bottleneck; this contrasts with standard sparse autoencoders that recover features post hoc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports performance at least matching post-hoc sparse autoencoders on sparse probing and outperforming them on feature absorption, steering effectiveness, and fine-grained causal interventions. It provides no numerical effect sizes, datasets, model-quality results, or statistical uncertainty.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence in the abstract is incomplete: there are no quantitative results, dataset or compute details, comparisons with broader interpretability methods, ablations, robustness tests, or confirmation that code and checkpoints are available. Evaluation appears limited to GPT-2 scale, so scalability beyond that regime is unsubstantiated here.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the causality feed through its evaluation of fine-grained causal interventions and its claim that learned sparse features participate directly in forward computation. Causality is an evaluation mechanism rather than the paper&amp;#x27;s primary research problem, so relevance is moderate rather than central.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; mechanistic interpretability, sparse autoencoders, interpretable-by-design models, transformers, sparse representations, causal interventions, mixture of experts, feature steering&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would compare a conventional transformer plus post-hoc SAE with a ParityTransformer layer, showing the hierarchical Deep Parity Bottleneck, fixed algebraic dictionary, sparse feature routing, and how retained features feed subsequent computation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Andrew Mack, Kraig Yuheng Tou, Mark Henry, Zhengxun Wu, Lauren Greenspan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20652v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>Are Single-Token Sparse Autoencoder Features Causally Necessary? Layer-Depth and SAE-Family Effects</title>
+      <link>http://arxiv.org/abs/2607.20596v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20596v1</guid>
+      <pubDate>Wed, 22 Jul 2026 17:33:16 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 58, Empirical 80, Reproducibility 20, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institutional provenance, Author citation counts and h-indices, DOI, journal, or conference acceptance, Paper citation and influential-citation signals, Open-source code or repository, Public data and artifact availability&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The study analyzes 3.9M features across six models and three SAE families.; Zero-ablation is evaluated at full layer depth.; Logit reductions are Benjamini-Hochberg-significant in 178 of 208 conditions.; Target-token rank recovers to within 2x baseline in 96–98% of cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A large-scale causal-ablation study finds that single-token sparse-autoencoder features behave differently across SAE families, making interpretability conclusions sensitive to training methodology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper tests whether the causal role of interpretable SAE features is stable across different SAE families, using single-token features as a diagnostic setting where feature-token correspondence can be compared directly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors analyze 3.9 million features from six models and three SAE families, identify single-token features, examine their decoder-space clustering and layer distribution, and apply zero-ablation at full layer depth while measuring target-token logit and rank changes. They also compare SAE families, scales, depths, and activation functions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a controlled cross-family test of SAE feature causal necessity. It shows that differences between SAE training families can exceed within-family scale effects: GemmaScope and BatchTopK features remain causally anchored, whereas LlamaScope features appear locally redundant. A same-model activation-function comparison reverses the effect&amp;#x27;s sign, pointing to the remaining training recipe as a candidate explanation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Single-token features cluster 4.7 times more tightly in decoder space and concentrate in early layers. Ablation produces Benjamini-Hochberg-significant target-logit reductions in 178 of 208 full-layer conditions, although target-token rank returns to within twice its baseline rank in 96–98% of cases. Layer depth determines whether the perturbation cascades downstream or affects output more directly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report open-source code, public artifacts, detailed datasets, uncertainty magnitudes, effect sizes beyond the stated aggregate results, broader semantic-feature validation, or extensive ablations isolating individual training-recipe components. Because the evidence centers on single-token features, generalization to polysemantic or higher-level SAE features remains uncertain; the training recipe is identified only as a residual candidate rather than causally isolated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query &amp;quot;causality&amp;quot;: it evaluates causal necessity through feature ablation and examines whether causal interpretability conclusions remain stable across SAE families and layer depths.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, sparse autoencoders, mechanistic interpretability, large language models, feature ablation, SAE families, layer depth, single-token features&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a pipeline figure showing single-token feature identification, layer-wise zero-ablation, downstream logit/rank measurement, and the comparison among GemmaScope, BatchTopK, and LlamaScope.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Seonglae Cho, Zekun Wu, Kleyton Da Costa, Rishi Kalra, Ilham Wicaksono, Adriano Koshiyama&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20596v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.CL</category>
+    </item>
+    <item>
       <title>Statevector-Referenced Geometry Survival of a Four-Qubit ZZ Quantum Kernel on IBM Quantum Hardware: A Fixed-Subset Diagnostic Across Three Execution Configurations</title>
       <link>http://arxiv.org/abs/2607.20377v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2607.20377v1</guid>
@@ -269,6 +485,31 @@
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20368v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.CV</category>
+    </item>
+    <item>
+      <title>When Does Recurrence Become an Algorithm? Convergence Selection in Weight-Tied Looped Transformers</title>
+      <link>http://arxiv.org/abs/2607.20594v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2607.20594v1</guid>
+      <pubDate>Wed, 22 Jul 2026 16:04:31 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 42, Empirical 84, Reproducibility 35, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations and institution information, author citation counts and h-indexes, paper citation and influential-citation data, DOI, journal, or conference acceptance, open-source code or repository, public training data and preprocessing details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The paper is arXiv v1, published 2026-07-22, with no supplied DOI, journal reference, or conference information.; The abstract reports a scaling exponent of 0.98 +/- 0.04 and R^2=0.99.; Experiments compare weight-tied, standard-depth, and parameter/depth-matched untied transformers.; The proposed diagnostic is causally checked using damage cones whose slope reportedly reproduces the frontier velocity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Controlled group-word experiments show that weight tying steers looped transformers toward serial, algorithm-like computation frontiers whose speed is set by the training loop budget and can be measured causally to predict length extrapolation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper asks when repeatedly applying one weight-tied transformer block produces a genuine iterative algorithm, what determines the selected computation strategy, and how that mechanism can be detected before out-of-distribution evaluation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors train weight-tied and untied transformers on controlled group word problems under varying input-length and loop-budget contracts. They characterize a linear computation frontier, estimate its velocity v using convergence-time scaling tau(n,i), test the mechanism through causal damage-cone interventions, and study architectural priors, curricula, warm starts, extra test-time loops, and replication on a public easy-to-hard benchmark.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is a quantitative budget law, v ~ n_train/T_train, connecting the training contract to the speed of a learned serial algorithm. The paper also proposes convergence-time scaling as a head-level diagnostic whose causal damage-cone slope recovers v and predicts out-of-distribution behavior when conventional tail metrics saturate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The reported scaling exponent is 0.98 +/- 0.04 with R^2=0.99, becoming exactly linear under T=n training. Extra test-time loops recover later positions and motivate T*=ceil(n/v-hat). Weight tying selects a serial frontier while standard-depth transformers learn parallel scans; matched untied models extrapolate worse and reportedly fail on A5. An operator-first curriculum resolves S5 joint-training deadlock in every tested seed, and the findings replicate on a public benchmark.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to the group-word setting and one referenced easy-to-hard benchmark, so applicability to natural-language reasoning or other algorithmic tasks is unknown. The abstract does not report sample sizes, seed counts, full metric tables, computational cost, code, implementation details, broad baseline coverage, or failure cases beyond the studied groups; several strong statements therefore cannot be independently assessed from the supplied metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the causality query because it does more than report correlations: it claims causal validation of the learned computation frontier using damage-cone interventions. Its primary focus is mechanistic algorithm selection in recurrent transformers, however, rather than general causal inference or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, mechanistic interpretability, looped transformers, weight tying, algorithmic reasoning, length extrapolation, test-time compute, group word problems&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the looped-transformer computation frontier across positions and loops, overlay the damage cone and velocity v, and show how the training contract determines the extrapolation boundary and halting rule.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Tong Zhang, Junhao Hu, Yun Peng, Tao Xie&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.20594v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>cs.AI</category>
+      <category>stat.ML</category>
     </item>
     <item>
       <title>How Does Urban Context Relate to Residential Building Health? A Vision-POI Fusion Framework for Building-Level Housing Inspection</title>
@@ -2139,245 +2380,6 @@
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07702v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.CL</category>
-    </item>
-    <item>
-      <title>Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety</title>
-      <link>http://arxiv.org/abs/2607.07695v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07695v1</guid>
-      <pubDate>Wed, 08 Jul 2026 17:53:56 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 55/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 42, Empirical 76, Reproducibility 38, Manuscript 72&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, author citation count or h-index, DOI, journal or conference venue, open-source code, public dataset or benchmark repository&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 with no DOI, journal reference, or comment in the supplied metadata.; Benchmark claims 228 contexts, five canonical rules, seven model populations, and 33,924 games.; Abstract reports a controlled rule-varying setup intended to attribute behavior changes to deployment rules.; Abstract reports an anonymization ablation on gpt-5.1 and repeated-play follow-up.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes an institutional red-teaming methodology showing that deployment rules can causally change collective safety outcomes in multi-agent AI systems, even when agents, objectives, and task states are held fixed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies how deployment rules, rather than only model capabilities or prompts, shape safety outcomes in multi-agent AI settings and whether changing a single rule can be causally attributed to changes in collective behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors introduce institutional red-teaming: keep agents, objectives, and task state fixed, vary one deployment rule, and attribute behavioral changes to that rule. They instantiate this in IABench-CA across 228 contexts, five consequence-allocation rules, seven model populations, 33,924 games, a normative cooperative reference, and auto-labelled reasoning traces.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is shifting red-teaming from testing models alone to testing institutional deployment rules as causal interventions, packaged as a safety-case workflow that certifies provisional rule regions per context and population.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, changing only the consequence rule moves mean fatality by 22 to 58 percentage points within every population; identity-targeting is never decisively safest, eliminates the least-resourced agent in 30-87% of games, and an anonymization ablation raises targeted elimination from 22% to 81% when the loss bearer is named.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report code, public data, detailed baselines beyond the cooperative reference, statistical uncertainty, full model list, robustness checks beyond the stated anonymization ablation, or external validation outside IABench-CA.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is directly relevant to the matched query &amp;#x27;causality&amp;#x27; because the paper frames deployment rules as controlled causal interventions and reports causal effects on multi-agent safety outcomes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, multi-agent AI, AI safety, red-teaming, game theory, benchmark, deployment governance&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be a framework or pipeline diagram showing the institutional red-teaming workflow: fixed agents/objectives/task state, single-rule intervention, IABench-CA evaluation, causal attribution, and safety-case certification of rule regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yujiao Chen&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07695v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-      <category>cs.GT</category>
-      <category>cs.MA</category>
-    </item>
-    <item>
-      <title>Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure</title>
-      <link>http://arxiv.org/abs/2607.07773v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07773v1</guid>
-      <pubDate>Wed, 08 Jul 2026 16:41:51 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 45/100 (TL;DR only, confidence: high)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 42, Empirical 62, Reproducibility 35, Manuscript 58&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index data, DOI, venue, or journal reference, open-source code link, full baseline list, ablation results&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 with no DOI or journal reference in supplied metadata.; Evaluated on SEED-IV and SEED-V datasets.; Reports three backbone architectures: AudioTransformer, Conformer, and DCGNN.; Reports best-case +5.42% accuracy and 39% reduction in psychologically implausible misclassifications.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes graph-based regularizers that encode psychological relationships among emotion labels to improve EEG emotion recognition across multiple neural backbones.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; EEG-based emotion recognition models commonly treat emotion classes as independent labels, which can ignore psychologically meaningful relationships between emotions and lead to implausible misclassifications.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It models emotion classes as nodes in a graph with edges derived from dimensional emotion theories, then regularizes predictions using Graph Label Smoothing, Graph Laplacian commuting distance, and Sliced Wasserstein Distance across AudioTransformer, Conformer, and DCGNN backbones.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is injecting a psychologically grounded emotion-label topology into otherwise standard EEG deep learning classifiers through architecture-agnostic graph regularization, rather than changing only the backbone architecture.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On SEED-IV and SEED-V, the abstract reports consistent gains, with a best-case accuracy improvement of up to 5.42% and a 39% reduction in psychologically implausible misclassifications.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report statistical significance, ablations, full baseline details, robustness tests, implementation details, or released code; it only states that code will be released.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the configured query &amp;#x27;causality&amp;#x27; mainly through its use of DCGNN as one evaluated backbone and graph-structured label dependencies, but the abstract does not indicate that the proposed method studies causal inference directly.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; EEG, emotion recognition, graph regularization, label structure, graph Laplacian, optimal transport, deep learning, causality-adjacent&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the emotion graph topology and how the three regularizers act on model predictions across the EEG backbone outputs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Dongyang Kuang, Zizheng Ma, Yushan Zhang, Xiaocong Zeng&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07773v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Infinite Worlds with Versatile Interactions</title>
-      <link>http://arxiv.org/abs/2607.07534v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07534v1</guid>
-      <pubDate>Wed, 08 Jul 2026 15:33:25 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 45, Empirical 35, Reproducibility 55, Manuscript 48&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; affiliations, citation_count, author_h_index, DOI, journal_or_conference_acceptance, benchmarks&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 in cs.CV.; Abstract claims unbounded interaction horizon via causal pretraining.; Abstract claims distilled real-time variant supports 720p video streams at 60 fps.; Comment provides project page and GitHub code URLs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; LingBot-World 2.0 proposes an interactive world-model simulator with causal pretraining for unbounded-horizon generation, real-time 720p/60fps operation, richer text/action interactions, and agentic control over characters and environments.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to build a world model that can sustain long-horizon, high-quality interactive video generation while supporting diverse user actions, text-driven events, multi-player use, and low-latency deployment.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces LingBot-World 2.0, centered on a causal pretraining paradigm for long interaction horizons, a distilled real-time variant, expanded action and event vocabularies, and an agentic harness with a pilot agent for character behavior plus a director agent for generating new environmental elements.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element claimed in the abstract is combining unbounded-horizon interactive world modeling with real-time video-stream control and an agentic harness that separates behavior planning from scene evolution.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that the system can drive 720p video streams at 60 fps and includes a primary 14B model plus a lightweight 1.3B model deployable on a single GPU; it does not provide benchmark numbers, baselines, or human-evaluation results.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract lacks evidence on datasets, metrics, baselines, ablations, robustness, latency measurements beyond the headline claim, user studies, and whether the released code contains model weights or full training details.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This matched the query &amp;#x27;causality&amp;#x27; because the abstract explicitly cites a &amp;#x27;causal pretraining paradigm&amp;#x27;; relevance is moderate because the paper appears mainly about interactive visual world modeling rather than causal inference or causal discovery.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; world-modeling, interactive-video-generation, causal-pretraining, real-time-simulation, agentic-systems, cs.CV&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework figure showing the causal pretraining setup, base-to-real-time distillation, pilot/director agent harness, and multi-player interaction loop would be useful, but no direct image URL is supplied in the metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zelin Gao, Qiuyu Wang, Jiapeng Zhu, Jingye Chen, Zichen Liu, Qingyan Bai, Jiahao Wang, Yufeng Yuan, Hanlin Wang, Yichong Lu, Ka Leong Cheng, Haojie Zhang, Jian Gao, Tianrui Feng, Yuzheng Liu, Yao Yao, Yinghao Xu, Xing Zhu, Yujun Shen, Hao Ouyang&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07534v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CV</category>
-    </item>
-    <item>
-      <title>FourierQK: Spectral Preprocessing of Query-Key Projections Improves Transformer Attention</title>
-      <link>http://arxiv.org/abs/2607.07478v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07478v1</guid>
-      <pubDate>Wed, 08 Jul 2026 14:43:00 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 43/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 35, Empirical 62, Reproducibility 25, Manuscript 58&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliation, author citation or h-index metadata, peer-reviewed venue, DOI or journal reference, open-source code, repository quality&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-07-08; no DOI or journal reference in supplied metadata.; Abstract reports TinyShakespeare validation losses for fixed random, single-frequency, and four-frequency spectral filters.; Single-frequency result is reported across three random seeds with mean val=0.236 and std=0.019.; Abstract includes controls against random Q/K projections and a shuffled-validation diagnostic against positional leakage.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; FourierQK proposes FFT-based spectral preprocessing of transformer Q/K projections and reports large TinyShakespeare character-level language-modeling gains, while finding that causal spectral filters do not help under this tokenization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whether globally mixing learned query/key projections in the frequency domain can improve transformer attention, and where the approach breaks down under causal attention constraints.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It applies spectral preprocessing to Q/K projections before standard dot-product attention, testing fixed random spectral filters, learned single-frequency filters, learned multi-frequency filters, random projection controls, shuffled-validation diagnostics, and causal filter variants such as Gaussian, Mexican Hat, and Morlet.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is preserving the usual attention score structure while modifying only Q/K through FFT-based bilateral spectral preprocessing, distinguishing it from FNet-style Fourier mixing of token embeddings and identifying a boundary between bilateral non-causal spectral attention and causal spectral attention.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; On TinyShakespeare, the abstract reports validation loss improving from standard attention by Delta=+1.166 with four learned frequencies, reaching val=0.309 and described as a 79% reduction; a single-frequency setup is reported across three seeds with mean val=0.236 and std=0.019.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence in the abstract is limited mainly to TinyShakespeare character-level modeling; no code, broader datasets, full hyperparameter details, peer review, DOI, or external validation are provided in the supplied metadata. The method is explicitly non-causal in its bilateral FFT form and causal filters did not improve over standard attention at character-level tokenization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;quot;causality&amp;quot; because it directly discusses causal versus non-causal spectral attention: the reported gains come from bilateral FFT kernels that couple positions to future tokens, while causal spectral filters fail in this setting.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; transformers, attention, spectral-methods, Fourier, query-key-projections, causality, language-modeling&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; The metadata says the paper has 2 figures, but no direct image URL is supplied. A useful image would be the FourierQK architecture or pipeline figure showing FFT-based preprocessing applied specifically to Q/K before standard attention.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Athanasios Zeris&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07478v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.CL</category>
-      <category>eess.SP</category>
-    </item>
-    <item>
-      <title>The Blind Curator: How a Biased Judge Silently Disables Skill Retirement in Self-Evolving Agents</title>
-      <link>http://arxiv.org/abs/2607.07436v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07436v1</guid>
-      <pubDate>Wed, 08 Jul 2026 14:08:04 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 40, Empirical 68, Reproducibility 25, Manuscript 62&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index signals, DOI or peer-reviewed venue, citation or influential-citation hints, open-source code, public datasets or benchmark details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 in cs.AI, cs.CL, and cs.CR.; Abstract claims a corrupted-reward analysis and controlled corruption injection into deterministic reward.; Experiments are described on a reference-free report-writing testbed with a code-generation cross-check.; Abstract reports that false-pass bias disables contribution-based retirement past a sharp threshold.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper analyzes how false-pass bias in LLM judges can silently disable contribution-based skill retirement in self-evolving agents, even when aggregate evaluation metrics may not reveal the failure.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies self-evolving agents whose growing skill libraries rely on reward-based retirement of bad skills, focusing on the case where reference-free tasks require biased LLM judges that may fail to observe or correctly score failures.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The abstract describes a corrupted-reward analysis plus behavioral experiments that inject controlled corruption into a deterministic reward, evaluated on a reference-free report-writing testbed with a code-generation cross-check.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that judge bias, especially false-pass bias, does not merely add noise but can disable the skill-retirement curator past a sharp threshold, producing a mechanism-level safety failure that may be invisible in aggregate performance metrics.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Symmetric noise reportedly leaves retirement intact, while false-pass bias disables contribution-based retirement beyond a threshold that additional data cannot overcome; the mechanism is said to hold across domains and failure rates except for near-zero-false-pass verifier-like graders.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative metrics, dataset details, baseline comparisons, ablations, statistical tests, code availability, or enough implementation detail to assess reproducibility or empirical strength.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;quot;causality&amp;quot; because it explicitly frames the analysis as isolating the causal channel of reward corruption and studying a mechanism by which biased judges disable skill retirement.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; self-evolving agents, LLM-as-judge, reward corruption, causal analysis, agent safety, skill retirement, reference-free evaluation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the self-evolving-agent pipeline with skill synthesis, judge reward, contribution-based retirement, and the false-pass corruption path that disables the curator.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xing Zhang, Yanwei Cui, Guanghui Wang, Ziyuan Li, Wei Qiu, Bing Zhu, Peiyang He&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07436v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-      <category>cs.CL</category>
-      <category>cs.CR</category>
-    </item>
-    <item>
-      <title>DeLS-Spec: Decoupled Long-Short Contexts for Parallel Speculative Drafting</title>
-      <link>http://arxiv.org/abs/2607.07409v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07409v1</guid>
-      <pubDate>Wed, 08 Jul 2026 13:41:52 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 55/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 24, Paper 55, Empirical 65, Reproducibility 35, Manuscript 72&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Affiliations not supplied., Citation count and h-index not supplied., DOI, journal, or conference venue not supplied., No code or data availability signal in metadata., No numeric empirical results in abstract., No ablations, statistical robustness, or detailed baseline list beyond DFlash in abstract.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08 in cs.CL.; Motivates a specific gap: DFlash position-wise block predictions lack explicit intra-block causal conditioning.; Positions Domino and DSpark as causal alternatives that require training from scratch.; Proposes a fixed DFlash long-context expert plus independently trained lightweight local short-context head.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; DeLS-Spec improves block-parallel speculative decoding by adding an independently trained lightweight short-context head to a fixed DFlash long-context drafter, aiming to recover intra-block causal conditioning without retraining the draft model from scratch.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to make block-parallel speculative drafting for LLM inference faster and more causally conditioned within generated token blocks, while avoiding the cost and inflexibility of training draft models from scratch.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes DeLS-Spec, a decoupled long-short context speculative decoding framework that treats a fixed DFlash model as a long-context expert and adds a lightweight local head as a short-context expert trained independently with standard next-token prediction. At inference, it combines long-context and short-context logits.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is modular causal enhancement for block-parallel drafting: intra-block short-context information is introduced through a detachable local head rather than joint training or full draft-model retraining as in methods such as Domino and DSpark.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports experiments on Qwen3 models where DeLS-Spec consistently improves speedup and average acceptance length over DFlash across math, code, and dialogue benchmarks, but gives no numeric gains.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not provide quantitative speedup values, acceptance-length numbers, ablations, robustness analysis, implementation details, code availability, or comparisons beyond DFlash; claims about lower training cost are qualitative in the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the configured query `causality` because it targets missing intra-block causal conditioning in block-parallel speculative decoding and proposes a lightweight way to add short-context causal information.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; speculative decoding, LLM inference, parallel drafting, causality, DFlash, Qwen3, efficient inference&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the DeLS-Spec inference pipeline: fixed DFlash long-context expert, independently trained local short-context head, logit combination, and verifier acceptance path.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hong-Kai Zheng, Piji Li&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07409v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CL</category>
-    </item>
-    <item>
-      <title>Physics-Audited Agentic Discovery in Scientific Machine Learning</title>
-      <link>http://arxiv.org/abs/2607.07379v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07379v1</guid>
-      <pubDate>Wed, 08 Jul 2026 13:10:35 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 42/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 16, Paper 35, Empirical 60, Reproducibility 25, Manuscript 65&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, citation counts or h-index, DOI or peer-reviewed venue, open-source code, public data, implementation details beyond abstract&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08.; Matched query is &amp;#x27;causality&amp;#x27;.; Abstract states an error-only transient elastodynamics baseline with similar mean error fails a stricter causality check.; Abstract reports static elasticity and transient elastodynamics numerical examples.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; PA-SciML proposes a verification-first workflow for LLM-agentic scientific machine learning that audits surrogate models against explicit physics requirements, including causality, instead of selecting only by prediction error.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how agentic SciML systems can select surrogate models that achieve low error while still violating mechanics-relevant physical properties such as boundary conditions, superposition, stiffness scaling, or causality.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces Physics-Audited Agentic SciML, a workflow that fixes the scoring evaluator before search, derives reviewable machine-checkable physics requirements, checks each trained candidate on predicted outputs, and searches input/load-history ranges for high-violation cases even without reference solution fields.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new emphasis is per-candidate physics evidence on predicted fields within an agentic model-discovery loop, separating verification of stated physical requirements from aggregate error-based scoring.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; In static elasticity examples, PA-SciML selects a surrogate with lower validation error than an error-only baseline while both pass common linear-elastic checks; in transient elastodynamics, an error-only baseline with similar mean error fails a stricter causality check, while the selected surrogate passes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only computational solid-mechanics numerical examples and does not provide code, public data, affiliations, DOI, peer-review status, ablations, statistical robustness, or broader benchmark evidence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the keyword &amp;#x27;causality&amp;#x27; because it evaluates whether transient surrogate models improperly respond to future loading history and uses causality as a physics-audit requirement.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; agentic SciML, LLM agents, surrogate modeling, physics verification, causality, computational mechanics, elastodynamics&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would show the PA-SciML pipeline: fixed evaluator, physics-requirement derivation, agentic surrogate search, per-candidate output audits, violation search over input/load-history spans, and verified reporting.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Diab W. Abueidda, Bilal Ahmed, Panos Pantidis, Mostafa E. Mobasher&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07379v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability for Neural Networks: Circuits, Sparse Features and Symbolic Reasoning</title>
-      <link>http://arxiv.org/abs/2607.07316v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07316v1</guid>
-      <pubDate>Wed, 08 Jul 2026 12:04:38 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 24/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 16, Paper 35, Empirical 10, Reproducibility 5, Manuscript 55&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, journal or conference venue, citation count, open-source code&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-07-08, 20 pages.; Abstract frames the article as a comprehensive overview, not as a new empirical study.; Covers Transformer circuit analysis, SAEs, transcoders, steering vectors, causal interventions, and neurosymbolic AI.; No DOI, journal reference, code, data, baselines, or evaluation metrics are present in the supplied metadata.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; This 20-page arXiv v1 overview surveys mechanistic interpretability for neural networks, covering Transformer circuits, sparse feature decomposition, steering/causal interventions, and links to neurosymbolic rule extraction.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to make modern neural networks less opaque by reverse-engineering their internal algorithms rather than relying only on input-output explanations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It appears to be a survey/framework-style overview of mechanistic interpretability topics: Transformer circuit analysis, residual streams, attention mechanisms, induction heads, superposition/polysemanticity, Sparse Autoencoders, transcoders, steering vectors, causal interventions, and neurosymbolic translation of neural representations into logical rules.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The abstract’s novelty is integrative rather than empirical: it connects circuit-level interpretability, sparse feature methods, behavior control via causal interventions, and neurosymbolic reasoning in one mechanistic interpretability overview.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No direct empirical result is reported in the abstract; it describes topics covered rather than experiments, benchmarks, or measured outcomes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The supplied metadata/abstract provides no evidence of new experiments, baselines, ablations, robustness checks, code, public data, affiliations, DOI, venue, or citation signals, so the strength of the contribution cannot be assessed beyond the stated survey scope.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevant to the matched query &amp;quot;causality&amp;quot; because the abstract explicitly discusses causal interventions and mechanistic methods for identifying and modifying internal model components that drive behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; mechanistic-interpretability, causal-interventions, transformer-circuits, sparse-autoencoders, neurosymbolic-ai, survey&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline or framework figure would be useful if available, showing how circuit analysis, sparse feature decomposition, causal interventions/steering, and symbolic rule extraction connect.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Pranav Sawant, Jakub Krejčí&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07316v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>Distributed Sparse Interventions in Language Models</title>
-      <link>http://arxiv.org/abs/2607.07128v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07128v1</guid>
-      <pubDate>Wed, 08 Jul 2026 08:19:11 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 49/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 35, Empirical 55, Reproducibility 20, Manuscript 70&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index signals, DOI, conference, or journal venue, open-source code, public data or benchmark details, named baselines&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08.; Abstract reports neuron-specific nonlinear effects not captured by current steering approaches.; Introduces Distributed Sparse Interventions for sparse neuron sets across layers.; Claims task behavior can be activated by intervening on as few as 0.01% of neurons.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes Distributed Sparse Interventions, a neuron-level causal intervention method for language models that identifies tiny distributed neuron sets whose nonlinear interactions can activate task-relevant behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how specific model components causally influence task behavior in language models, especially where global linear steering directions fail to capture neuron-specific nonlinear effects.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It introduces Distributed Sparse Interventions (DSI), which searches for sparse neuron sets across layers while accounting for nonlinearities and neuron interactions, then intervenes on those neurons to elicit task-relevant computations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The claimed novelty is moving from global activation-space steering directions to sparse, distributed neuron-basis interventions that model nonlinear and cross-layer interactions, enabling set-level analysis of task-related neurons.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; From the abstract, DSI activates task behavior in instruction-tuned language models across a range of tasks while intervening on as few as 0.01% of neurons.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not specify model families, datasets, baselines, metrics, ablations, robustness checks, code availability, or whether the effects transfer across architectures.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Highly relevant to the matched query &amp;#x27;causality&amp;#x27; because it explicitly uses interventions to study causal influence of neurons on language-model task behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; language-models, causal-interventions, mechanistic-interpretability, model-steering, sparse-interventions, neurons&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper&amp;#x27;s framework or pipeline figure showing how DSI identifies sparse neuron sets across layers and applies interventions to activate task behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Maximilian S. Ernst, Lorenz Linhardt, Aaron Peikert, Oliver Eberle&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07128v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-    </item>
-    <item>
-      <title>A knowledge-augmented dataset of high-risk driving scenarios with LLM annotations for autonomous driving</title>
-      <link>http://arxiv.org/abs/2607.07103v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.07103v1</guid>
-      <pubDate>Wed, 08 Jul 2026 07:39:21 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 12, Paper 42, Empirical 68, Reproducibility 50, Manuscript 72&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation or h-index metadata, DOI, venue, or journal reference, benchmark baselines, ablation studies, statistical robustness&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 paper published 2026-07-08; no DOI or journal reference supplied.; Abstract reports integration of 20 trajectory datasets from Europe, China, and the United States.; Dataset size is stated as 31,398 high-risk events plus 1,036 extreme near-collision events.; Annotations include structured descriptions, abnormal-behavior notifications, and causal risk analyses/action recommendations for a representative subset.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; K-Risk is a knowledge-augmented autonomous-driving dataset that combines high-risk trajectory events with LLM-generated semantic safety annotations, including causal analyses and action recommendations for a subset of near-collision scenarios.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies the lack of standardized data for rare, high-risk and long-tail autonomous-driving safety scenarios, especially datasets that combine trajectories with risk labels, semantic annotations, and verifiable safety signals.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It proposes K-Risk, a dataset and risk-centric extraction pipeline that integrates 20 human-driven and autonomous-vehicle trajectory datasets from Europe, China, and the United States, extracts high-risk events, and augments them with LLM-generated language triplets: structured scenario descriptions, abnormal-behavior notifications, and for a representative subset, causal risk analyses plus action recommendations validated in a closed-loop simulator with iterative reflection.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element, according to the abstract, is the combination of multi-source structured driving trajectories, risk-centric event extraction, LLM-generated semantic supervision, causal risk analysis, and simulator-validated decision recommendations in one standardized high-risk driving dataset.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that K-Risk contains 31,398 high-risk events and a 1,036-event extreme near-collision subset, covering highways, urban freeways, intersections, and roundabouts across Europe, China, and the United States.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report benchmark results, model performance gains, annotation quality metrics, inter-rater validation, baselines, ablations, code availability, or details on how simulator validation was quantified.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;#x27;causality&amp;#x27; because it includes causal risk analyses for safety-critical driving events, though the abstract frames causality mainly as part of dataset annotation and decision supervision rather than as a new causal inference method.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; autonomous-driving, traffic-safety, high-risk-events, long-tail-scenarios, LLM-annotations, causal-risk-analysis, trajectory-dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the K-Risk pipeline figure showing multi-source trajectory ingestion, risk-centric event extraction, LLM semantic annotation, causal risk analysis, and closed-loop simulator validation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Heye Huang, Jingguang Li, Zhiyuan Zhou, Paul Liang, Mingyu Wu, Kitae Jang, Jianqiang Wang&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.07103v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.DB</category>
     </item>
   </channel>
 </rss>
