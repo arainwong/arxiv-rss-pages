@@ -9,8 +9,202 @@
       <title>arXiv keyword digest</title>
       <link>https://arainwong.github.io/arxiv-rss-pages/</link>
     </image>
-    <lastBuildDate>Wed, 05 Aug 2026 08:38:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 09:12:06 GMT</lastBuildDate>
     <generator>arxiv-rss-agent</generator>
+    <item>
+      <title>The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images</title>
+      <link>http://arxiv.org/abs/2608.06270v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.06270v1</guid>
+      <pubDate>Thu, 06 Aug 2026 17:01:08 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 57/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 29, Paper 45, Empirical 72, Reproducibility 75, Manuscript 85&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution information, Author citation counts and h-index information, DOI, journal, or conference acceptance, Paper citation and influential-citation data, Named models and benchmarks, Numerical results and metric tables&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The method explicitly formulates visual tool use as a causal graph.; Interventions are conducted at policy, trajectory, and step levels.; Evaluation covers six representative models and five fine-grained perception benchmarks.; The abstract identifies two named failure modes and reports gains concentrated in a calibrated minority.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper introduces a causal audit of visual tool use in multimodal LLMs and finds that apparent aggregate gains from crop-and-zoom operations often do not reflect causal use of the returned visual evidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies why active visual operations such as crop-and-zoom frequently add substantial token cost while producing marginal or negative accuracy gains, repeatedly targeting irrelevant regions, or harming questions that direct inference answers correctly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors model visual tool use as a causal graph separating observation-mediated effects from action-induced shortcuts, then intervene at policy, trajectory, and individual-step levels. Their step-level Visual Evidence Gain estimand measures the causal contribution of each returned observation under a fixed rollout prefix.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new contribution is a multi-level causal auditing framework that distinguishes merely calling visual tools from actually using their returned evidence. It identifies two failure modes—Calling Without Looking and Looking Without Planning—and decomposes aggregate policy gains to reveal that causal effectiveness is concentrated in a minority of calibrated rollouts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across six representative models and five fine-grained perception benchmarks, the audit finds widespread policy miscalibration: returned observations often have no causal effect, or are informative but requested according to an incoherent schedule. Aggregate accuracy gains are reportedly concentrated in a calibrated minority, although the abstract provides no numerical effect sizes, benchmark-level results, or token-cost measurements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract supplies no quantitative accuracy or Visual Evidence Gain values, model and benchmark names, statistical uncertainty, baseline details beyond direct inference, ablations, robustness tests, or implementation specifics. The evidence therefore supports the qualitative finding but not an assessment of effect magnitude or generalization beyond the evaluated settings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; This is highly relevant to the matched query &amp;quot;causality&amp;quot; because causal graphs, interventions, counterfactual observation replacement, and a causal estimand are central to the proposed evaluation of multimodal tool use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, multimodal-LLMs, visual-tool-use, thinking-with-images, causal-auditing, counterfactual-interventions, model-evaluation, fine-grained-perception&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A diagram of the causal graph and its policy-, trajectory-, and step-level interventions would be the most useful image; no direct figure URL is provided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zhiheng Wang, Bo Peng, Lai Wei, Chaochao Lu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.06270v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.AI</category>
+    </item>
+    <item>
+      <title>From Passive Mirrors to Active Agents: Holonic Digital Twins for Physical AI over Networks</title>
+      <link>http://arxiv.org/abs/2608.06227v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.06227v1</guid>
+      <pubDate>Thu, 06 Aug 2026 16:17:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 32/100 (TL;DR only, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 42, Paper 35, Empirical 10, Reproducibility 5, Manuscript 68&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations, author citation counts and h-indices, DOI, journal, or conference status, code repository, public data or simulation environment, implementation details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The manuscript is arXiv v1, published August 6, 2026.; The abstract explicitly proposes a network of holonic digital twins.; Causal Markov blankets are used to define coordination boundaries and support counterfactual reasoning.; Active inference, category theory, and integrated information theory are assigned distinct roles in the framework.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper proposes HDT-Nets, a conceptual network architecture in which hierarchical digital-twin agents use causal boundaries, active inference, semantic mappings, and collective-intelligence measures to coordinate physical AI systems in real time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Current AI and wireless-network architectures do not provide reliable long-horizon world models, generalization under uncertainty, or the shared spatiotemporal context needed to coordinate robots and vehicles operating under physical constraints.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; HDT-Nets organizes each holonic digital twin across a physical agent and the network edge. Causal Markov blankets identify which sensing, communication, and control components must coordinate; active inference minimizes expected free energy and selects beliefs to transmit according to their cognitive value; category theory is proposed to preserve semantics across heterogeneous representations; and integrated information theory measures emergent collective intelligence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a synthesis that turns digital twins from passive asset replicas into reasoning agents and treats communication as selective exchange of causally relevant beliefs rather than conventional data delivery optimized primarily for throughput, latency, and reliability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports no implementation, experiments, quantitative metrics, comparisons, or empirical results; the contribution appears to be a conceptual framework.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not establish feasibility, computational or communication overhead, scalability, real-time performance, or advantages over alternative multi-agent and digital-twin architectures. It also provides no validation that its combination of causal Markov blankets, active inference, category theory, and integrated information theory works in an operational system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the causality query because causal Markov blankets and counterfactual reasoning are central mechanisms for determining coordination boundaries and reasoning about interventions, although causality is one component of a broader physical-AI networking framework rather than the sole research focus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, causal Markov blankets, counterfactual reasoning, holonic digital twins, physical AI, active inference, multi-agent systems, wireless networks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would depict the hierarchical HDT-Net architecture from physical agents to network-edge holons, with causal Markov blankets defining coordination groups and belief exchange linking active inference, semantic translation, and collective-intelligence measurement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Christo Kurisummoottil Thomas, Omar Hashash, Walid Saad&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.06227v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.NI</category>
+      <category>cs.AI</category>
+      <category>cs.IT</category>
+      <category>eess.SY</category>
+    </item>
+    <item>
+      <title>Kastor: An efficient fine-tuning strategy for generative emulation of PDE simulations</title>
+      <link>http://arxiv.org/abs/2608.06107v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.06107v1</guid>
+      <pubDate>Thu, 06 Aug 2026 14:41:11 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 50/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 52, Empirical 72, Reproducibility 25, Manuscript 78&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution information, Author citation counts and h-indices, DOI, journal, or conference acceptance, Paper citation and influential-citation information, Open-source code or repository, Explicit public-data statement&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The work evaluates 10 datasets from The Well benchmark.; The abstract reports better VRMSE than Walrus on 8 of 10 datasets.; The abstract reports a 42.9% average reduction relative to Walrus fine-tuning, but does not clearly name the reduced quantity.; The manuscript is arXiv v1 with 34 pages and 32 figures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Kastor converts a deterministic physics foundation model into an efficient generative PDE surrogate using coarse causal forecasting, non-causal temporal super-resolution, mean-prediction regularization, and spatial-gradient matching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Standard autoregressive machine-learning emulators for PDE simulations accumulate errors over long forecasting horizons and inadequately represent stochastic physical dynamics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The proposed framework combines a large-stride causal autoregressive model with a non-causal temporal super-resolution network, then trains generative FGN- and diffusion-based emulators using mean prediction regularization under null-noise conditioning and spatial-gradient matching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is mean prediction regularization, which forces a generative emulator to recover the deterministic distribution mean when noise is disabled; this is integrated with a two-stage temporal inference strategy intended to reduce autoregressive drift and computational cost.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across 10 datasets from The Well benchmark, Kastor reportedly beats Walrus on VRMSE in 8 datasets and achieves a 42.9% average reduction in an ambiguously described forecasting quantity relative to Walrus fine-tuning; it also improves spectral consistency and efficiency, although the abstract gives no absolute scores, uncertainty estimates, or runtime figures.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to abstract-level claims: no statistical robustness, detailed baselines, component-wise ablations, absolute metrics, code availability, or implementation details are supplied. The paper is also only arXiv v1, with no DOI or venue signal. Its connection to causality is architectural—causal temporal prediction—not causal inference or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the query “causality” because it uses a causal autoregressive forecasting model, but it appears only weakly relevant if the feed targets causal inference, causal representation learning, or causal discovery.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; PDE surrogate modeling, generative emulation, causal autoregression, temporal super-resolution, diffusion models, physics foundation models, The Well, mean prediction regularization&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing the large-stride causal predictor, non-causal temporal super-resolution stage, generative noise conditioning, mean prediction regularization, and spatial-gradient loss would be useful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Guillaume Couairon, Alexis Jacq, Yu-Han Wu, Renu Singh, Yana Hasson, Quentin Berthet, Romuald Elie&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.06107v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.LG</category>
+      <category>math.NA</category>
+    </item>
+    <item>
+      <title>Clinical Communication Processing with Models Trained on LLM-Generated Synthetic Data: A Structured Survey and Novel Application Case Studies</title>
+      <link>http://arxiv.org/abs/2608.05993v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.05993v1</guid>
+      <pubDate>Thu, 06 Aug 2026 13:04:42 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 53/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 62, Empirical 55, Reproducibility 25, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations and institutional evidence, author citation counts or h-index, DOI, journal, or conference acceptance, paper citation or influential-citation information, open-source code or repository, public synthetic or authentic datasets&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1, published 2026-08-06, with no DOI or journal reference supplied.; The manuscript is described as 20 pages with 7 figures.; The abstract reports a structured survey complemented by thirteen novel case studies.; Application areas include EMS reports, casualty radio documentation, nurse handoffs, portal triage, and discharge communication.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A structured survey and thirteen case studies examine how LLM-generated synthetic clinical communication can bootstrap healthcare NLP systems when authentic labeled conversations are scarce.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Clinical communication contains role-, intent-, uncertainty-, omission-, noise-, and causality-dependent meaning, but authentic exchanges are private, fragmented, and expensive to annotate, leaving many communication channels and languages without labeled training data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The paper organizes a narrative survey by source representation, communication form and participants, generation method, and downstream task, then presents thirteen case studies that transform clinical sources into synthetic written or transcribed communication for training downstream NLP models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; Beyond surveying the area, the paper contributes thirteen application case studies across EMS reports, field-radio casualty documentation, nurse handoffs, patient-portal triage, and low-resource discharge communication; it also highlights deliberate degradation of synthetic messages as a robustness strategy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports that synthetic communication can bootstrap downstream systems, that fine-tuned encoder models are competitive with the evaluated zero-shot baselines, and that deliberately degraded communication improves robustness. It provides no numerical results, statistical tests, or detailed baseline comparisons.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Most evaluations use held-out synthetic communication, so evidence that systems trained on synthetic data transfer to authentic clinical communication remains limited; safety and external validation are also unresolved.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query “causality” because it identifies causality as one dimension needed to interpret clinical language. However, causality is not presented as the central research problem, method, or evaluation target, so relevance to a causality-focused feed is indirect.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; clinical NLP, synthetic data, large language models, clinical communication, data scarcity, domain transfer, robustness, survey&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing clinical source representations flowing through LLM-based communication generation, optional channel-noise degradation, downstream model training, and synthetic-versus-authentic evaluation would be useful; the metadata notes seven figures but provides no direct image URL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Alexander Apartsin, Yehudit Aperstein&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.05993v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>Causal Episodic Memory for Feedback-Driven Agent Repair</title>
+      <link>http://arxiv.org/abs/2608.05906v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.05906v1</guid>
+      <pubDate>Thu, 06 Aug 2026 11:34:03 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 14, Paper 48, Empirical 75, Reproducibility 25, Manuscript 82&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution information, Author citation counts and h-indices, DOI, journal, or conference acceptance, Paper citation and influential-citation data, Open-source code or repository, Explicit implementation and hyperparameter details&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The paper is arXiv v1 with no DOI, journal reference, or conference information supplied.; Experiments use Qwen2.5-7B-Instruct on Spider and BIRD with identical initial predictions and repair budgets.; MERIT improves execution accuracy by 3.45 percentage points on Spider and 1.09 points on BIRD over stateless repair.; The abstract reports paired analyses, multiple retrieval/memory comparisons, and component ablations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; MERIT is a training-free Text-to-SQL repair agent that reuses oracle-verified successes and failed directions from completed episodes, producing a clear accuracy gain on Spider but only a small, weaker gain on BIRD.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how an LLM repair agent can retain finalized corrections so that later Text-to-SQL episodes do not have to rediscover similar solutions, without updating model parameters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; MERIT maintains an online dual-polarity episodic memory containing oracle-verified corrections and observed unsuccessful directions. A deterministic failure-type classifier conditions hybrid lexical–dense retrieval over memories from earlier finalized episodes, and a frozen Qwen2.5-7B-Instruct model uses the retrieved experience when generating revisions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a causal, cross-query memory protocol that restricts retrieval to experience available from previously finalized episodes, combines positive and negative repair memories, and conditions retrieval on coarse failure types. However, the abstract reports that MERIT is not reliably better than untyped dynamic retrieval, weakening evidence that its full design is necessary.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; With identical initial predictions and repair budgets, execution accuracy rises from 66.34% to 69.79% on Spider and from 47.35% to 48.44% on BIRD versus stateless iterative repair. Paired analyses clearly support the Spider improvement but provide weaker evidence on BIRD. Reflexion-style memory reaches 51.24% on BIRD at substantially higher inference cost. Ablations indicate modest value from negative memory and the most consistent benefit from schema-local experience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The evaluation assumes oracle-assisted benchmark feedback, which may not represent practical deployments. The BIRD gain is small and weakly supported; MERIT is not reliably separated from untyped dynamic retrieval. The abstract supplies no code, repository, detailed cost measurements, affiliations, external validation, or robustness results beyond paired analyses and ablations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the keyword “causality” through its causal cross-query memory protocol, where only temporally eligible prior episodes inform later repairs. Its relevance is moderate rather than central if the feed targets causal inference, causal discovery, or treatment-effect estimation, because the work primarily concerns leakage-controlled episodic memory for LLM agents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM agents, Text-to-SQL, episodic memory, agent repair, retrieval-augmented generation, causal memory, Spider, BIRD&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline diagram would be useful showing finalized episode outcomes entering positive and negative memories, deterministic failure typing, hybrid lexical–dense retrieval, temporal eligibility constraints, and the frozen model’s revision loop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Khang Nhat Hoang Vo, Tam Minh Chu, Anh Trac Duc Dinh, Thuyen Vinh Ha Bui, Tho Quan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.05906v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+    </item>
+    <item>
+      <title>The em-dash em-beds in Congress: A population-level rise in em-dash frequency in U.S. congressional press releases at the dawn of the large-language-model era, 2021-2025</title>
+      <link>http://arxiv.org/abs/2608.05889v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.05889v1</guid>
+      <pubDate>Thu, 06 Aug 2026 11:12:48 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 60/100 (Skim, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 28, Paper 52, Empirical 85, Reproducibility 68, Manuscript 88&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliation and institutional information, Author citation count and h-index, Peer-reviewed venue, journal reference, or DOI, Open-source analysis code or repository, Detailed implementation and preprocessing materials beyond the abstract, Conventional baseline-model comparisons or ablation studies&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Preregistered design with disclosed deviations and a formal validation-gate breach.; Analyzes 146,239 releases from 480 congressional offices spanning 2021–2025.; Reports an effect estimate of 1.55 with a 95% confidence interval of 1.28–1.93.; Includes within-office, closed-panel, placebo-cutoff, pipeline, and continuing-office checks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A preregistered observational study finds that unspaced em-dashes rose sharply in U.S. congressional press releases in 2025, consistent with—but not causally attributable to—broader diffusion of LLM-assisted writing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper tests whether a stylistic trace associated with LLM-assisted writing, specifically unspaced prose-form em-dashes, measurably increased in congressional press releases during 2021–2025.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It analyzes 146,239 releases from 480 House and Senate offices using em-dash density per 1,000 cleaned-text characters, Poisson/negative-binomial models with length offsets and office clustering, within-office and closed-panel comparisons, segmented regression, placebo cutoffs, and pipeline falsification checks under a preregistered design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The novel contribution is a large-scale, population-level longitudinal test of a specific LLM-associated stylistic marker in political communications, strengthened by within-author analysis, preregistration, placebo boundaries, and explicit separation of population trends from individual-document authorship detection.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Unspaced em-dash density remained near 0.10–0.12 per 1,000 characters through 2024 and rose to 0.217 in 2025; document prevalence increased from about 13% to 24.8%. The primary 2023–2025 versus 2021–2022 frequency ratio was 1.55 (95% CI 1.28–1.93), narrowly exceeding the prespecified 1.5 threshold. The increase appeared across parties and chambers and persisted in within-office and closed-panel analyses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The registered validation gate was breached, so the full preregistered decision rule was not satisfied and the LLM-diffusion interpretation is exploratory. Em-dashes are only a population-level proxy, not an authorship detector; the observational design supports no causal claim, and the abstract provides no direct evidence linking individual releases to actual LLM use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the query “causality” mainly through its careful discussion of causal limits and falsification checks, but it does not estimate a causal effect. It is therefore moderately relevant for researchers studying causal inference boundaries or observational evidence around LLM adoption, and less relevant for those seeking a new causal-identification method.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; LLM-assisted writing, stylometry, political communication, congressional press releases, preregistered study, observational analysis, falsification tests, causal limitations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would plot annual em-dash density and release-level prevalence from 2021–2025, annotated with the tested cutoffs and confidence intervals; a secondary panel could show within-office changes by party and chamber.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Przemysław Czuma&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.05889v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.DL</category>
+      <category>cs.AI</category>
+      <category>cs.CL</category>
+      <category>cs.CY</category>
+    </item>
+    <item>
+      <title>KVAE: Family of Tokenizers for Multimodal Generative Models</title>
+      <link>http://arxiv.org/abs/2608.05798v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.05798v1</guid>
+      <pubDate>Thu, 06 Aug 2026 09:34:00 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 56/100 (Skim, confidence: medium)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 29, Paper 45, Empirical 72, Reproducibility 82, Manuscript 70&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution metadata, Author citation counts or h-index data, DOI, journal, or conference acceptance, Exact metric values and per-baseline comparisons, Evaluation datasets and sample sizes, Statistical significance or robustness analysis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The work covers 48 kHz audio, images, and two causal video compression configurations.; The abstract names reconstruction, generation, and subjective evaluation families and several open-source baselines.; Training details, model-selection methodology, and design-choice ablations are claimed.; Two public GitHub repositories are explicitly provided.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; KVAE introduces a family of latent tokenizers for 48 kHz audio, images, and causal video that reportedly matches or outperforms prominent open-source tokenizer baselines in reconstruction and downstream text-conditioned generation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how to compress audio, image, and video signals into latent representations suitable for latent diffusion models without sacrificing reconstruction quality, generation quality, or training efficiency.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It presents four modality-specific KVAE tokenizers: KVAE-Audio with 48 kHz full-band audio compressed to a 50 Hz, 64-channel continuous latent; KVAE-2D with 8× spatial image compression and 32 latent channels; and two causal KVAE-3D video tokenizers using 4×16×16 and 4×8×8 compression. The report also provides training details, a model-selection procedure, and design ablations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a unified, openly released tokenizer family spanning audio, image, and causal video, designed specifically as the compression layer for subsequent text-conditioned generation. The abstract claims competitive performance against modality-specific frontier open-source systems while disclosing training and selection practices.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across reconstruction metrics including PSNR, LPIPS, and PESQ; generation metrics including Fréchet distances, CLIP score, and CLAP score; and subjective side-by-side evaluations, KVAE reportedly matches or surpasses tokenizers from Wan-2.2, HunyuanVideo-1.5, FLUX.2, MovieGen, StableAudio, and MMAudio. The abstract supplies no numerical results, dataset names, uncertainty estimates, or per-baseline breakdowns.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report quantitative effect sizes, datasets, statistical robustness, computational cost, or the scope and outcomes of its ablations. It also does not establish that the causal video architecture studies causality as a scientific or inference problem; causality appears to mean temporally causal encoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The match to the query “causality” is narrow: two KVAE-3D variants are causal video tokenizers, likely preventing dependence on future frames. The work is relevant if the feed targets causal temporal architectures or streaming video generation, but likely peripheral if it targets causal inference, causal discovery, or intervention-based reasoning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; multimodal tokenization, latent diffusion, variational autoencoder, causal video tokenizer, audio generation, image generation, video generation, representation compression&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would be the paper’s architecture or pipeline figure comparing KVAE-Audio, KVAE-2D, and the two causal KVAE-3D compression paths, including latent shapes and their connection to text-conditioned generators.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Andrey Shutkin, Denis Parkhomenko, Ivan Kirillov, Kirill Chernyshev, Kirill Malakhov, Ilia Vasiliev, Ilia Trushkin, Valeriya Kobenko, David Chikovani, Alexander Ivanov, Azat Saginbaev, Egor Silvestrov, Ivan Mikheev, Konstantin Zakharov&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.05798v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CV</category>
+      <category>cs.LG</category>
+      <category>cs.SD</category>
+    </item>
+    <item>
+      <title>Answer First, Reason Later: Commitment Order in Diffusion LLMs</title>
+      <link>http://arxiv.org/abs/2608.05687v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.05687v1</guid>
+      <pubDate>Thu, 06 Aug 2026 07:25:04 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 59/100 (Skim, confidence: high)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 46, Paper 48, Empirical 84, Reproducibility 30, Manuscript 91&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution quality are not supplied., Author citation counts, h-indices, and prior topic-specific publication records are not supplied., No DOI, journal, conference, citation count, or influential-citation signal is supplied., No code repository or implementation-release statement is supplied., Public data and exact reproducibility instructions are not described., Full baseline tables, comprehensive ablations, and complete per-dataset metrics are absent from the abstract.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; This is arXiv version 1, published 2026-08-06, with no DOI or journal reference supplied.; The abstract reports commitment-level logging on LLaDA-8B and replication on Dream-7B.; Evaluation names GSM8K and MATH-500.; A 2×2 prompt-decoder design reports a +34.8-point interaction with a 95% confidence interval.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; The paper argues that unrestricted token-commitment order causes diffusion language models to produce premature answers on reasoning tasks and introduces frontier-gated commitment to recover ordered reasoning while retaining parallel decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; It studies why masked diffusion language models often fail to produce complete chain-of-thought reasoning when allowed to commit tokens in arbitrary order, especially as the output canvas grows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors log every token commitment made by LLaDA-8B on GSM8K, compare prompts and decoders in a 2×2 design, distinguish EOS pressure from positional reachability, decompose performance into collapse and order channels, replicate findings on Dream-7B and MATH-500, and test a frontier-gated sampler that restricts commitments to a controllable window.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new claim is that arbitrary commitment order—normally presented as a defining advantage of diffusion LLMs—is a causal source of reasoning failure. The proposed single-parameter frontier gate reframes windowed sampling as a remedy for this pathology rather than merely an efficiency mechanism.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Pure decoding commits final answers after only 15–24% of the trajectory and produces answer-only outputs on up to 90% of problems as canvas size increases. Ordered commitment yields a chain-of-thought interaction of +34.8 percentage points (95% CI [26.8, 42.8]), while frontier gating raises the reported score from 0.528 to 0.852 and preserves up to 4× parallel decoding. The qualitative effect is replicated on Dream-7B and MATH-500.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not report open-source code, implementation details, comparisons with a broad set of existing samplers, full per-dataset metrics, extensive ablations, or robustness across more model families and reasoning domains. Its causal evidence concerns a controlled decoding intervention, not general causal-inference methodology.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the query “causality” because it performs a controlled intervention on token reachability and claims that commitment order causally determines reasoning collapse. Relevance is meaningful but indirect for researchers seeking general causal inference, causal discovery, or treatment-effect methods.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; diffusion language models, masked diffusion, reasoning, chain-of-thought, decoding, commitment order, causal intervention, GSM8K&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the decoding trajectory under unrestricted versus ordered commitment, showing premature final-answer placement, the moving frontier gate, and the accuracy–parallelism trade-off as window size changes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Hwiyeong Lee, Taesup Kim&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2608.05687v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
+      <category>cs.CL</category>
+      <category>cs.AI</category>
+    </item>
     <item>
       <title>JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</title>
       <link>http://arxiv.org/abs/2608.03974v1</link>
@@ -2206,196 +2400,6 @@
 &lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.19038v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
       <category>cs.CV</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>OntoBook: Ontology-Grounded Synthetic Textbooks for Medical Encoder Pretraining</title>
-      <link>http://arxiv.org/abs/2607.18927v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18927v1</guid>
-      <pubDate>Tue, 21 Jul 2026 10:11:10 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 61/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 58, Empirical 70, Reproducibility 82, Manuscript 78&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institutional information, Author citation or h-index information, Paper citation and influential-citation information, DOI or archival journal publication, Open-source training and generation code, Repository-quality or licensing details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Evaluated on three French medical coding benchmarks.; Reports +2.5 micro-F1 on FRACCO and +8.0 micro-F1 on Distemist over MLM-only pretraining.; Misaligned data across objectives reportedly causes a 30-point degradation.; Releases 1.3 million synthetic textbooks spanning CIM-10, CCAM, and ATC, plus pretrained checkpoints.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; OntoBook turns medical-ontology graph walks into LLM-written French textbook prose and jointly pretrains an encoder with masked-language-modeling and code-relation objectives, improving medical coding performance over MLM-only pretraining.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies how structured knowledge in medical ontologies can be converted into useful pretraining signals for French encoder language models used in medical coding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; OntoBook performs random walks over medical ontology graphs to capture hierarchical and causal code relations, asks a large language model to rewrite the walks as fluent textbook-style prose, and trains a 149M-parameter ModernCamemBERT on the resulting corpus using aligned masked-language-modeling and code-pair relation-prediction objectives.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a three-stage ontology-to-text pretraining pipeline that combines synthetic textbook generation with relation-aware encoder training on the same examples. The abstract specifically shows that sharing aligned data between the two objectives is crucial, rather than merely adding an auxiliary relation task.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across FRACCO, Cantemist-FR, and Distemist-FR, OntoBook significantly outperforms MLM-only pretraining, including gains of 2.5 micro-F1 on FRACCO and 8.0 micro-F1 on Distemist. Training the objectives on different data produces a reported 30-point degradation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract compares primarily against MLM-only pretraining and does not report broader encoder or knowledge-enhanced baselines, statistical test details, robustness analyses, component-level ablations beyond objective alignment, or the contribution and possible factual errors of the LLM-generated prose.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched the query &amp;quot;causality&amp;quot; because its ontology walks are intended to encode causal as well as hierarchical relations. However, causality is an input relation type rather than the main research problem: the work does not claim causal discovery, causal inference, or causal-effect estimation, so relevance to a focused causality feed is limited.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; medical NLP, ontology grounding, synthetic textbooks, encoder pretraining, relation prediction, French language models, medical coding, knowledge graphs&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing ontology random walks, LLM textbook reformulation, aligned MLM and relation-prediction pretraining, and downstream medical coding evaluation would be useful; no direct image URL was supplied.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Rian Touchent, Éric de la Clergerie&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18927v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Regime-Aware Physics-Guided Early Warning of Lithium-Ion Battery Thermal Runaway Using Thermo-Mechanical Signals</title>
-      <link>http://arxiv.org/abs/2607.18860v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18860v1</guid>
-      <pubDate>Tue, 21 Jul 2026 08:50:55 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 49/100 (TL;DR only, confidence: high)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 30, Paper 45, Empirical 72, Reproducibility 25, Manuscript 78&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution evidence, Author citation counts and h-index information, DOI, peer-reviewed venue, or journal reference, Paper citation and influential-citation signals, Open-source code or repository, Public dataset availability&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 with no DOI, journal reference, or conference information.; Evaluation uses leave-one-experiment-out cross-validation over 30 experiments.; Experiments cover 10%, 50%, and 90% state of charge and two loading protocols.; The abstract reports five quantitative performance metrics and comparison with a strongest baseline.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A regime-aware, physics-guided temporal model fuses thermo-mechanical battery signals to detect thermal runaway and estimate time-to-disaster earlier than temperature-centered warning methods.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Early-warning systems for lithium-ion battery thermal runaway rely mainly on temperature and may miss force or deformation precursors that appear before rapid heating, limiting warning lead time under mechanical abuse.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; A lightweight convolutional classifier identifies safe, warning, and danger regimes from mechanical signals; these estimates condition a causal temporal convolutional network using feature-wise linear modulation, physics-biased attention, and regime-dependent gating. Joint training covers regime classification, thermal-runaway detection, and time-to-disaster estimation using temperature, voltage, force, deformation, and state-of-charge inputs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely distinctive element is regime-conditioned thermo-mechanical fusion: inferred mechanical regimes dynamically modulate a causal temporal backbone, while physics-biased attention and gating incorporate domain structure. This goes beyond standard temperature-only monitoring and ordinary unconditioned temporal classifiers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Across 30 controlled mechanical-abuse experiments evaluated with leave-one-experiment-out cross-validation, the method reports F1=0.89, temperature RMSE=12.3 °C, mean warning lead time=15.6 s, detection success rate=0.92, and experiment-level false alarms=2.7%. Lead time is 69.6% greater than the strongest baseline; removing force reduces lead time by 60.3%.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to 30 controlled mechanical-abuse tests spanning three state-of-charge levels and two loading protocols. The abstract provides no evidence of validation on real vehicles, operational storage systems, other abuse or failure modes, broader battery chemistries, statistical uncertainty, robustness testing, or public code and data.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches “causality” only indirectly: “causal” describes a temporal convolutional architecture that avoids future information, not an explicit causal-inference method involving interventions, treatment effects, or causal discovery. It is therefore peripheral unless the feed also targets causal temporal prediction or safety forecasting.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; battery safety, thermal runaway, early warning, physics-guided learning, multimodal sensor fusion, causal temporal convolution, regime-aware modeling, time-to-event prediction&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the complete pipeline from multimodal battery measurements through mechanical-regime classification, regime-conditioned FiLM/attention/gating, and the three joint outputs: regime, runaway detection, and time-to-disaster.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Syed Sajid Ullah, Muhammad Zunair Zamir, Salman Khan&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18860v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>WorldScape Policy 2.0: Empowering Steerable World Action Modeling with Reasoning-Augmented Memory</title>
-      <link>http://arxiv.org/abs/2607.18840v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18840v1</guid>
-      <pubDate>Tue, 21 Jul 2026 08:25:37 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 56/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 40, Paper 64, Empirical 62, Reproducibility 35, Manuscript 78&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations and institutional provenance, author citation counts or h-indexes, DOI, journal, or conference acceptance, quantitative results and metric values, named baselines, ablation studies&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 in cs.RO, published July 21, 2026.; ManipEvent-5M is described as containing nearly five million event segments.; Evaluation reportedly covers both simulation and real-world platforms.; The abstract explicitly identifies prior limitations and distinguishes short-term visual memory from event-structured long-term memory.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; WorldScape Policy 2.0 combines event-structured long-term memory, causal short-term visual context, and multimodal event-level pretraining to improve long-horizon robotic manipulation and controllable execution.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Existing World Action Models have limited temporal context, coarse episode-level language supervision, and mainly text-only conditioning, weakening task-progress tracking, fine-grained language-video-action grounding, visual-context reasoning, and cross-embodiment transfer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The proposed controllable WAM uses recent observations as DiT prefill for short-term dynamics and organizes historical VLM outputs into global-history, local-active, and event-boundary memories for progress-aware retrieval. Retrieved context conditions perception and autoregressive planning tokens, while semantic forcing transfers event-level instructions into the latent planning pathway. Training uses ManipEvent-5M, containing nearly five million aligned event segments with actions, task instructions, subtask captions, goal images, and video demonstrations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a unified memory-and-conditioning framework that supports autonomous planning from high-level instructions and steerable execution from fine-grained text, goal images, or video context, backed by a large event-grounded embodied dataset.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports superior long-horizon planning, fine-grained instruction following, and in-context adaptation in simulation and on real-world platforms, but supplies no numerical results, named baselines, task counts, or statistical evidence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to qualitative superiority claims in the abstract. It does not report metrics, baselines, ablations, robustness tests, dataset release status, code availability, or detailed cross-embodiment results. Its relevance to causality also appears lexical and architectural—through causal temporal processing—rather than an explicit contribution to causal inference or causal discovery.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matched “causality” because it uses causal short-term visual memory, but its central subject is memory-augmented robotic world-action modeling. It is moderately relevant if the feed includes causal temporal architectures, and weakly relevant if it targets formal causal reasoning, intervention, or causal identification.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; robotics, world action models, long-horizon manipulation, multimodal conditioning, visual memory, event memory, vision-language models, Diffusion Transformer DiTprefill, semantic forcing, ManipEvent-5M.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the pipeline from recent observations through DiT-prefill short-term memory, event-structured history retrieval, perception and planning tokens, semantic forcing, and multimodal action generation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Haisheng Su, Zongdai Liu, Xin Jin, Haoxuan Dou, Chengming Hu, Baorun Li, Zhanwang Liu, Ruiyan Xu, Jianjie Fang, Xin Zhang, Zhenjie Yang, Xue Yang, Chen Gao, Junchi Yan, Yong Li, Wei Wu&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18840v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.RO</category>
-    </item>
-    <item>
-      <title>Group-of-Latents: Perceptual Video Compression at Extreme Bitrates via Masked Latent Generative Modeling</title>
-      <link>http://arxiv.org/abs/2607.19437v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.19437v1</guid>
-      <pubDate>Tue, 21 Jul 2026 06:36:32 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 46/100 (TL;DR only, confidence: high)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 20, Paper 52, Empirical 58, Reproducibility 35, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations and institutions, author citation counts and h-indices, conference, journal, or DOI signal, paper citation and influential-citation data, named datasets and scenario coverage, named baselines&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The submission is arXiv v1, published July 21, 2026, with no DOI, journal reference, or conference comment.; The abstract explicitly describes GoL, I-DCM, and DiT-based U-LDM components.; The claimed operating regime is below 0.005 bpp.; The abstract claims extensive experiments and state-of-the-art perceptual fidelity but reports no dataset, baseline, metric value, ablation, or uncertainty estimate.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A generative video-compression framework combines grouped causal-tokenizer latents with pretrained Diffusion Transformer priors to reconstruct perceptually convincing video below 0.005 bpp.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies perceptual video compression under extremely constrained bitrates, where conventional transformation-and-quantization methods struggle to retain spatial detail and temporal consistency.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The framework partitions a causal tokenizer&amp;#x27;s latent stream into intra I-latents and inter P-latents using Group-of-Latents (GoL); an I-DCM compresses key I-latents as perceptual anchors, while a DiT-based U-LDM refines intra-frame textures and generates P-latents from noise without transmitting additional P-latent bits.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a unified masked latent generative design that transmits compressed perceptual anchors but synthesizes temporal P-latents from a pretrained DiT prior, targeting a bitrate regime below 0.005 bpp rather than optimizing every latent through standard transform coding.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; The abstract reports state-of-the-art perceptual fidelity, rich spatial detail, and robust temporal consistency at extreme bitrates below 0.005 bpp. It provides no named datasets, baselines, metric values, or statistical evidence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Only abstract-level claims are available: there are no quantitative comparisons beyond the operating bitrate, no named benchmarks or metrics, no ablations or robustness analysis, and no evidence about factual reconstruction versus plausible generative hallucination. Code is promised but not yet identified as available.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; Relevance to the query &amp;quot;causality&amp;quot; is weak and likely lexical: the paper uses a causal tokenizer, but the abstract does not study causal inference, causal representation learning, interventions, or causal discovery.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; video compression, extreme low bitrate, generative compression, Diffusion Transformer, masked latent modeling, causal tokenizer, perceptual quality, temporal synthesis&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing the causal tokenizer, GoL partition into I- and P-latents, I-DCM anchor transmission, and U-LDM denoising/generation paths would be useful; no direct figure URL is supplied.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Shaokang Wang, Jinchang Xu, Peidong Jia, Zhijian Hao, Siyuan Qian, Fei Zhao, Rui Ma, Xiaozhu Ju, Jian Tang, Xiaodong Xie, Shanghang Zhang, Huizhu Jia&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.19437v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>eess.IV</category>
-      <category>cs.CV</category>
-      <category>cs.MM</category>
-    </item>
-    <item>
-      <title>ConceptCF: Concept-based Counterfactuals for the Explainability of Time Series</title>
-      <link>http://arxiv.org/abs/2607.18748v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18748v1</guid>
-      <pubDate>Tue, 21 Jul 2026 06:12:16 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 46/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 35, Paper 45, Empirical 60, Reproducibility 20, Manuscript 75&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; author affiliations and institutional provenance, author citation counts and h-indices, DOI, journal, or conference acceptance, paper citation and influential-citation information, datasets and scenario coverage, numerical results and effect sizes&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The submission is arXiv v1 in cs.LG and cs.AI.; The method constructs concepts through time-series decomposition and optimizes their mutations with a genetic algorithm.; The abstract reports comparison with five state-of-the-art methods.; Evaluation claims cover validity, confidence, proximity, sparsity, and plausibility.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; ConceptCF generates interpretable time-series counterfactual explanations by mutating decomposition-derived concepts such as scale and frequency bands with a genetic algorithm.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Existing time-series counterfactual methods modify individual points or subsequences, which can produce changes that are difficult for humans to interpret, especially in high-stakes applications.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; ConceptCF decomposes time series into human-interpretable concepts, including scale and frequency bands, and uses a genetic algorithm to optimize concept-level mutations that change a model&amp;#x27;s prediction.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The principal novelty is shifting counterfactual generation from point- or subsequence-level perturbations to mutations of named, interpretable time-series concepts. The abstract does not establish that these concepts are causal or that the resulting counterfactuals identify causal relationships.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Against five state-of-the-art approaches, ConceptCF reportedly delivers consistently top-tier results across validity, confidence, proximity, sparsity, and plausibility. The abstract provides no datasets, numerical results, uncertainty estimates, or per-baseline comparisons.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; Evidence is limited to aggregate claims in the abstract. It does not report dataset coverage, numerical effect sizes, statistical robustness, ablations, runtime, human evaluation of concept interpretability, or tests demonstrating causal validity. Code and data availability are also unspecified.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper matches the causality query through its motivation that explanations should distinguish causal relationships from spurious correlations. Its direct technical contribution is concept-based counterfactual explainability rather than causal identification, estimation, or discovery, so relevance is meaningful but indirect.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; counterfactual explanations, time series, concept-based explainability, genetic algorithms, interpretable AI, causality, XAI&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A pipeline figure showing time-series decomposition into interpretable concepts, genetic-algorithm concept mutations, reconstructed counterfactuals, and the resulting prediction change would be useful.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Annemarie Jutte, Faizan Ahmed, Jeroen Linssen, Maurice van Keulen&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18748v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.LG</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Temporal-Causal Unity as an Operational Framework for Collective Dynamics: Causal-Progress Clocks, Synchronization, and Polarization</title>
-      <link>http://arxiv.org/abs/2607.18620v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18620v1</guid>
-      <pubDate>Tue, 21 Jul 2026 01:39:53 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 47/100 (TL;DR only, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 34, Paper 45, Empirical 40, Reproducibility 45, Manuscript 80&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institutional signals, Author citation counts and h-indexes, DOI, journal, or conference acceptance, Paper citation and influential-citation information, Open-source code or repository, Public data and implementation details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; The manuscript is arXiv v1 with no DOI, journal reference, or conference information supplied.; The abstract gives an explicit causal-progress definition and conditional threshold K_c=2(Δ+D).; Numerical results are explicitly described as reproducible illustrations, not empirical demonstrations.; Six historical episodes are explicitly treated as scope probes rather than validation data.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; TCU operationalizes a process-philosophical view of time through an intensity-based causal-progress clock and a stochastic agent network that models synchronization, consensus, and polarization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper asks whether time understood as ordered causal change can be translated into a measurable coordinate and a testable model of cognitive and social collective dynamics without conflating philosophical interpretation, mathematical construction, and empirical claims.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; It defines causal progress as τ(t)=∫₀ᵗλ(s|H_s)ds, requiring event intensity λ to be specified independently of outcomes, and evolves agents&amp;#x27; orientation phases and activation amplitudes in τ using weighted interactions, heterogeneous drift, external input, anchoring, and diffusion. First- and second-harmonic order parameters distinguish consensus from bipolar polarization; an all-to-all noisy Kuramoto specialization yields K_c=2(Δ+D).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The main novelty is a deliberately layered bridge between process ontology and complex-systems modeling: an independently specified causal-progress clock is separated from both the philosophical thesis and the stochastic network model, enabling chronological-time and causal-progress models to be compared out of sample. The framework also explicitly separates consensus from bipolar polarization rather than treating all collective order as synchronization.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Numerical illustrations reproduce the conditional Kuramoto synchronization threshold K_c=2(Δ+D), show causal-clock curve collapse, and demonstrate the distinction between consensus and polarization. The abstract explicitly characterizes these as illustrations rather than empirical validation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; No real-world validation is reported: six historical episodes are only scope probes. The abstract provides no quantitative predictive comparison against chronological-time baselines, statistical robustness analysis, ablations, public dataset, or code repository; the central causal intensity must also be independently specified, but practical estimation and identifiability evidence are not described.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the query &amp;quot;causality&amp;quot; because its central construct is a measurable causal-progress coordinate and it proposes falsifiable comparisons between causally parameterized and chronological-time models. It is conceptually relevant, though presently supported mainly by theory and simulations rather than empirical causal validation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, causal-progress clock, collective dynamics, process philosophy, Kuramoto model, synchronization, polarization, stochastic networks&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A framework diagram showing the separation and links among the process-ontology thesis, causal-progress clock τ, stochastic agent dynamics, harmonic order parameters, and out-of-sample validation protocol would be useful.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jian Liu, Dong Sun&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18620v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>physics.soc-ph</category>
-      <category>cs.AI</category>
-    </item>
-    <item>
-      <title>Attention Without Grounding: Causal Evaluation of Visual Explanations in Medical VLMs</title>
-      <link>http://arxiv.org/abs/2607.18577v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18577v1</guid>
-      <pubDate>Mon, 20 Jul 2026 23:19:28 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 58/100 (Skim, confidence: high)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 36, Paper 58, Empirical 88, Reproducibility 25, Manuscript 90&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution quality, Author citation counts and h-indices, Paper citation and influential-citation signals, DOI, journal reference, or archival conference acceptance, Open-source code or repository, Public evaluation scripts and implementation details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; arXiv v1 dated 2026-07-20 and marked for the iMIMIC Workshop 2026.; Evaluation covers PadChest (n=637) and CheXlocalize (n=643).; The audit includes multiple VLM families plus two chest-X-ray classifier positive controls.; Reported negative correlations include 95% bootstrap confidence intervals below zero.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; A multi-model causal audit finds that attention and saliency heatmaps for chest-X-ray VLMs are visually plausible but systematically fail to identify the image regions that actually drive predictions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper asks whether attention and saliency heatmaps faithfully explain medical VLM predictions on chest X-rays, rather than merely overlapping with plausible anatomy or producing reassuring visualizations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors evaluate three MedGemma-4B variants, LLaVA-RAD, Qwen3-VL-8B-Instruct, and CheXagent-2-3b using radiologist-box overlap on PadChest (n=637), attribution mass within masks on CheXlocalize (n=643), and causal 16×16 patch occlusion. DenseNet121 and ResNet50 chest-X-ray classifiers serve as positive controls. Faithfulness requires both evidence that the model uses the image and agreement between attention and regions whose occlusion changes its answer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is a two-part causal standard for heatmap faithfulness that separates localization plausibility from actual image use and perturbation sensitivity. This exposes misleading cases such as positive attention–occlusion correlation in a nearly text-only model and compares observed localization against shifted and random controls.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; No evaluated VLM passes both faithfulness criteria. MedGemma and Qwen3-VL use visual input, but their attention anti-correlates with occlusion importance, with rho below zero and 95% bootstrap confidence intervals entirely below zero. LLaVA-RAD shows positive correlation but 99.1% agreement with text-only predictions and near-zero causal mass. VLM heatmaps never outperform shifted or random localization controls and place at most 22% of attribution mass inside radiologist masks, while both classifier controls pass all metrics.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract reports only chest-X-ray tasks, two localization datasets, and a finite set of VLM families, so generalization to other medical modalities, explanation methods, prompting strategies, and clinical workflows remains untested. It also provides no ablations, statistical tests beyond the reported bootstrap intervals, human-factor evaluation, code, or implementation details sufficient to assess reproducibility.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper is highly relevant to the matched query “causality” because causal perturbation is central to its evaluation: patch occlusion tests whether highlighted regions actually affect model answers, distinguishing causal faithfulness from visual or correlational plausibility.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, medical VLMs, explainable AI, attention faithfulness, saliency heatmaps, chest X-rays, patch occlusion, causal evaluation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful figure would diagram the proposed faithfulness audit: verify image dependence, generate attention and 16×16 occlusion maps, compare their agreement, evaluate localization against radiologist annotations and shifted/random controls, and contrast VLMs with classifier positive controls.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Binesh Sadanandan, Vahid Behzadan&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18577v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CV</category>
-    </item>
-    <item>
-      <title>The Story Shapes the Agent: Narrative Priors in LLM Behavior</title>
-      <link>http://arxiv.org/abs/2607.18566v1</link>
-      <guid isPermaLink="true">http://arxiv.org/abs/2607.18566v1</guid>
-      <pubDate>Mon, 20 Jul 2026 23:03:16 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Priority:&lt;/strong&gt; 63/100 (Skim, confidence: medium)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quality dimensions:&lt;/strong&gt; Author 44, Paper 72, Empirical 84, Reproducibility 28, Manuscript 88&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Missing quality signals:&lt;/strong&gt; Author affiliations and institution information, Author citation counts and h-indices, DOI or journal reference, Open-source code or repository, Public data or evaluation environment, Model identities and implementation details&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Score evidence:&lt;/strong&gt; Accepted at COLM 2026; arXiv version 1.; Evaluation covers 1,890 sessions, three models, 10 personas, and three structurally matched narratives.; Narrative priors reportedly explain 5–31× more behavioral variance than persona.; An anchor-word removal intervention reportedly reduces cross-narrative consistency by 95%.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Using structurally identical investigation games with different stories, the paper shows that narrative framing drives LLM-agent behavior far more strongly than assigned personas and proposes action-grounded behavioral anchors to improve transfer across narratives.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; The paper studies whether an LLM agent’s behavior is primarily determined by persona prompting or by the narrative framing of its task, independently of the underlying decision structure.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; The authors construct three text-based investigation games—disease investigation, IT troubleshooting, and murder mystery—with matched action spaces, progression, and resource constraints. They compare 10 personas across three models and 1,890 sessions, analyze variance attributable to narrative versus persona, intervene by removing action-related anchor words from a transferable persona, and test generalization on a held-out fourth narrative.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key contribution:&lt;/strong&gt; The genuinely new element is the isolation of “narrative priors” through structural isomorphism: behavior changes induced solely by story framing despite an unchanged decision problem. The paper further identifies behavioral anchors—persona language directly mapped to shared actions—as the mechanism supporting cross-narrative persona transfer, and derives a persona-selection method from this framework.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Main result:&lt;/strong&gt; Narrative priors explain 5–31 times more behavioral variance than personas, remain consistent across model architectures, and correlate negatively with success in two of three domains. Removing anchor words reduces cross-narrative behavioral consistency by 95%; the framework also generalizes to a held-out narrative and supports improved persona selection.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Limitation:&lt;/strong&gt; The abstract does not identify the evaluated models, report absolute success rates, quantify the persona-selection improvement, describe statistical uncertainty, or mention comparisons with alternative prompting controls. Evidence is limited to text-based investigation games, so generalization to open-ended or embodied agents remains unclear.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Relevance:&lt;/strong&gt; The paper directly matches the “causality” query through controlled structural-isomorphism experiments and a targeted lexical intervention intended to establish that narrative framing and behavioral anchors cause changes in agent behavior. Its causal evidence is intervention-based, although the work is primarily about LLM prompting and behavioral transfer rather than general causal inference methodology.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; causality, LLM agents, persona prompting, narrative priors, behavioral anchors, causal intervention, prompt robustness, cross-domain transfer&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure note:&lt;/strong&gt; A useful image would diagram the structural-isomorphism setup: several narrative skins mapped onto the same actions, stages, and resource constraints, followed by variance decomposition and the behavioral-anchor intervention.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Yixuan Wang, James Lester, Shashank Srivastava&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Query:&lt;/strong&gt; causality&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2607.18566v1"&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
-      <category>cs.CL</category>
       <category>cs.AI</category>
     </item>
   </channel>
